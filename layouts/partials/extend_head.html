@@ -1,18 +1,9 @@
-{{/* 애드센스 (심사 통과 후 주석 해제) */}}
-{{/*
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
-*/}}
-
-{{/* 구글 Analytics 4 (Search Console 연결용, 심사 통과 후) */}}
-{{/*
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-*/}}
+{{/* 디스플레이 폰트 — Gmarket Sans (로고·히어로용) */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFBold.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFMedium.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFLight.css">
 
 {{/* Product / Review / FAQ JSON-LD */}}
 {{ if .Params.product }}
@@ -40,7 +31,6 @@
 </script>
 {{ end }}
 
-{{/* FAQ Schema */}}
 {{ if .Params.faq }}
 <script type="application/ld+json">
 {
@@ -61,7 +51,6 @@
 </script>
 {{ end }}
 
-{{/* BreadcrumbList */}}
 {{ if .IsPage }}
 <script type="application/ld+json">
 {

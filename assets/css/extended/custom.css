@@ -54,10 +54,10 @@ body, html {
 }
 .logo a {
   color: var(--lt-ink) !important;
-  font-weight: 800 !important;
-  font-size: 1.35rem !important;
-  letter-spacing: -0.035em !important;
-  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: -0.05em !important;
+  font-family: "GmarketSansTTF", "Pretendard Variable", sans-serif !important;
 }
 .logo a img { display: none; }  /* 로고 이미지 숨김, 텍스트만 */
 .menu { gap: 1.5rem !important; }
@@ -71,45 +71,76 @@ body, html {
 
 /* ========== 홈 히어로 ========== */
 .first-entry {
-  background: var(--lt-dark) !important;
+  background: #050505 !important;
   background-image:
-    linear-gradient(135deg, rgba(26,26,26,0.88) 0%, rgba(26,26,26,0.55) 100%),
+    linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.45) 100%),
     url('/covers/home-hero.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
-  min-height: 440px !important;
+  min-height: 520px !important;
   border-radius: 0 !important;
-  padding: 5rem 2.5rem !important;
-  margin: 0 -1.5rem 3.5rem !important;
+  padding: 6rem 3rem !important;
+  margin: 0 -1.5rem 4rem !important;
   color: #FFF !important;
   position: relative;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
 }
+.first-entry::before {
+  content: "LIVINGTAB";
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-family: "GmarketSansTTF", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  font-size: 0.85rem;
+  color: var(--lt-gold);
+  z-index: 2;
+}
+.first-entry::after {
+  content: "";
+  position: absolute;
+  top: 3.5rem;
+  left: 3rem;
+  width: 48px;
+  height: 2px;
+  background: var(--lt-gold);
+  z-index: 2;
+}
 .first-entry .entry-header h1 {
-  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
-  font-size: 2.8rem !important;
+  font-family: "GmarketSansTTF", "Pretendard Variable", sans-serif !important;
+  font-size: 4.2rem !important;
   color: #FFFFFF !important;
-  font-weight: 800 !important;
-  line-height: 1.3 !important;
-  letter-spacing: -0.04em !important;
-  margin: 0 0 1.25rem 0 !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.055em !important;
+  margin: 0 0 2rem 0 !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 .first-entry .entry-content {
-  font-size: 1.05rem !important;
-  color: rgba(255,255,255,0.88) !important;
-  line-height: 1.8 !important;
-  max-width: 520px !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  font-size: 1.1rem !important;
+  color: rgba(255,255,255,0.92) !important;
+  line-height: 1.85 !important;
+  max-width: 540px !important;
   letter-spacing: -0.02em !important;
   font-weight: 400 !important;
 }
-.first-entry .entry-content p { margin: 0 0 0.5rem !important; }
+.first-entry .entry-content p { margin: 0 0 0.6rem !important; }
 .first-entry .entry-content strong {
   color: var(--lt-gold) !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
-.first-entry .social-icons a { color: var(--lt-gold) !important; }
+.first-entry .social-icons {
+  margin-top: 2rem !important;
+}
+.first-entry .social-icons a {
+  color: var(--lt-gold) !important;
+  opacity: 0.85;
+}
+.first-entry .social-icons a:hover { opacity: 1; }
 
 /* ========== 홈 포스트 카드 ========== */
 .post-entry {
@@ -385,12 +416,18 @@ footer.entry-footer + div {
 /* 모바일 */
 @media (max-width: 640px) {
   .first-entry {
-    padding: 3.5rem 1.5rem !important;
-    min-height: 340px !important;
+    padding: 4rem 1.5rem 3rem !important;
+    min-height: 380px !important;
     margin: 0 -1.5rem 2.5rem !important;
   }
-  .first-entry .entry-header h1 { font-size: 2rem !important; }
-  .first-entry .entry-content { font-size: 0.98rem !important; }
+  .first-entry::before { left: 1.5rem; top: 1.5rem; }
+  .first-entry::after { left: 1.5rem; top: 3rem; width: 36px; }
+  .first-entry .entry-header h1 {
+    font-size: 2.6rem !important;
+    letter-spacing: -0.05em !important;
+    line-height: 1.2 !important;
+  }
+  .first-entry .entry-content { font-size: 1rem !important; }
   .post-entry .entry-header { padding: 1.25rem 1.25rem 0.25rem !important; }
   .post-entry .entry-content { padding: 0 1.25rem 0.5rem !important; }
   .post-entry .entry-footer { padding: 0.25rem 1.25rem 1.25rem !important; }
