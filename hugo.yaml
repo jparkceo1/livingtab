@@ -57,18 +57,8 @@ params:
   ShowRssButtonInSectionTermList: true
   comments: false
 
-  homeInfoParams:
-    Title: "후회 없는 선택, 리빙탭"
-    Content: |
-      소형가전 · 주방 · 육아 · 수납까지
-
-      **실사용 비교 · 체크리스트 · 솔직한 단점**까지 한 번에 보고 고르세요.
-      광고 아닌 가이드로 구매 전 5분을 돌려드립니다.
-
-  label:
-    text: "리빙탭"
-    icon: /logo.png
-    iconHeight: 36
+  disableSpecial1stPost: false    # 첫 포스트를 대표로 크게 표시
+  # homeInfoParams 비활성화 (상단 대표 포스트로 대체)
 
   socialIcons:
     - name: instagram
