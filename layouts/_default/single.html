@@ -35,7 +35,7 @@
   {{ with .Params.cover }}
     {{ if not .hiddenInList }}
     <div class="max-w-[1040px] mx-auto my-8 md:my-12">
-      <img src="{{ .image }}" alt="{{ .alt }}" class="w-full h-auto rounded-lg shadow-sm">
+      <img src="{{ .image }}?v=4" alt="{{ .alt }}" class="w-full h-auto rounded-lg shadow-sm">
       {{ with .caption }}<figcaption class="text-center text-gray-500 text-xs mt-2">{{ . | safeHTML }}</figcaption>{{ end }}
     </div>
     {{ end }}

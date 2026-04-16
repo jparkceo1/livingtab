@@ -10,8 +10,8 @@
 <div class="max-w-[1240px] mx-auto md:px-6 my-8">
   <a href="{{ .Permalink }}" class="flex flex-col md:flex-row bg-[#4A4A4A] overflow-hidden md:h-[480px] no-underline">
     <div class="w-full md:w-1/2 relative min-h-[340px] md:min-h-[480px] bg-[#4A4A4A]">
-      <div class="absolute top-0 left-0 bg-[#4A4A4A] text-white px-5 py-[10px] font-bold text-[14px] tracking-widest leading-none z-10">TODAY</div>
-      <img src="/covers/{{ .File.BaseFileName }}-hero.jpg" alt="{{ .Title }}" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute top-0 left-0 bg-[#FF6B2C] text-white px-5 py-[10px] font-bold text-[14px] tracking-widest leading-none z-10 shadow-md">TODAY</div>
+      <img src="/covers/{{ .File.BaseFileName }}-hero.jpg?v=4" alt="{{ .Title }}" class="absolute inset-0 w-full h-full object-cover">
     </div>
 
     <div class="w-full md:w-1/2 bg-[#4A4A4A] text-white p-8 md:p-14 flex flex-col justify-center">
@@ -34,44 +34,45 @@
 </div>
 {{- end -}}
 
-{{/* 오늘의 쿠팡 베스트 3 (데스크탑 3-col / 모바일 가로 스와이프) */}}
-<div class="max-w-[1240px] mx-auto px-4 md:px-6 my-12">
-  <div class="bg-[#4A4A4A] text-white p-6 md:p-10">
-    <div class="flex justify-between items-end mb-5 md:mb-6 border-b border-white/20 pb-3 md:pb-4">
-      <div>
-        <div class="text-[#F5B7A8] text-[11px] md:text-[13px] font-bold tracking-widest uppercase mb-1">BEST DEAL</div>
-        <h3 class="text-[20px] md:text-[26px] font-bold tracking-tight font-serif-kr">오늘의 쿠팡 베스트</h3>
+{{/* 오늘의 쿠팡 베스트 3 — 컴팩트 버전 */}}
+<div class="max-w-[1240px] mx-auto px-4 md:px-6 my-8">
+  <div class="bg-[#4A4A4A] text-white p-4 md:p-6">
+    <div class="flex justify-between items-center mb-3 md:mb-4 border-b border-white/20 pb-2 md:pb-3">
+      <div class="flex items-baseline gap-3">
+        <div class="text-[#FF6B2C] text-[11px] md:text-[12px] font-bold tracking-widest uppercase">BEST DEAL</div>
+        <h3 class="text-[17px] md:text-[20px] font-bold tracking-tight font-serif-kr">오늘의 쿠팡 베스트</h3>
       </div>
-      <span class="text-[10px] md:text-[12px] text-gray-400 text-right leading-tight">실시간 업데이트<br class="md:hidden">쿠팡 파트너스 제휴</span>
+      <span class="text-[10px] md:text-[11px] text-gray-400">쿠팡 파트너스 제휴</span>
     </div>
 
-    {{/* 모바일: 가로 스와이프 / 데스크탑: 3-col 그리드 */}}
-    <div class="flex md:grid md:grid-cols-3 gap-3 md:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-3 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
+    <div class="flex md:grid md:grid-cols-3 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
       {{- $bestProducts := slice
-        (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+" "price" "398,000" "before" "599,000" "rating" "4.8" "reviews" "12,847" "img" "/covers/robot-vacuum-top5-2026.jpg" "url" "#")
-        (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000" "before" "179,000" "rating" "4.7" "reviews" "5,234" "img" "/covers/airfryer-comparison-2026.jpg" "url" "#")
-        (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 9종 세트" "price" "38,900" "before" "59,000" "rating" "4.9" "reviews" "3,892" "img" "/covers/baby-dish-set-guide.jpg" "url" "#")
+        (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+" "price" "398,000" "before" "599,000" "rating" "4.8" "reviews" "12,847" "img" "/covers/robot-vacuum-top5-2026.jpg?v=4" "url" "#")
+        (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000" "before" "179,000" "rating" "4.7" "reviews" "5,234" "img" "/covers/airfryer-comparison-2026.jpg?v=4" "url" "#")
+        (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 9종 세트" "price" "38,900" "before" "59,000" "rating" "4.9" "reviews" "3,892" "img" "/covers/baby-dish-set-guide.jpg?v=4" "url" "#")
       -}}
       {{- range $bestProducts -}}
-      <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[72vw] md:w-auto bg-white text-gray-900 p-4 md:p-5 hover:shadow-lg transition-shadow no-underline">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="bg-[#F5B7A8] text-[#3D2C24] w-6 h-6 md:w-7 md:h-7 flex items-center justify-center font-bold text-[13px] md:text-sm">{{ .rank }}</div>
-          <span class="text-[11px] md:text-[12px] text-gray-500">{{ .cat }}</span>
-        </div>
-        <div class="aspect-[4/3] bg-gray-100 mb-3 overflow-hidden">
+      <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[70vw] md:w-auto bg-white text-gray-900 flex md:flex-col gap-3 md:gap-0 p-3 hover:shadow-lg transition-shadow no-underline">
+        <div class="w-[90px] md:w-full shrink-0 aspect-square md:aspect-[16/10] bg-gray-100 overflow-hidden md:mb-2.5 relative">
           <img src="{{ .img }}" alt="{{ .name }}" class="w-full h-full object-cover">
+          <div class="absolute top-1 left-1 bg-[#FF6B2C] text-white w-5 h-5 md:w-6 md:h-6 flex items-center justify-center font-bold text-[11px] md:text-[12px] shadow-md">{{ .rank }}</div>
         </div>
-        <h4 class="font-bold text-[14px] md:text-[16px] leading-tight mb-2 font-serif-kr line-clamp-2">{{ .name }}</h4>
-        <div class="flex items-baseline gap-2">
-          <span class="text-[18px] md:text-[22px] font-bold text-[#D4A574]">₩{{ .price }}</span>
-          <span class="text-[11px] md:text-[12px] text-gray-400 line-through">₩{{ .before }}</span>
+        <div class="flex-1 flex flex-col justify-between min-w-0">
+          <div>
+            <div class="text-[10px] md:text-[11px] text-gray-500 mb-0.5">{{ .cat }}</div>
+            <h4 class="font-bold text-[13px] md:text-[14px] leading-tight mb-1.5 font-serif-kr line-clamp-2">{{ .name }}</h4>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-[15px] md:text-[16px] font-bold text-[#FF6B2C]">₩{{ .price }}</span>
+              <span class="text-[10px] md:text-[11px] text-gray-400 line-through">₩{{ .before }}</span>
+            </div>
+            <div class="text-[10px] md:text-[11px] text-gray-500 mt-0.5">★ {{ .rating }} ({{ .reviews }})</div>
+          </div>
         </div>
-        <div class="text-[11px] md:text-[12px] text-gray-500 mt-1">★ {{ .rating }} ({{ .reviews }} 리뷰)</div>
       </a>
       {{- end -}}
     </div>
-
-    <div class="text-[10px] md:text-[11px] text-gray-400 mt-3 md:mt-4 text-right">* 쿠팡 파트너스 제휴 · 실시간 최저가는 변동 가능</div>
   </div>
 </div>
 <style>
@@ -86,7 +87,7 @@
     <h3 class="text-[28px] font-bold text-gray-900 tracking-tight font-serif-kr">리빙탭 피플의 스테디셀러 노트</h3>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-[48px]">
-    {{- range $i, $p := $rest -}}
+    {{- range $i, $p := $allPosts -}}
       {{- partial "article-card.html" (dict "page" $p "rank" (add $i 1) "showRank" true) -}}
     {{- end -}}
   </div>

@@ -3,12 +3,12 @@
 {{- $showRank := .showRank -}}
 <a href="{{ $p.Permalink }}" class="flex flex-col cursor-pointer group no-underline">
   <div class="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100 shadow-sm">
-    <img src="/covers/{{ $p.File.BaseFileName }}.jpg" alt="{{ $p.Title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+    <img src="/covers/{{ $p.File.BaseFileName }}.jpg?v=4" alt="{{ $p.Title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
     <div class="absolute top-3 left-3 bg-white/20 p-1 rounded-sm backdrop-blur-[2px]">
       <i data-lucide="bookmark" class="text-white w-5 h-5 drop-shadow-md"></i>
     </div>
     {{ if $showRank }}
-    <div class="absolute bottom-0 left-0 bg-[#F5B7A8] text-white w-9 h-9 flex items-center justify-center font-bold text-[18px]">
+    <div class="absolute bottom-0 left-0 bg-[#FF6B2C] text-white w-9 h-9 flex items-center justify-center font-bold text-[18px] shadow-md">
       {{ $rank }}
     </div>
     {{ end }}
