@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>리빙탭 배너 프리뷰 — 이메일 구독 CTA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<style>
+  body { font-family: "IBM Plex Sans KR", system-ui, sans-serif; background: #FAF7F2; }
+  .font-serif-kr { font-family: "IBM Plex Sans KR", sans-serif; font-weight: 700; letter-spacing: -0.035em; }
+  .font-serif { font-family: "Playfair Display", Georgia, serif; }
+</style>
+</head>
+<body class="min-h-screen bg-[#FAF7F2] antialiased">
+
+<div class="fixed top-2 right-4 z-50 bg-black text-white px-3 py-1 text-xs font-bold rounded">
+  배너 C: 이메일 구독 CTA
+</div>
+
+<!-- 상단 배너 -->
+<div class="bg-[#F5B7A8] text-[#3D2C24] font-medium text-[14px] py-[10px] px-8 flex justify-between items-center">
+  <span class="font-bold tracking-tight">HELLO LIVINGTAB!</span>
+  <span>리빙탭 멤버십 가입하기 →</span>
+</div>
+
+<!-- 헤더 -->
+<header class="bg-[#CDDAC0] text-[#2D3A30] border-b border-black/5">
+  <div class="max-w-[1240px] mx-auto px-6 h-[64px] flex items-center justify-between">
+    <a href="/" class="text-[30px] font-serif font-bold tracking-normal" style="letter-spacing:0">LivingTab</a>
+    <nav class="hidden md:flex items-center gap-7 font-semibold text-[14px]">
+      <span>전체 노트</span><span>카테고리</span><span>소개</span>
+    </nav>
+  </div>
+</header>
+
+<!-- TODAY -->
+<div class="max-w-[1240px] mx-auto md:px-6 my-8">
+  <div class="flex flex-col md:flex-row bg-[#4A4A4A] overflow-hidden md:h-[480px]">
+    <div class="w-full md:w-1/2 relative min-h-[340px] md:min-h-[480px]">
+      <div class="absolute top-0 left-0 bg-[#4A4A4A] text-white px-5 py-[10px] font-bold text-[14px] tracking-widest z-10">TODAY</div>
+      <img src="/covers/cordless-vacuum-top5-2026-hero.jpg" class="absolute inset-0 w-full h-full object-cover">
+    </div>
+    <div class="w-full md:w-1/2 bg-[#4A4A4A] text-white p-8 md:p-14 flex flex-col justify-center">
+      <div class="flex justify-between items-start mb-10 border-b border-white/20 pb-6">
+        <div class="flex flex-col text-[13px] font-medium text-[#F5B7A8] gap-1"><span>오늘의</span><span>필독 추천</span></div>
+        <div class="text-[44px] font-light font-serif">TODAY</div>
+      </div>
+      <h2 class="text-[36px] font-bold leading-[1.3] mb-5 tracking-tight break-keep text-white">무선청소기 TOP 5 — 흡입력·배터리·가격 비교</h2>
+      <p class="text-gray-300 text-[15px] leading-[1.7] font-medium break-keep">프리미엄 왕 다이슨 V15 Detect, 국산 최강 LG 코드제로 A9S, 가성비 삼성 비스포크 제트까지. 실사용 관점에서 5종을 비교합니다.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 여기부터 배너 =========================================== -->
+
+<!-- 이메일 구독 CTA -->
+<div class="max-w-[1240px] mx-auto px-6 my-12">
+  <div class="bg-[#4A4A4A] text-white p-12 md:p-16 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <div class="text-[#F5B7A8] text-[13px] font-bold tracking-widest uppercase mb-2">NEWSLETTER</div>
+      <h3 class="text-[32px] md:text-[38px] font-bold leading-tight mb-3 font-serif-kr">
+        매주 월요일,<br class="md:hidden">리빙탭 큐레이션을 받아보세요
+      </h3>
+      <p class="text-gray-300 text-[15px] leading-relaxed">광고 없는 구매 가이드만 골라 보내드립니다. 바쁜 월요일 아침, 5분 투자로 한 주 쇼핑을 정리하세요.</p>
+    </div>
+    <div class="flex-1 w-full">
+      <form class="flex flex-col sm:flex-row gap-3">
+        <input type="email" placeholder="이메일 주소" class="flex-1 px-5 py-4 bg-white text-gray-900 text-[15px] focus:outline-none">
+        <button class="bg-[#F5B7A8] text-[#3D2C24] px-8 py-4 font-bold text-[15px] hover:bg-[#E8A090] transition-colors whitespace-nowrap">구독하기</button>
+      </form>
+      <p class="text-[12px] text-gray-400 mt-3">언제든지 구독 취소 가능 · 광고성 메일 없음 · 주 1회</p>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================== -->
+
+<!-- 카드 그리드 -->
+<div class="max-w-[1240px] mx-auto px-6 my-[72px]">
+  <h3 class="text-[28px] font-bold text-gray-900 tracking-tight font-serif-kr mb-8">리빙탭 피플의 스테디셀러 노트</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100">
+        <img src="/covers/robot-vacuum-top5-2026.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 bg-[#F5B7A8] text-[#3D2C24] w-9 h-9 flex items-center justify-center font-bold text-[18px]">1</div>
+      </div>
+      <h4 class="text-[19px] font-bold leading-[1.3] mb-2 text-gray-900 tracking-tight font-serif-kr">로봇청소기 추천 TOP 5</h4>
+      <p class="text-[15px] text-gray-600 line-clamp-2 leading-[1.6] mb-3">가성비 샤오미부터 프리미엄 로보락 S8까지 2026 기준 실사용 비교</p>
+      <div class="flex items-center gap-1 text-sm"><span class="text-[#D4A574] font-bold">●</span><span class="font-bold">5분</span><span class="text-gray-400">· 1,500자</span></div>
+    </div>
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100">
+        <img src="/covers/airfryer-comparison-2026.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 bg-[#F5B7A8] text-[#3D2C24] w-9 h-9 flex items-center justify-center font-bold text-[18px]">2</div>
+      </div>
+      <h4 class="text-[19px] font-bold leading-[1.3] mb-2 text-gray-900 tracking-tight font-serif-kr">에어프라이어 추천</h4>
+      <p class="text-[15px] text-gray-600 line-clamp-2 leading-[1.6] mb-3">용량별·기능별 5종 솔직 비교. 1~2인 필립스 에센셜, 4인 가족 쿠쿠</p>
+      <div class="flex items-center gap-1 text-sm"><span class="text-[#D4A574] font-bold">●</span><span class="font-bold">5분</span><span class="text-gray-400">· 1,500자</span></div>
+    </div>
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100">
+        <img src="/covers/baby-dish-set-guide.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 bg-[#F5B7A8] text-[#3D2C24] w-9 h-9 flex items-center justify-center font-bold text-[18px]">3</div>
+      </div>
+      <h4 class="text-[19px] font-bold leading-[1.3] mb-2 text-gray-900 tracking-tight font-serif-kr">유아식기 세트 고르는 법</h4>
+      <p class="text-[15px] text-gray-600 line-clamp-2 leading-[1.6] mb-3">브랜드보다 소재·인증·실용성 우선. 부모가 꼭 알아야 할 7가지</p>
+      <div class="flex items-center gap-1 text-sm"><span class="text-[#D4A574] font-bold">●</span><span class="font-bold">5분</span><span class="text-gray-400">· 1,500자</span></div>
+    </div>
+    <div class="flex flex-col">
+      <div class="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100">
+        <img src="/covers/small-room-storage-ideas-10.jpg" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 bg-[#F5B7A8] text-[#3D2C24] w-9 h-9 flex items-center justify-center font-bold text-[18px]">4</div>
+      </div>
+      <h4 class="text-[19px] font-bold leading-[1.3] mb-2 text-gray-900 tracking-tight font-serif-kr">원룸 수납 아이디어 10가지</h4>
+      <p class="text-[15px] text-gray-600 line-clamp-2 leading-[1.6] mb-3">공간 2배 만드는 실전 노하우</p>
+      <div class="flex items-center gap-1 text-sm"><span class="text-[#D4A574] font-bold">●</span><span class="font-bold">5분</span><span class="text-gray-400">· 1,500자</span></div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body></html>

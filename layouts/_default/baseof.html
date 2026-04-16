@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+{{/* Tailwind CDN */}}
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"IBM Plex Sans KR"', '"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          'serif-kr': ['"IBM Plex Sans KR"', '"IBM Plex Sans"', 'sans-serif'],
+        },
+        typography: { DEFAULT: { css: { maxWidth: 'none' } } }
+      }
+    }
+  }
+</script>
+
+{{/* Fonts — IBM Plex Sans KR (본문·헤드라인 공통) + Playfair Display (영문 로고) */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap">
+
+{{/* Lucide icons */}}
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+{{/* AdSense */}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5237519328448179" crossorigin="anonymous"></script>
+
+{{/* Schema */}}
+{{ if .Params.product }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"{{ .Params.product.name }}","description":"{{ .Params.description }}"{{ with .Params.product.url }},"url":"{{ . }}"{{ end }}{{ with .Params.product.rating }},"aggregateRating":{"@type":"AggregateRating","ratingValue":"{{ . }}","reviewCount":"{{ default 0 $.Params.product.review_count }}"}{{ end }}{{ with .Params.product.price }},"offers":{"@type":"Offer","price":"{{ . }}","priceCurrency":"{{ default "KRW" $.Params.product.currency }}","availability":"https://schema.org/InStock"}{{ end }}}
+</script>
+{{ end }}
+
+{{ if .Params.faq }}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $item := .Params.faq }}{{ if $i }},{{ end }}{"@type":"Question","name":"{{ .q }}","acceptedAnswer":{"@type":"Answer","text":"{{ .a }}"}}{{ end }}]}
+</script>
+{{ end }}
+
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  body, html { font-family: "IBM Plex Sans KR", "IBM Plex Sans", system-ui, sans-serif !important; }
+  /* 헤드라인 클래스 — IBM Plex Sans KR Bold */
+  .font-serif-kr {
+    font-family: "IBM Plex Sans KR", "IBM Plex Sans", sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.035em;
+  }
+  /* 본문 prose 스타일 — IBM Plex Sans KR */
+  .post-body { max-width: 760px; margin: 0 auto; color: #191F28; font-size: 17px; line-height: 1.9; word-break: keep-all; overflow-wrap: break-word; font-family: "IBM Plex Sans KR", sans-serif; }
+  .post-body h2 { font-size: 28px; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.035em; line-height: 1.35; font-family: "IBM Plex Sans KR", sans-serif; }
+  .post-body h3 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; letter-spacing: -0.03em; line-height: 1.4; font-family: "IBM Plex Sans KR", sans-serif; }
+  .post-body h4 { font-size: 14px; font-weight: 700; color: #D4A574; margin: 24px 0 6px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .post-body p { margin: 18px 0; }
+  .post-body strong { color: #0F0F0F; font-weight: 700; }
+  .post-body ul, .post-body ol { padding-left: 24px; margin: 18px 0; }
+  .post-body li { margin: 8px 0; line-height: 1.85; }
+  .post-body ul li::marker { color: #D4A574; }
+  .post-body a { color: #0F0F0F; text-decoration: underline; text-decoration-color: #D4A574; text-decoration-thickness: 2px; text-underline-offset: 4px; font-weight: 500; }
+  .post-body a:hover { color: #D4A574; }
+  .post-body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; border-top: 2px solid #0F0F0F; border-bottom: 1px solid #0F0F0F; }
+  .post-body th { background: #FAFAF8; font-weight: 700; padding: 14px 12px; text-align: left; border-bottom: 1px solid #E8E4DC; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .post-body td { padding: 14px 12px; border-bottom: 1px solid #F2EFE8; }
+  .post-body blockquote { border-left: 3px solid #D4A574; background: #FAF7F2; padding: 16px 20px; margin: 28px 0; font-weight: 500; }
+  .post-body code { background: #F3F1EC; color: #D4A574; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+  .post-body img { max-width: 100%; height: auto; border-radius: 8px; }
+  .post-body hr { border: none; width: 48px; height: 1px; background: #0F0F0F; margin: 56px auto; }
+  .post-body figure { margin: 24px 0; }
+  .post-body figure figcaption { font-size: 12.5px; color: #757167; text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body class="min-h-screen bg-white antialiased">
+
+{{/* 상단 배너 — 더스티 피치 */}}
+<div class="bg-[#F5B7A8] text-[#3D2C24] font-medium text-[13px] md:text-[14px] py-[10px] px-4 md:px-8 flex flex-col md:flex-row justify-between items-center whitespace-nowrap overflow-hidden">
+  <div class="flex items-center gap-4 w-full md:w-auto overflow-hidden">
+    <span class="font-bold tracking-tight shrink-0 lg:mr-10">HELLO LIVINGTAB!</span>
+    <span class="hidden lg:inline-block font-medium">생각이 탄탄한 사람들의 하루 10분 구매 가이드</span>
+    <span class="hidden lg:inline-block ml-8 font-medium">광고 없는 생생한 진짜 리뷰를 만나보세요!</span>
+  </div>
+  <div class="flex items-center shrink-0 cursor-pointer hover:underline mt-2 md:mt-0 w-full md:w-auto justify-end font-semibold text-[13px]">
+    리빙탭 멤버십 가입하기 <i data-lucide="chevron-right" class="w-[16px] h-[16px] ml-1"></i>
+  </div>
+</div>
+
+{{/* 헤더 — 파스텔 세이지 */}}
+<header class="bg-[#CDDAC0] text-[#2D3A30] border-b border-black/5">
+  <div class="max-w-[1240px] mx-auto px-4 md:px-6 h-[64px] flex items-center justify-between">
+    <a href="/" class="text-[30px] font-serif font-bold cursor-pointer tracking-normal text-[#2D3A30] no-underline" style="letter-spacing: 0;">LivingTab</a>
+    <nav class="hidden md:flex items-center gap-[28px] font-semibold text-[14px]">
+      <button aria-label="Search" class="hover:opacity-70 transition-opacity">
+        <i data-lucide="search" class="w-5 h-5" stroke-width="2.5"></i>
+      </button>
+      <a href="/posts/" class="hover:opacity-70 transition-opacity text-[#2D3A30] no-underline">전체 노트</a>
+      <a href="/categories/" class="hover:opacity-70 transition-opacity text-[#2D3A30] no-underline">카테고리</a>
+      <a href="/about/" class="hover:opacity-70 transition-opacity text-[#2D3A30] no-underline">소개</a>
+    </nav>
+  </div>
+</header>
+
+{{ block "main" . }}{{ end }}
+
+<footer class="bg-gray-50 text-gray-600 text-center py-12 border-t border-gray-200 text-sm mt-20">
+  <p>&copy; {{ now.Year }} <a href="/" class="text-gray-600 hover:text-gray-900">리빙탭</a> · 쿠팡 파트너스 활동의 일환으로 일정 수수료를 제공받습니다.</p>
+</footer>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

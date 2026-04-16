@@ -1,36 +1,45 @@
-{{/* 디스플레이 폰트 — Gmarket Sans (로고·히어로용) */}}
+{{/* Tailwind CSS CDN (Gemini 디자인 재현용) */}}
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"Pretendard Variable"', 'Pretendard', 'system-ui', 'sans-serif'],
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          'serif-kr': ['"Noto Serif KR"', '"Playfair Display"', 'serif'],
+        }
+      }
+    }
+  }
+</script>
+
+{{/* 폰트 */}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFBold.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFMedium.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansTTFLight.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap">
 
-{{/* Google AdSense (소유권 확인 + 광고 게재) */}}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5237519328448179"
-     crossorigin="anonymous"></script>
+{{/* Lucide 아이콘 (Search / ChevronRight / Bookmark / Pencil / Clock) */}}
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-{{/* Product / Review / FAQ JSON-LD */}}
+{{/* Google AdSense */}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5237519328448179" crossorigin="anonymous"></script>
+
+{{/* Schema JSON-LD */}}
 {{ if .Params.product }}
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "{{ .Params.product.name }}",
-  "description": "{{ .Params.description }}",
+  "@context": "https://schema.org", "@type": "Product",
+  "name": "{{ .Params.product.name }}", "description": "{{ .Params.description }}",
   {{ with .Params.product.url }}"url": "{{ . }}",{{ end }}
   {{ with .Params.product.rating }}
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "{{ . }}",
-    "reviewCount": "{{ default 0 $.Params.product.review_count }}"
-  },{{ end }}
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "{{ . }}", "reviewCount": "{{ default 0 $.Params.product.review_count }}"},
+  {{ end }}
   {{ with .Params.product.price }}
-  "offers": {
-    "@type": "Offer",
-    "price": "{{ . }}",
-    "priceCurrency": "{{ default "KRW" $.Params.product.currency }}",
-    "availability": "https://schema.org/InStock"
-  }{{ end }}
+  "offers": {"@type": "Offer", "price": "{{ . }}", "priceCurrency": "{{ default "KRW" $.Params.product.currency }}", "availability": "https://schema.org/InStock"}
+  {{ end }}
 }
 </script>
 {{ end }}
@@ -38,48 +47,11 @@
 {{ if .Params.faq }}
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
+  "@context": "https://schema.org", "@type": "FAQPage",
   "mainEntity": [
     {{ range $i, $item := .Params.faq }}{{ if $i }},{{ end }}
-    {
-      "@type": "Question",
-      "name": "{{ .q }}",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ .a }}"
-      }
-    }{{ end }}
-  ]
-}
-</script>
-{{ end }}
-
-{{ if .IsPage }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "홈",
-      "item": "{{ .Site.BaseURL }}"
-    }
-    {{ with (index .Params.categories 0) }},
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ . }}",
-      "item": "{{ $.Site.BaseURL }}categories/{{ . | urlize }}/"
-    }
-    {{ end }},
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ .Title }}"
-    }
+    {"@type": "Question", "name": "{{ .q }}", "acceptedAnswer": {"@type": "Answer", "text": "{{ .a }}"}}
+    {{ end }}
   ]
 }
 </script>

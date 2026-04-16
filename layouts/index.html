@@ -1,0 +1,118 @@
+{{- define "main" -}}
+{{- $allPosts := where .Site.RegularPages "Section" "posts" -}}
+{{- $featured := index $allPosts 0 -}}
+{{- $rest := after 1 $allPosts -}}
+
+<main class="pb-24 pt-4 bg-white">
+
+{{/* TODAY 섹션 */}}
+{{- with $featured -}}
+<div class="max-w-[1240px] mx-auto md:px-6 my-8">
+  <a href="{{ .Permalink }}" class="flex flex-col md:flex-row bg-[#4A4A4A] overflow-hidden md:h-[480px] no-underline">
+    <div class="w-full md:w-1/2 relative min-h-[340px] md:min-h-[480px] bg-[#4A4A4A]">
+      <div class="absolute top-0 left-0 bg-[#4A4A4A] text-white px-5 py-[10px] font-bold text-[14px] tracking-widest leading-none z-10">TODAY</div>
+      <img src="/covers/{{ .File.BaseFileName }}-hero.jpg" alt="{{ .Title }}" class="absolute inset-0 w-full h-full object-cover">
+    </div>
+
+    <div class="w-full md:w-1/2 bg-[#4A4A4A] text-white p-8 md:p-14 flex flex-col justify-center">
+      <div class="flex justify-between items-start mb-10 border-b border-[white/20] pb-6">
+        <div class="flex flex-col text-[13px] font-medium text-[#F5B7A8] gap-[2px]">
+          <i data-lucide="clock" class="w-[18px] h-[18px] mb-2"></i>
+          <span>오늘의</span>
+          <span>필독 추천</span>
+        </div>
+        <div class="text-[32px] md:text-[44px] font-light tracking-wider tabular-nums leading-none font-serif">TODAY</div>
+      </div>
+      <h2 class="text-[30px] md:text-[36px] font-bold leading-[1.3] mb-5 tracking-tight break-keep font-serif-kr text-white">
+        {{ .Title }}
+      </h2>
+      <p class="text-gray-300 text-[15px] leading-[1.7] md:line-clamp-4 line-clamp-3 font-medium tracking-tight break-keep">
+        {{ .Params.description }}
+      </p>
+    </div>
+  </a>
+</div>
+{{- end -}}
+
+{{/* 오늘의 쿠팡 베스트 3 (데스크탑 3-col / 모바일 가로 스와이프) */}}
+<div class="max-w-[1240px] mx-auto px-4 md:px-6 my-12">
+  <div class="bg-[#4A4A4A] text-white p-6 md:p-10">
+    <div class="flex justify-between items-end mb-5 md:mb-6 border-b border-white/20 pb-3 md:pb-4">
+      <div>
+        <div class="text-[#F5B7A8] text-[11px] md:text-[13px] font-bold tracking-widest uppercase mb-1">BEST DEAL</div>
+        <h3 class="text-[20px] md:text-[26px] font-bold tracking-tight font-serif-kr">오늘의 쿠팡 베스트</h3>
+      </div>
+      <span class="text-[10px] md:text-[12px] text-gray-400 text-right leading-tight">실시간 업데이트<br class="md:hidden">쿠팡 파트너스 제휴</span>
+    </div>
+
+    {{/* 모바일: 가로 스와이프 / 데스크탑: 3-col 그리드 */}}
+    <div class="flex md:grid md:grid-cols-3 gap-3 md:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-3 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
+      {{- $bestProducts := slice
+        (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+" "price" "398,000" "before" "599,000" "rating" "4.8" "reviews" "12,847" "img" "/covers/robot-vacuum-top5-2026.jpg" "url" "#")
+        (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000" "before" "179,000" "rating" "4.7" "reviews" "5,234" "img" "/covers/airfryer-comparison-2026.jpg" "url" "#")
+        (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 9종 세트" "price" "38,900" "before" "59,000" "rating" "4.9" "reviews" "3,892" "img" "/covers/baby-dish-set-guide.jpg" "url" "#")
+      -}}
+      {{- range $bestProducts -}}
+      <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[72vw] md:w-auto bg-white text-gray-900 p-4 md:p-5 hover:shadow-lg transition-shadow no-underline">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="bg-[#F5B7A8] text-[#3D2C24] w-6 h-6 md:w-7 md:h-7 flex items-center justify-center font-bold text-[13px] md:text-sm">{{ .rank }}</div>
+          <span class="text-[11px] md:text-[12px] text-gray-500">{{ .cat }}</span>
+        </div>
+        <div class="aspect-[4/3] bg-gray-100 mb-3 overflow-hidden">
+          <img src="{{ .img }}" alt="{{ .name }}" class="w-full h-full object-cover">
+        </div>
+        <h4 class="font-bold text-[14px] md:text-[16px] leading-tight mb-2 font-serif-kr line-clamp-2">{{ .name }}</h4>
+        <div class="flex items-baseline gap-2">
+          <span class="text-[18px] md:text-[22px] font-bold text-[#D4A574]">₩{{ .price }}</span>
+          <span class="text-[11px] md:text-[12px] text-gray-400 line-through">₩{{ .before }}</span>
+        </div>
+        <div class="text-[11px] md:text-[12px] text-gray-500 mt-1">★ {{ .rating }} ({{ .reviews }} 리뷰)</div>
+      </a>
+      {{- end -}}
+    </div>
+
+    <div class="text-[10px] md:text-[11px] text-gray-400 mt-3 md:mt-4 text-right">* 쿠팡 파트너스 제휴 · 실시간 최저가는 변동 가능</div>
+  </div>
+</div>
+<style>
+  /* 모바일 가로 스크롤 시 스크롤바 숨김 */
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+</style>
+
+{{/* 랭크 섹션 — TODAY 아래 나머지 포스트 전체 */}}
+<div class="max-w-[1240px] mx-auto px-4 md:px-6 my-[72px]">
+  <div class="flex items-center justify-between mb-8">
+    <h3 class="text-[28px] font-bold text-gray-900 tracking-tight font-serif-kr">리빙탭 피플의 스테디셀러 노트</h3>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-[48px]">
+    {{- range $i, $p := $rest -}}
+      {{- partial "article-card.html" (dict "page" $p "rank" (add $i 1) "showRank" true) -}}
+    {{- end -}}
+  </div>
+</div>
+
+{{/* 이메일 구독 CTA — 최하단 */}}
+<div class="max-w-[1240px] mx-auto px-4 md:px-6 my-16">
+  <div class="bg-[#4A4A4A] text-white p-8 md:p-16 flex flex-col md:flex-row items-center gap-8 md:gap-10">
+    <div class="flex-1">
+      <div class="text-[#F5B7A8] text-[12px] md:text-[13px] font-bold tracking-widest uppercase mb-2">NEWSLETTER</div>
+      <h3 class="text-[24px] md:text-[36px] font-bold leading-tight mb-3 font-serif-kr">
+        매주 월요일,<br class="md:hidden"> 리빙탭 큐레이션을 받아보세요
+      </h3>
+      <p class="text-gray-300 text-[14px] md:text-[15px] leading-relaxed break-keep">
+        광고 없는 구매 가이드만 골라 보내드립니다. 바쁜 월요일 아침, 5분 투자로 한 주 쇼핑을 정리하세요.
+      </p>
+    </div>
+    <div class="flex-1 w-full">
+      <form class="flex flex-col sm:flex-row gap-3">
+        <input type="email" placeholder="이메일 주소" class="flex-1 px-5 py-3 md:py-4 bg-white text-gray-900 text-[15px] focus:outline-none" required>
+        <button type="submit" class="bg-[#F5B7A8] text-[#3D2C24] px-8 py-3 md:py-4 font-bold text-[15px] hover:bg-[#E8A090] transition-colors whitespace-nowrap">구독하기</button>
+      </form>
+      <p class="text-[11px] md:text-[12px] text-gray-400 mt-3">언제든지 구독 취소 가능 · 광고성 메일 없음 · 주 1회</p>
+    </div>
+  </div>
+</div>
+
+</main>
+{{- end -}}
