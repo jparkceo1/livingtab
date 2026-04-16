@@ -1,26 +1,26 @@
-/* LivingTab — longblack 레이아웃 (상단 대표 + 하단 리스트) */
+/* LivingTab — longblack 1:1 레이아웃 */
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
-:root, html[data-theme], html[data-theme=dark], html[data-theme=light] {
-  --lt-bg: #FFFFFF;
-  --lt-cream: #FAF8F3;
-  --lt-ink: #0F0F0F;
-  --lt-text: #2B2B2B;
-  --lt-muted: #757167;
-  --lt-line: #E8E4DC;
-  --lt-line-soft: #F2EFE8;
-  --lt-gold: #A0804D;
-  --lt-gold-soft: #D4B887;
+:root, html[data-theme] {
+  --bg: #FFFFFF;
+  --ink: #111111;
+  --text: #2B2B2B;
+  --muted: #8A867D;
+  --line: #E8E4DC;
+  --cream: #FAF8F3;
+  --brand: #D94A32;       /* 테라코타 (longblack식 따뜻한 포인트) */
+  --brand-soft: #F4B891;
+  --gold: #C9A26A;
+  --dark: #0E0E0E;
+
   --theme: #FFFFFF !important;
   --entry: #FFFFFF !important;
-  --primary: #0F0F0F !important;
-  --secondary: #757167 !important;
+  --primary: #111111 !important;
+  --secondary: #8A867D !important;
   --tertiary: #E8E4DC !important;
   --content: #2B2B2B !important;
   --border: #E8E4DC !important;
-  --code-bg: #FAF8F3 !important;
-  --code-block-bg: #FAF8F3 !important;
   color-scheme: light !important;
 }
 
@@ -29,80 +29,103 @@ html, body, html[data-theme=dark] body {
   color: #2B2B2B !important;
 }
 
-* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; }
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Noto Sans KR", sans-serif !important;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif !important;
   letter-spacing: -0.02em;
-  -webkit-text-size-adjust: 100%;
 }
 
-/* ============ 헤더 ============ */
+/* ============ HEADER ============ */
 .header {
   background: #FFFFFF !important;
-  border-bottom: 1px solid var(--lt-line);
+  border-bottom: 1px solid var(--line);
 }
 .header-nav {
-  max-width: 1040px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0.5rem 1.5rem;
 }
 .logo a {
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   font-weight: 700 !important;
-  font-size: 1.4rem !important;
+  font-size: 1.35rem !important;
   letter-spacing: -0.05em !important;
   font-family: "GmarketSansTTF", sans-serif !important;
 }
 .logo a img { display: none; }
 .menu { gap: 1.75rem !important; }
 .menu a {
-  color: var(--lt-muted) !important;
+  color: var(--muted) !important;
   font-weight: 500 !important;
-  font-size: 0.9rem !important;
-  letter-spacing: -0.015em !important;
+  font-size: 0.88rem !important;
 }
-.menu a:hover { color: var(--lt-ink) !important; }
+.menu a:hover { color: var(--ink) !important; }
 #theme-toggle { display: none !important; }
 
-.main {
+/* ============ MAIN ============ */
+main.main {
   max-width: 100% !important;
   padding: 0 !important;
+  background: #FFFFFF !important;
 }
-.main .first-entry { display: none !important; }  /* homeInfoParams 숨김 */
+main.main .first-entry { display: none !important; }
 
-/* ============ 홈 — 포스트 리스트 컨테이너 ============ */
-main.main > * { max-width: 1040px; margin-left: auto; margin-right: auto; }
-
-/* ============ 대표 포스트 (첫 번째) — FEATURED ============ */
+/* ============ 1. FEATURED POST (첫 번째) ============ */
 main.main article.post-entry:first-of-type {
   display: block !important;
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 0 4rem !important;
   position: relative;
-  background: #0A0A0A !important;
+  width: 100%;
+  max-width: 1100px;
+  margin: 2.5rem auto 3rem !important;
+  padding: 0 1.5rem !important;
+  background: transparent !important;
   border: none !important;
-  min-height: 520px;
-  overflow: hidden;
+  border-bottom: none !important;
 }
-/* 대표 포스트 배경 이미지 */
+
+/* Featured 카드 박스 */
+main.main article.post-entry:first-of-type > * {
+  position: relative;
+  z-index: 2;
+}
+main.main article.post-entry:first-of-type .entry-header,
+main.main article.post-entry:first-of-type .entry-content,
+main.main article.post-entry:first-of-type .entry-footer {
+  padding: 0 !important;
+  max-width: 620px;
+  margin-left: 0 !important;
+  margin-right: auto;
+  color: #FFFFFF !important;
+}
+
+/* Featured 배경 이미지 박스 + 그라디언트 오버레이 */
 main.main article.post-entry:first-of-type::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.55;
   z-index: 0;
-  width: 100% !important;
-  height: 100% !important;
+  border-radius: 4px;
+  width: auto !important;
+  height: auto !important;
   flex: none !important;
   min-height: 0 !important;
   order: 0 !important;
-  border-radius: 0 !important;
-  background-color: transparent !important;
+}
+main.main article.post-entry:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.25) 100%);
+  z-index: 1;
+  border-radius: 4px;
 }
 main.main article.post-entry:first-of-type:has(a[href*="welcome"])::before {
   background-image: url('/covers/welcome.jpg');
@@ -113,49 +136,49 @@ main.main article.post-entry:first-of-type:has(a[href*="small-appliance"])::befo
 main.main article.post-entry:first-of-type:has(a[href*="kitchen-essentials"])::before {
   background-image: url('/covers/kitchen-essentials-2026.jpg');
 }
-/* 대표 포스트 내부 — 왼쪽 정렬, 하단 배치 */
-main.main article.post-entry:first-of-type > * {
-  position: relative;
-  z-index: 1;
-  max-width: 1040px;
-  margin: 0 auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  color: #FFFFFF !important;
+
+/* Featured 콘텐츠 레이아웃 */
+main.main article.post-entry:first-of-type {
+  min-height: 520px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 main.main article.post-entry:first-of-type .entry-header {
-  padding-top: 5rem !important;
-  padding-bottom: 0 !important;
+  padding: 0 3rem 0 3rem !important;
+  margin-top: 4rem;
 }
 main.main article.post-entry:first-of-type .entry-header::before {
   content: "TODAY · 리빙탭";
-  display: block;
+  display: inline-block;
+  background: var(--brand);
+  color: #FFFFFF;
   font-family: "GmarketSansTTF", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.25em;
-  font-size: 0.75rem;
-  color: var(--lt-gold-soft);
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 main.main article.post-entry:first-of-type .entry-header h2 {
   font-family: "GmarketSansTTF", "Pretendard Variable", sans-serif !important;
-  font-size: 3.4rem !important;
+  font-size: 2.7rem !important;
   color: #FFFFFF !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.05em !important;
   margin: 0 !important;
-  max-width: 680px;
 }
 main.main article.post-entry:first-of-type .entry-content {
-  padding-top: 1.5rem !important;
-  padding-bottom: 0 !important;
+  padding: 0 3rem !important;
+  margin-top: 1.25rem !important;
 }
 main.main article.post-entry:first-of-type .entry-content p {
-  color: rgba(255,255,255,0.88) !important;
-  font-size: 1.05rem !important;
-  line-height: 1.75 !important;
-  max-width: 560px !important;
+  color: rgba(255,255,255,0.92) !important;
+  font-size: 1.02rem !important;
+  line-height: 1.65 !important;
   margin: 0 !important;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -163,103 +186,186 @@ main.main article.post-entry:first-of-type .entry-content p {
   overflow: hidden;
 }
 main.main article.post-entry:first-of-type .entry-footer {
-  padding-top: 2.5rem !important;
-  padding-bottom: 5rem !important;
-  color: var(--lt-gold-soft) !important;
-  font-size: 0.8rem !important;
-  letter-spacing: 0.05em !important;
+  padding: 1.75rem 3rem 3rem !important;
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.03em !important;
 }
 main.main article.post-entry:first-of-type .entry-footer span {
-  color: var(--lt-gold-soft) !important;
+  color: rgba(255,255,255,0.75) !important;
 }
 main.main article.post-entry:first-of-type a.entry-link {
-  position: absolute; inset: 0; z-index: 2;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
 }
 
-/* ============ 나머지 포스트 (2번째 이후) — 리스트 ============ */
-main.main article.post-entry:not(:first-of-type) {
+/* ============ 2. GRID LIST (2~) ============ */
+/* Wrapper — longblack 섹션 타이틀 */
+main.main article.post-entry:nth-of-type(2)::before {
+  content: "리빙탭이 고른 오늘의 가이드";
+  display: block;
+  font-family: "GmarketSansTTF", sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--ink);
+  letter-spacing: -0.035em;
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ink);
+  grid-column: 1 / -1;
+}
+
+/* Fall-through article 카드 wrapper */
+main.main > article.post-entry:not(:first-of-type) {
   background: #FFFFFF !important;
-  border: none !important;
-  border-bottom: 1px solid var(--lt-line) !important;
-  border-radius: 0 !important;
-  padding: 1.75rem 0 !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 4px !important;
+  padding: 0 !important;
   margin: 0 !important;
   box-shadow: none !important;
-  display: flex !important;
-  gap: 1.75rem;
-  align-items: center;
+  display: block !important;
+  overflow: hidden;
   position: relative;
-  max-width: 1040px;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  transition: all 0.2s;
 }
-main.main article.post-entry:not(:first-of-type):hover .entry-header h2 {
-  color: var(--lt-gold) !important;
+main.main > article.post-entry:not(:first-of-type):hover {
+  border-color: var(--ink) !important;
+  transform: translateY(-2px);
 }
 
-/* 리스트 썸네일 — 왼쪽 작게 */
-main.main article.post-entry:not(:first-of-type)::before {
+/* 그리드 컨테이너는 없으므로 — body·main layout 조정 */
+/* 카드들을 한꺼번에 grid 2-columns로 감싸려면 wrapper가 필요.
+   PaperMod는 list 템플릿에서 자동 wrap 없음.
+   따라서 각 카드를 inline-block grid로 flex-wrap */
+
+main.main {
+  display: block !important;
+}
+/* list body 전체 감싸는 건 .post-entry 바로 바깥에서만 가능 */
+/* PaperMod 구조: main > article.post-entry (평면) */
+/* 따라서 main에 column-count 2 또는 grid 적용 */
+
+/* 첫 번째는 full-width, 나머지는 2col grid — main에 직접 flex */
+main.main article.post-entry:not(:first-of-type) {
+  width: calc(50% - 0.75rem);
+  margin: 0.75rem 0.375rem !important;
+  display: inline-block !important;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* 그리드 컨테이너 역할의 가짜 div 생성 */
+main.main::after {
   content: "";
-  flex: 0 0 180px;
-  width: 180px;
-  height: 120px;
-  min-height: 120px;
-  background-color: var(--lt-cream);
+  display: block;
+  clear: both;
+}
+
+/* 썸네일 블록 */
+main.main > article.post-entry:not(:first-of-type) > *:first-child,
+main.main > article.post-entry:not(:first-of-type) .entry-header {
+  position: relative;
+}
+main.main > article.post-entry:not(:first-of-type)::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 220px;
+  background-color: var(--cream);
   background-size: cover;
   background-position: center;
-  border-radius: 2px;
-  order: 0;
-  opacity: 1;
-  position: static;
+  flex: none !important;
+  min-height: 0 !important;
+  position: relative;
+  order: 0 !important;
 }
-main.main article.post-entry:not(:first-of-type):has(a[href*="welcome"])::before {
+main.main > article.post-entry:not(:first-of-type):has(a[href*="welcome"])::before {
   background-image: url('/covers/welcome.jpg');
 }
-main.main article.post-entry:not(:first-of-type):has(a[href*="small-appliance"])::before {
+main.main > article.post-entry:not(:first-of-type):has(a[href*="small-appliance"])::before {
   background-image: url('/covers/small-appliance-2026-guide.jpg');
 }
-main.main article.post-entry:not(:first-of-type):has(a[href*="kitchen-essentials"])::before {
+main.main > article.post-entry:not(:first-of-type):has(a[href*="kitchen-essentials"])::before {
   background-image: url('/covers/kitchen-essentials-2026.jpg');
 }
 
-main.main article.post-entry:not(:first-of-type) .entry-header,
-main.main article.post-entry:not(:first-of-type) .entry-content,
-main.main article.post-entry:not(:first-of-type) .entry-footer {
-  flex: 1 1 auto;
-  padding: 0 !important;
-  order: 1;
+/* 번호 배지 */
+main.main > article.post-entry:nth-of-type(2) .entry-header::before {
+  content: "01";
 }
-main.main article.post-entry:not(:first-of-type) .entry-header h2 {
-  color: var(--lt-ink) !important;
-  font-size: 1.2rem !important;
+main.main > article.post-entry:nth-of-type(3) .entry-header::before {
+  content: "02";
+}
+main.main > article.post-entry:nth-of-type(4) .entry-header::before {
+  content: "03";
+}
+main.main > article.post-entry:nth-of-type(5) .entry-header::before {
+  content: "04";
+}
+main.main > article.post-entry:nth-of-type(6) .entry-header::before {
+  content: "05";
+}
+main.main > article.post-entry:not(:first-of-type) .entry-header::before {
+  display: inline-block;
+  font-family: "GmarketSansTTF", sans-serif;
+  font-weight: 500;
+  color: var(--brand);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+main.main > article.post-entry:not(:first-of-type) .entry-header {
+  padding: 1.25rem 1.25rem 0 !important;
+}
+main.main > article.post-entry:not(:first-of-type) .entry-header h2 {
+  color: var(--ink) !important;
+  font-size: 1.15rem !important;
   font-weight: 700 !important;
   line-height: 1.45 !important;
   margin: 0 !important;
-  letter-spacing: -0.03em !important;
-  transition: color 0.15s;
+  letter-spacing: -0.035em !important;
 }
-main.main article.post-entry:not(:first-of-type) .entry-content p {
-  color: var(--lt-muted) !important;
-  font-size: 0.9rem !important;
-  line-height: 1.6 !important;
-  margin: 0.45rem 0 0 !important;
+main.main > article.post-entry:not(:first-of-type) .entry-content {
+  padding: 0.5rem 1.25rem 0 !important;
+}
+main.main > article.post-entry:not(:first-of-type) .entry-content p {
+  color: var(--muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
   letter-spacing: -0.02em !important;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-main.main article.post-entry:not(:first-of-type) .entry-footer {
-  padding-top: 0.5rem !important;
-  color: var(--lt-muted) !important;
-  font-size: 0.75rem !important;
+main.main > article.post-entry:not(:first-of-type) .entry-footer {
+  padding: 0.75rem 1.25rem 1.25rem !important;
+  color: var(--muted) !important;
+  font-size: 0.72rem !important;
   letter-spacing: 0.02em !important;
 }
-main.main article.post-entry:not(:first-of-type) .entry-footer span {
-  color: var(--lt-muted) !important;
+main.main > article.post-entry:not(:first-of-type) .entry-footer span {
+  color: var(--muted) !important;
 }
-main.main article.post-entry:not(:first-of-type) .entry-link {
-  position: absolute; inset: 0;
+main.main > article.post-entry:not(:first-of-type) .entry-link {
+  position: absolute;
+  inset: 0;
+}
+
+/* Wrapper div for grid */
+main.main {
+  padding: 0 1.5rem !important;
+  max-width: 1132px !important;
+  margin: 0 auto !important;
+}
+main.main > article.post-entry:first-of-type {
+  padding: 0 !important;
+  margin: 2.5rem 0 3rem !important;
+  width: 100%;
+  max-width: 1100px;
 }
 
 /* ============ 상세 페이지 ============ */
@@ -267,17 +373,17 @@ main.main article.post-entry:not(:first-of-type) .entry-link {
 .post-header, .page-header {
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--lt-line);
+  border-bottom: 1px solid var(--line);
 }
 .breadcrumbs, .breadcrumbs a {
-  color: var(--lt-gold) !important;
+  color: var(--brand) !important;
   font-size: 0.78rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase;
 }
 .post-title {
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   font-size: 2.3rem !important;
   font-weight: 800 !important;
   line-height: 1.3 !important;
@@ -285,26 +391,26 @@ main.main article.post-entry:not(:first-of-type) .entry-link {
   margin: 0.75rem 0 1rem !important;
 }
 .post-description {
-  color: var(--lt-muted) !important;
+  color: var(--muted) !important;
   font-size: 1.05rem !important;
   line-height: 1.65 !important;
 }
-.post-meta { color: var(--lt-muted) !important; font-size: 0.8rem !important; }
+.post-meta { color: var(--muted) !important; font-size: 0.8rem !important; }
 
 .post-content {
-  color: var(--lt-text) !important;
+  color: var(--text) !important;
   font-size: 1.05rem !important;
   line-height: 1.9 !important;
   letter-spacing: -0.02em !important;
   background: #FFFFFF !important;
 }
 .post-content > * { max-width: 680px; margin-left: auto; margin-right: auto; }
-.post-content p { margin: 1.4rem auto !important; color: var(--lt-text) !important; }
-.post-content strong { color: var(--lt-ink) !important; font-weight: 700 !important; }
+.post-content p { margin: 1.4rem auto !important; color: var(--text) !important; }
+.post-content strong { color: var(--ink) !important; font-weight: 700 !important; }
 
 .post-content h1 { display: none !important; }
 .post-content h2 {
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   font-size: 1.7rem !important;
   font-weight: 800 !important;
   margin: 3.5rem auto 1.25rem !important;
@@ -312,114 +418,123 @@ main.main article.post-entry:not(:first-of-type) .entry-link {
   line-height: 1.4;
 }
 .post-content h3 {
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   font-size: 1.25rem !important;
   font-weight: 700 !important;
   margin: 2.25rem auto 0.75rem !important;
 }
 .post-content h4 {
-  color: var(--lt-gold) !important;
+  color: var(--brand) !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
-  margin: 1.75rem auto 0.25rem !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase;
+  margin: 1.75rem auto 0.25rem !important;
 }
 
 .post-content ul, .post-content ol { padding-left: 1.25rem !important; margin: 1.25rem auto !important; }
-.post-content li { margin: 0.5rem 0 !important; line-height: 1.85; color: var(--lt-text) !important; }
-.post-content ul li::marker { color: var(--lt-gold); }
+.post-content li { margin: 0.5rem 0 !important; line-height: 1.85; color: var(--text) !important; }
+.post-content ul li::marker { color: var(--brand); }
 
 .post-content table {
-  width: 100%; border-collapse: collapse; margin: 2rem auto !important; font-size: 0.95rem;
-  border-top: 2px solid var(--lt-ink); border-bottom: 1px solid var(--lt-ink); background: #FFF !important;
+  width: 100%; border-collapse: collapse; margin: 2rem auto !important;
+  font-size: 0.95rem;
+  border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink);
+  background: #FFF !important;
 }
 .post-content table th {
-  color: var(--lt-ink) !important; font-weight: 700 !important; padding: 0.85rem 0.5rem !important;
-  text-align: left; border-bottom: 1px solid var(--lt-line);
-  font-size: 0.78rem !important; letter-spacing: 0.08em !important; text-transform: uppercase;
+  color: var(--ink) !important; font-weight: 700 !important;
+  padding: 0.85rem 0.5rem !important;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+  text-align: left;
 }
 .post-content table td {
   padding: 0.85rem 0.5rem !important;
-  border-bottom: 1px solid var(--lt-line-soft) !important;
-  color: var(--lt-text) !important; background: #FFF !important;
+  border-bottom: 1px solid var(--line) !important;
+  color: var(--text) !important;
+  background: #FFF !important;
 }
 
 .post-content blockquote {
   border: none !important;
-  border-left: 3px solid var(--lt-gold) !important;
-  background: var(--lt-cream) !important;
+  border-left: 3px solid var(--brand) !important;
+  background: var(--cream) !important;
   padding: 1rem 0 1rem 1.5rem !important;
   margin: 2rem auto !important;
   font-size: 1.05rem !important;
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   font-weight: 500 !important;
 }
 
 .post-content code {
-  background: var(--lt-cream) !important; color: var(--lt-gold) !important;
-  padding: 0.1rem 0.4rem; border-radius: 2px; font-size: 0.88em;
+  background: var(--cream) !important;
+  color: var(--brand) !important;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
 }
 
 .post-content a, .entry-content a {
-  color: var(--lt-ink) !important;
+  color: var(--ink) !important;
   text-decoration: underline !important;
-  text-decoration-color: var(--lt-gold) !important;
+  text-decoration-color: var(--brand) !important;
   text-decoration-thickness: 2px !important;
   text-underline-offset: 4px !important;
 }
-.post-content a:hover { color: var(--lt-gold) !important; }
 
-.post-content hr { border: none; width: 48px; margin: 4rem auto; border-top: 1px solid var(--lt-ink); }
+.post-content hr { border: none; width: 48px; margin: 4rem auto; border-top: 1px solid var(--ink); }
 
-.post-tags { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--lt-line); }
+.post-tags { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 .post-tags a {
-  color: var(--lt-muted) !important; font-size: 0.8rem !important;
+  color: var(--muted) !important; font-size: 0.8rem !important;
   margin-right: 1rem; text-decoration: none !important;
 }
-.post-tags a::before { content: "#"; color: var(--lt-gold); }
+.post-tags a::before { content: "#"; color: var(--brand); }
 
 .footer {
-  background: var(--lt-cream) !important;
-  color: var(--lt-muted) !important;
+  background: var(--cream) !important;
+  color: var(--muted) !important;
   font-size: 0.82rem;
   text-align: center;
   padding: 3rem 1rem 2rem;
   margin-top: 5rem;
-  border-top: 1px solid var(--lt-line);
+  border-top: 1px solid var(--line);
 }
 
 /* ============ 모바일 ============ */
 @media (max-width: 760px) {
-  main.main article.post-entry:first-of-type { min-height: 420px; }
-  main.main article.post-entry:first-of-type > * {
-    padding-left: 1.5rem; padding-right: 1.5rem;
+  main.main { padding: 0 1rem !important; }
+  main.main article.post-entry:first-of-type {
+    min-height: 420px;
+    margin: 1.5rem 0 2rem !important;
   }
-  main.main article.post-entry:first-of-type .entry-header { padding-top: 3rem !important; }
+  main.main article.post-entry:first-of-type::before,
+  main.main article.post-entry:first-of-type::after {
+    left: 0; right: 0;
+  }
+  main.main article.post-entry:first-of-type .entry-header {
+    padding: 0 1.5rem !important;
+    margin-top: 3rem;
+  }
   main.main article.post-entry:first-of-type .entry-header h2 {
-    font-size: 2rem !important;
-    letter-spacing: -0.045em !important;
+    font-size: 1.85rem !important;
   }
-  main.main article.post-entry:first-of-type .entry-content p { font-size: 0.95rem !important; }
-  main.main article.post-entry:first-of-type .entry-footer { padding-bottom: 3rem !important; }
+  main.main article.post-entry:first-of-type .entry-content {
+    padding: 0 1.5rem !important;
+  }
+  main.main article.post-entry:first-of-type .entry-footer {
+    padding: 1.5rem 1.5rem 2.5rem !important;
+  }
 
-  main.main article.post-entry:not(:first-of-type) {
-    gap: 1rem;
-    padding: 1.25rem 1rem !important;
+  main.main > article.post-entry:not(:first-of-type) {
+    width: 100% !important;
+    margin: 0 0 1.25rem 0 !important;
+    display: block !important;
   }
-  main.main article.post-entry:not(:first-of-type)::before {
-    flex: 0 0 100px;
-    width: 100px;
-    height: 80px;
-    min-height: 80px;
-  }
-  main.main article.post-entry:not(:first-of-type) .entry-header h2 {
-    font-size: 1.02rem !important;
-    line-height: 1.35 !important;
-  }
-  main.main article.post-entry:not(:first-of-type) .entry-content p {
-    -webkit-line-clamp: 2;
-    font-size: 0.82rem !important;
+  main.main > article.post-entry:not(:first-of-type)::before {
+    height: 180px;
   }
 
   .post-single { padding: 2rem 1.25rem !important; }
@@ -427,4 +542,5 @@ main.main article.post-entry:not(:first-of-type) .entry-link {
   .post-content { font-size: 1rem !important; line-height: 1.85 !important; }
   .post-content h2 { font-size: 1.4rem !important; margin: 2.5rem auto 1rem !important; }
   .post-content h3 { font-size: 1.15rem !important; }
+  .post-content table { font-size: 0.88rem; }
 }
