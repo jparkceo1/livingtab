@@ -344,7 +344,7 @@ main.main > article.post-entry:not(:first-of-type) .entry-link {
 /* Clearfix 불필요 (grid 사용) */
 
 /* ============ 상세 페이지 ============ */
-/* 상세 페이지만 중앙정렬 (main 전체는 건드리지 않음) */
+/* 상세 페이지 — 중앙정렬 블록 + 내부는 좌측정렬 */
 .post-single {
   padding: 2rem 0 !important;
   max-width: 780px !important;
@@ -352,6 +352,40 @@ main.main > article.post-entry:not(:first-of-type) .entry-link {
   margin-right: auto !important;
   display: block !important;
   box-sizing: border-box !important;
+}
+/* 제목·메타·브레드크럼 좌측정렬 (Toss 스타일) */
+.post-single .post-header,
+.post-single .page-header {
+  text-align: left !important;
+}
+.post-single .post-title,
+.post-single .post-description,
+.post-single .post-meta,
+.post-single .breadcrumbs {
+  text-align: left !important;
+}
+/* 한글 제목 줄바꿈 자연스럽게 */
+.post-single .post-title,
+.post-single .post-description,
+.post-single .post-content p,
+.post-single .post-content li,
+.post-single .post-content h2,
+.post-single .post-content h3,
+.post-single .post-content h4 {
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
+}
+/* 모바일 상세 페이지 패딩·본문 너비 확보 */
+@media (max-width: 900px) {
+  .post-single { padding: 1.5rem 1rem !important; }
+  .post-title { font-size: 1.55rem !important; line-height: 1.35 !important; }
+  .post-description { font-size: 1rem !important; }
+  .post-content { font-size: 1rem !important; line-height: 1.8 !important; }
+  .post-content > * { max-width: 100% !important; }
+  .post-content h2 { font-size: 1.35rem !important; margin: 2.5rem auto 1rem !important; }
+  .post-content h3 { font-size: 1.15rem !important; }
+  .post-content table { font-size: 0.88rem; }
 }
 
 /* 상세 페이지 — 좌측 정렬 + 한글 줄바꿈 */
