@@ -1,6 +1,41 @@
 User-agent: *
 Allow: /
+Disallow: /preview/
+Disallow: /assets/
 
-# 검색 엔진 봇 허용, AI 훈련 크롤러만 선택적 차단은 Cloudflare 엣지에서 처리
+# AI 훈련 크롤러 차단 (콘텐츠 무단 학습 방지)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# 검색 엔진은 허용 (Googlebot, Bingbot, NaverBot, Daumoa)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: NaverBot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
+Allow: /
 
 Sitemap: https://livingtab.co.kr/sitemap.xml
