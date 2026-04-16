@@ -119,8 +119,25 @@
 
 {{ block "main" . }}{{ end }}
 
-<footer class="bg-gray-50 text-gray-600 text-center py-12 border-t border-gray-200 text-sm mt-20">
-  <p>&copy; {{ now.Year }} <a href="/" class="text-gray-600 hover:text-gray-900">리빙탭</a> · 쿠팡 파트너스 활동의 일환으로 일정 수수료를 제공받습니다.</p>
+<footer class="bg-gray-50 text-gray-600 py-10 border-t border-gray-200 text-sm mt-16">
+  <div class="max-w-[1240px] mx-auto px-4 md:px-6">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+      <div>
+        <div class="text-[18px] font-serif font-bold text-gray-900 mb-1">LivingTab</div>
+        <p class="text-[12px] text-gray-500">소형가전·주방·육아·수납 구매 가이드</p>
+      </div>
+      <nav class="flex flex-wrap gap-4 text-[13px] font-medium">
+        <a href="/about/" class="text-gray-600 hover:text-[#FF6B2C] no-underline">소개</a>
+        <a href="/contact/" class="text-gray-600 hover:text-[#FF6B2C] no-underline">문의하기</a>
+        <a href="/privacy/" class="text-gray-600 hover:text-[#FF6B2C] no-underline">개인정보처리방침</a>
+        <a href="/terms/" class="text-gray-600 hover:text-[#FF6B2C] no-underline">이용약관</a>
+      </nav>
+    </div>
+    <div class="border-t border-gray-200 pt-4 text-center">
+      <p class="text-[12px] text-gray-500 mb-1">&copy; {{ now.Year }} 리빙탭 LivingTab · 운영자: 박윤승 · <a href="mailto:jparkceo1@gmail.com" class="text-gray-500 hover:text-[#FF6B2C]">jparkceo1@gmail.com</a></p>
+      <p class="text-[11px] text-gray-400">이 사이트는 쿠팡 파트너스 활동의 일환으로 사이트 내 링크를 통해 구매 발생 시 일정액의 수수료를 제공받습니다.</p>
+    </div>
+  </div>
 </footer>
 
 <script>lucide.createIcons();</script>
