@@ -58,6 +58,8 @@ params:
   comments: false
 
   disableSpecial1stPost: false    # 첫 포스트를 대표로 크게 표시
+  label:
+    text: "리빙탭"                 # 헤더 로고엔 짧게만 표시 (제목+부제 분리)
   # homeInfoParams 비활성화 (상단 대표 포스트로 대체)
 
   socialIcons:
