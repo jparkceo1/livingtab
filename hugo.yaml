@@ -47,7 +47,8 @@ params:
   env: production
   description: "실사용 비교·체크리스트 기반 구매 가이드. 리빙탭에서 한 번에 비교하고 고르세요."
   author: "리빙탭"
-  defaultTheme: auto
+  defaultTheme: light
+  disableThemeToggle: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowBreadCrumbs: true

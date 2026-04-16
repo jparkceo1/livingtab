@@ -1,8 +1,8 @@
-/* LivingTab — 밝은 배경 에디토리얼 (longblack 참고) */
+/* LivingTab — 밝은 배경 에디토리얼 (라이트 모드 강제) */
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
-:root {
+:root, html[data-theme], html[data-theme=dark], html[data-theme=light] {
   --lt-bg: #FFFFFF;
   --lt-cream: #FAF8F3;
   --lt-ink: #0F0F0F;
@@ -12,48 +12,47 @@
   --lt-line-soft: #F2EFE8;
   --lt-gold: #A0804D;
   --lt-gold-soft: #D4B887;
-  --lt-red: #C84A3E;
+
+  --theme: #FFFFFF !important;
+  --entry: #FFFFFF !important;
+  --primary: #0F0F0F !important;
+  --secondary: #757167 !important;
+  --tertiary: #E8E4DC !important;
+  --content: #2B2B2B !important;
+  --border: #E8E4DC !important;
+  --code-bg: #FAF8F3 !important;
+  --code-block-bg: #FAF8F3 !important;
+  color-scheme: light !important;
+}
+
+html, body, html[data-theme=dark] body {
+  background: #FFFFFF !important;
+  color: #2B2B2B !important;
 }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-body, html {
+body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Noto Sans KR", sans-serif !important;
-  background: var(--lt-bg);
-  color: var(--lt-text);
   letter-spacing: -0.02em;
   -webkit-text-size-adjust: 100%;
-}
-
-:root {
-  --theme: var(--lt-bg);
-  --entry: #FFFFFF;
-  --primary: var(--lt-ink);
-  --secondary: var(--lt-muted);
-  --tertiary: var(--lt-line);
-  --content: var(--lt-text);
-  --border: var(--lt-line);
 }
 
 .main { max-width: 1040px !important; padding: 2rem 1.5rem !important; }
 
 /* ============ 헤더 ============ */
 .header {
-  background: var(--lt-bg);
+  background: #FFFFFF !important;
   border-bottom: 1px solid var(--lt-line);
   padding: 0.25rem 0;
 }
-.header-nav {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+.header-nav { max-width: 1040px; margin: 0 auto; padding: 0 1.5rem; }
 .logo a {
   color: var(--lt-ink) !important;
   font-weight: 700 !important;
   font-size: 1.4rem !important;
   letter-spacing: -0.05em !important;
-  font-family: "GmarketSansTTF", "Pretendard Variable", sans-serif !important;
+  font-family: "GmarketSansTTF", sans-serif !important;
 }
 .logo a img { display: none; }
 .menu { gap: 1.75rem !important; }
@@ -62,31 +61,22 @@ body, html {
   font-weight: 500 !important;
   font-size: 0.9rem !important;
   letter-spacing: -0.015em !important;
-  transition: color 0.15s;
 }
 .menu a:hover { color: var(--lt-ink) !important; }
-.menu li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--lt-gold);
-  transition: width 0.2s;
-  margin-top: 2px;
-}
-.menu li a:hover::after { width: 100%; }
 
-/* ============ 홈 히어로 — 밝은 타이포만 ============ */
+/* 테마 토글 버튼 숨김 */
+#theme-toggle { display: none !important; }
+
+/* ============ 홈 히어로 ============ */
 .first-entry {
-  background: var(--lt-bg) !important;
+  background: #FFFFFF !important;
   background-image: none !important;
   border-radius: 0 !important;
-  padding: 5rem 1rem 4rem !important;
-  margin: 0 0 3rem 0 !important;
+  padding: 4rem 0 3.5rem !important;
+  margin: 0 0 2.5rem 0 !important;
   min-height: auto !important;
   color: var(--lt-ink) !important;
   border-bottom: 1px solid var(--lt-line);
-  position: relative;
 }
 .first-entry::before {
   content: "ISSUE · NO.01";
@@ -94,89 +84,79 @@ body, html {
   font-family: "GmarketSansTTF", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3em;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--lt-gold);
   margin-bottom: 1.25rem;
 }
 .first-entry .entry-header h1 {
   font-family: "GmarketSansTTF", "Pretendard Variable", sans-serif !important;
-  font-size: 4rem !important;
+  font-size: 3.4rem !important;
   color: var(--lt-ink) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.055em !important;
-  margin: 0 0 2rem 0 !important;
-  max-width: 720px;
+  margin: 0 0 1.75rem 0 !important;
+  max-width: 680px;
 }
 .first-entry .entry-content {
-  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
-  font-size: 1.1rem !important;
+  font-family: "Pretendard Variable", sans-serif !important;
+  font-size: 1.05rem !important;
   color: var(--lt-text) !important;
   line-height: 1.85 !important;
   max-width: 540px !important;
   letter-spacing: -0.02em !important;
   font-weight: 400 !important;
 }
-.first-entry .entry-content p { margin: 0 0 0.7rem !important; }
+.first-entry .entry-content p { margin: 0 0 0.7rem !important; color: var(--lt-text) !important; }
 .first-entry .entry-content strong {
   color: var(--lt-ink) !important;
   font-weight: 600 !important;
   background: linear-gradient(transparent 60%, var(--lt-gold-soft) 60%);
   padding: 0 2px;
 }
-.first-entry .social-icons { margin-top: 2rem !important; }
+.first-entry .social-icons { margin-top: 1.75rem !important; }
 .first-entry .social-icons a {
-  color: var(--lt-ink) !important;
-  opacity: 0.65;
-  transition: opacity 0.2s;
+  color: var(--lt-muted) !important;
 }
-.first-entry .social-icons a:hover { opacity: 1; color: var(--lt-gold) !important; }
+.first-entry .social-icons a:hover { color: var(--lt-gold) !important; }
 
-/* ============ 포스트 리스트 (홈) ============ */
+/* ============ 포스트 카드 (홈) ============ */
+/* 2컬럼 (데스크탑) / 1컬럼 스택 (모바일) */
 .post-entry {
-  background: var(--lt-bg);
+  background: #FFFFFF !important;
   border: none !important;
   border-bottom: 1px solid var(--lt-line) !important;
   border-radius: 0 !important;
   padding: 2rem 0 !important;
   margin-bottom: 0 !important;
   box-shadow: none !important;
-  transition: none;
-  display: grid;
-  grid-template-columns: 1fr 240px;
+  transition: none !important;
+  display: flex !important;
   gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
 }
-.post-entry:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: var(--lt-ink) !important;
-}
+.post-entry:hover { transform: none !important; box-shadow: none !important; }
 .post-entry:hover .entry-header h2 { color: var(--lt-gold) !important; }
 
-/* 썸네일 — 오른쪽에 직사각형 이미지 */
-.post-entry::after {
+/* 썸네일 블록 — 오른쪽 */
+.post-entry::before {
   content: "";
-  display: block;
-  width: 100%;
-  height: 160px;
+  flex: 0 0 240px;
+  order: 2;
+  align-self: stretch;
+  min-height: 160px;
   background-color: var(--lt-cream);
   background-size: cover;
   background-position: center;
   border-radius: 2px;
-  order: 2;
 }
-.post-entry:has(a[href*="welcome"])::after {
-  background-image: url('/covers/welcome.jpg');
-}
-.post-entry:has(a[href*="small-appliance"])::after {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-.post-entry:has(a[href*="kitchen-essentials"])::after {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
+.post-entry:has(a[href*="welcome"])::before { background-image: url('/covers/welcome.jpg'); }
+.post-entry:has(a[href*="small-appliance"])::before { background-image: url('/covers/small-appliance-2026-guide.jpg'); }
+.post-entry:has(a[href*="kitchen-essentials"])::before { background-image: url('/covers/kitchen-essentials-2026.jpg'); }
 
-.post-entry .entry-header {
+.post-entry .entry-header, .post-entry .entry-content, .post-entry .entry-footer {
+  flex: 1 1 auto;
   padding: 0 !important;
   order: 1;
 }
@@ -188,15 +168,10 @@ body, html {
   line-height: 1.4 !important;
   margin: 0 !important;
   letter-spacing: -0.035em !important;
-  transition: color 0.2s;
-}
-.post-entry .entry-content {
-  padding: 0 !important;
-  order: 1;
 }
 .post-entry .entry-content p {
   color: var(--lt-muted) !important;
-  font-size: 0.97rem !important;
+  font-size: 0.96rem !important;
   line-height: 1.65 !important;
   margin: 0.6rem 0 0 !important;
   font-weight: 400 !important;
@@ -212,9 +187,15 @@ body, html {
   font-size: 0.78rem !important;
   letter-spacing: 0.02em !important;
   font-weight: 500 !important;
-  order: 1;
 }
-.post-entry .entry-footer span { color: var(--lt-muted) !important; }
+
+/* 카드의 클릭 링크 — 헤더·본문 영역만 덮음 */
+.post-entry .entry-link {
+  position: absolute;
+  top: 0; left: 0;
+  right: 260px;
+  bottom: 0;
+}
 
 /* ============ 상세 페이지 ============ */
 .post-single { padding: 2.5rem 1rem !important; max-width: 760px; margin: 0 auto; }
@@ -232,7 +213,6 @@ body, html {
   text-transform: uppercase;
 }
 .post-title {
-  font-family: "Pretendard Variable", sans-serif !important;
   color: var(--lt-ink) !important;
   font-size: 2.3rem !important;
   font-weight: 800 !important;
@@ -246,25 +226,23 @@ body, html {
   line-height: 1.65 !important;
   margin: 1rem 0 0 !important;
   font-weight: 400 !important;
-  letter-spacing: -0.02em !important;
 }
 .post-meta {
   color: var(--lt-muted) !important;
   font-size: 0.8rem !important;
   font-weight: 500 !important;
-  letter-spacing: 0.02em !important;
 }
 
 .post-content {
   color: var(--lt-text) !important;
   font-size: 1.05rem !important;
   line-height: 1.9 !important;
-  font-family: "Pretendard Variable", sans-serif !important;
   letter-spacing: -0.02em !important;
   font-weight: 400 !important;
+  background: #FFFFFF !important;
 }
 .post-content > * { max-width: 680px; margin-left: auto; margin-right: auto; }
-.post-content p { margin: 1.4rem auto !important; }
+.post-content p { margin: 1.4rem auto !important; color: var(--lt-text) !important; }
 .post-content strong { color: var(--lt-ink) !important; font-weight: 700 !important; }
 
 .post-content h1 { display: none !important; }
@@ -299,7 +277,7 @@ body, html {
 .post-content li {
   margin: 0.5rem 0 !important;
   line-height: 1.85;
-  color: var(--lt-text);
+  color: var(--lt-text) !important;
   letter-spacing: -0.02em;
 }
 .post-content ul li::marker { color: var(--lt-gold); }
@@ -311,6 +289,7 @@ body, html {
   font-size: 0.95rem;
   border-top: 2px solid var(--lt-ink);
   border-bottom: 1px solid var(--lt-ink);
+  background: #FFFFFF !important;
 }
 .post-content table th {
   background: transparent !important;
@@ -326,8 +305,8 @@ body, html {
 .post-content table td {
   padding: 0.85rem 0.5rem !important;
   border-bottom: 1px solid var(--lt-line-soft) !important;
-  color: var(--lt-text);
-  background: transparent !important;
+  color: var(--lt-text) !important;
+  background: #FFFFFF !important;
   letter-spacing: -0.02em;
 }
 .post-content table tr:last-child td { border-bottom: none !important; }
@@ -340,21 +319,20 @@ body, html {
   margin: 2rem auto !important;
   font-style: normal !important;
   font-size: 1.05rem !important;
-  color: var(--lt-ink);
+  color: var(--lt-ink) !important;
   line-height: 1.7;
   font-weight: 500 !important;
 }
 
 .post-content code {
-  background: var(--lt-cream);
-  color: var(--lt-gold);
+  background: var(--lt-cream) !important;
+  color: var(--lt-gold) !important;
   padding: 0.1rem 0.4rem;
   border-radius: 2px;
   font-size: 0.88em;
   font-weight: 500;
 }
 
-/* 링크 — 포인트 컬러 골드 */
 .post-content a, .entry-content a, .first-entry a {
   color: var(--lt-ink) !important;
   text-decoration: underline !important;
@@ -384,23 +362,21 @@ body, html {
   font-weight: 500 !important;
   margin-right: 1rem;
   font-size: 0.8rem !important;
-  letter-spacing: 0.02em !important;
   text-decoration: none !important;
 }
 .post-tags a::before { content: "#"; color: var(--lt-gold); margin-right: 2px; }
 .post-tags a:hover { color: var(--lt-ink) !important; }
 
 .footer {
-  background: var(--lt-cream);
-  color: var(--lt-muted);
+  background: var(--lt-cream) !important;
+  color: var(--lt-muted) !important;
   font-size: 0.82rem;
   text-align: center;
   padding: 3rem 1rem 2rem;
-  letter-spacing: -0.01em;
   margin-top: 5rem;
   border-top: 1px solid var(--lt-line);
 }
-.footer a { color: var(--lt-muted); }
+.footer a { color: var(--lt-muted) !important; }
 
 article + div[style*="margin-top:3rem"],
 footer.entry-footer + div {
@@ -412,39 +388,38 @@ footer.entry-footer + div {
   border-top: 1px solid var(--lt-line) !important;
   margin: 3rem auto 0 !important;
   text-align: center !important;
-  letter-spacing: -0.01em !important;
 }
 
-/* ============ 모바일 ============ */
-@media (max-width: 640px) {
-  .first-entry {
-    padding: 3rem 1rem 2.5rem !important;
-  }
+/* ============ 모바일 — 카드 스택 ============ */
+@media (max-width: 760px) {
+  .main { padding: 1.5rem 1rem !important; }
+  .first-entry { padding: 3rem 0 2.5rem !important; }
+  .first-entry::before { font-size: 0.7rem; margin-bottom: 1rem; }
   .first-entry .entry-header h1 {
-    font-size: 2.4rem !important;
+    font-size: 2.2rem !important;
     letter-spacing: -0.045em !important;
   }
-  .first-entry .entry-content { font-size: 1rem !important; }
+  .first-entry .entry-content { font-size: 0.98rem !important; }
+
+  /* 모바일 카드 — 수직 스택: 이미지 위, 텍스트 아래 */
   .post-entry {
-    grid-template-columns: 1fr;
-    padding: 1.5rem 0 !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1.75rem 0 !important;
   }
-  .post-entry::after {
-    height: 200px;
-    margin-bottom: 1rem;
-    order: -1 !important;
+  .post-entry::before {
+    flex: none !important;
+    width: 100%;
+    height: 200px !important;
+    min-height: 200px !important;
+    order: 0 !important;
   }
   .post-entry .entry-header h2 { font-size: 1.25rem !important; }
+  .post-entry .entry-link { right: 0; }
+
   .post-title { font-size: 1.7rem !important; }
   .post-content { font-size: 1rem !important; line-height: 1.85 !important; }
   .post-content h2 { font-size: 1.4rem !important; margin: 2.5rem auto 1rem !important; }
   .post-content h3 { font-size: 1.15rem !important; }
   .post-content table { font-size: 0.88rem; }
-}
-
-/* 다크 모드는 일단 비활성화 (밝은 테마 집중) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --theme: var(--lt-bg);
-  }
 }
