@@ -24,6 +24,15 @@ cover:
 - **저예산**: 샤오미 무선청소기 — 15~25만, 원룸용
 - **물걸레 중심**: 테팔 디렉셔널 워시 — 40~50만
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/cordless-vacuum-top5-2026/01.jpg" alt="cordless-vacuum-top5-2026-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@liliana-drew" target="_blank" rel="noopener nofollow">Liliana Drew</a> on <a href="https://www.pexels.com/photo/red-and-black-vacuum-in-close-up-shot-9462141/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 선택 전 필수 체크 6가지
 
 ### 1. 흡입력 (W·kPa·AW)
@@ -66,6 +75,15 @@ cover:
 - **벽걸이 거치대** — 보관 필수
 - **자동 비움 스테이션** — 프리미엄 옵션
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/cordless-vacuum-top5-2026/02.jpg" alt="cordless-vacuum-top5-2026-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/black-vacuum-cleaner-on-area-rug-4107284/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 📊 5종 비교
 
 | 제품 | 가격 | 흡입력 | 배터리 | 무게 | 특장점 |
@@ -76,6 +94,15 @@ cover:
 | 샤오미 무선 G11 | 15~25만 | 125W | 60분 | 1.5kg | 초저가 |
 | 테팔 디렉셔널 워시 | 40~50만 | 190W | 50분 | 2.3kg | 물걸레 동시 |
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/cordless-vacuum-top5-2026/03.jpg" alt="cordless-vacuum-top5-2026-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@tima-miroshnichenko" target="_blank" rel="noopener nofollow">Tima Miroshnichenko</a> on <a href="https://www.pexels.com/photo/person-vacuuming-the-floor-6195275/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 제품별 솔직 평
 
 ### 다이슨 V15 Detect
@@ -103,6 +130,15 @@ cover:
 - 장점: 원스톱
 - 단점: 배터리 상대적으로 짧음
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/cordless-vacuum-top5-2026/04.jpg" alt="cordless-vacuum-top5-2026-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/photograph-of-a-woman-in-a-white-shirt-vacuuming-7703296/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 이런 분은 무선 말고 유선
 
 - 50평+ 대형 평수 (배터리 부족)

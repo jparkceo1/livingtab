@@ -34,6 +34,15 @@ cover:
 4. **물걸레 여부** — 진공+물걸레 겸용이 가성비 ↑, 단 물걸레는 주 2~3회 세척 필수
 5. **어플 연동** — 매일 시간 예약, 구역 설정 편리함
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/robot-vacuum-top5-2026/01.jpg" alt="robot-vacuum-top5-2026-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/woman-in-blue-denim-jeans-and-brown-jacket-standing-beside-brown-wooden-table-4107249/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 📊 TOP 5 비교표
 
 | 순위 | 제품 | 가격대 | 흡입력 | 배터리 | 물걸레 | 추천 대상 |
@@ -52,6 +61,15 @@ cover:
 **단점**: 물걸레는 진공 후 교체식 (자동 세척 아님)
 **이런 분에게**: 첫 로봇청소기, 20~30평 아파트
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/robot-vacuum-top5-2026/02.jpg" alt="robot-vacuum-top5-2026-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/person-holding-white-round-device-4107248/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 2. 에코백스 디봇 X 시리즈 (물걸레 끝판왕)
 
 물걸레가 자동 세척·자동 건조되는 게 최대 장점. 먼지통도 자동 비움 스테이션 있음.
@@ -68,6 +86,15 @@ cover:
 **단점**: 스테이션이 커서 배치 공간 필요
 **이런 분에게**: 청소기 신경 안 쓰고 싶은 분, 대형 평수
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/robot-vacuum-top5-2026/03.jpg" alt="robot-vacuum-top5-2026-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/person-walking-near-a-robotic-vacuum-cleaner-on-marble-floor-6856823/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 4. 로보락 E5 (저예산·원룸)
 
 LiDAR 없이 자이로스코프 기반 맵핑. 15~20만원의 가격이 매력.
@@ -84,6 +111,15 @@ LiDAR 없이 자이로스코프 기반 맵핑. 15~20만원의 가격이 매력.
 **단점**: AS 네트워크 상대적 부족
 **이런 분에게**: 30평 이상, 복층·다실
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/robot-vacuum-top5-2026/04.jpg" alt="robot-vacuum-top5-2026-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cottonbro" target="_blank" rel="noopener nofollow">cottonbro studio</a> on <a href="https://www.pexels.com/photo/person-walking-past-roomba-vacuum-cleaner-6856821/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 💡 구매 전 마지막 체크
 
 - 계단 있는 집은 **낙하 방지 센서** 필수 (대부분 기본 탑재)

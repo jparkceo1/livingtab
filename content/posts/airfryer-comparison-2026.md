@@ -22,6 +22,15 @@ cover:
 - **3~4인 가족**: 7~8L 표준 — 쿠쿠 에어프라이어, 쿠첸 네모
 - **대가족·파티용**: 10L+ 대형 — 필립스 XXL, 네스프레소 시리즈
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/airfryer-comparison-2026/01.jpg" alt="airfryer-comparison-2026-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@bertellifotografia" target="_blank" rel="noopener nofollow">Matheus Bertelli</a> on <a href="https://www.pexels.com/photo/crispy-street-food-pastries-frying-in-oil-30893317/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 에어프라이어 고르는 5가지 기준
 
 ### 1. 용량 (절대 중요)
@@ -56,6 +65,15 @@ cover:
 - 50dB 미만: 조용 (거실에서 쓰기 OK)
 - 60dB+: 시끄러움 (TV 소리 묻힘)
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/airfryer-comparison-2026/02.jpg" alt="airfryer-comparison-2026-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@gera-cejas-3616330" target="_blank" rel="noopener nofollow">Gera Cejas</a> on <a href="https://www.pexels.com/photo/argentinian-empanadas-frying-outdoors-37049963/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 📊 5종 비교표
 
 | 제품 | 용량 | 가격대 | 온도 | 특장점 | 추천 대상 |
@@ -66,6 +84,15 @@ cover:
 | 쿠첸 네모 | 8L | 15~20만 | 40~230°C | 큰 창, 다중층 | 3~4인+ |
 | 필립스 XXL 3000 | 7.3L | 25~35만 | 40~200°C | 프리미엄 코팅 | 장기 사용 |
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/airfryer-comparison-2026/03.jpg" alt="airfryer-comparison-2026-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@gera-cejas-3616330" target="_blank" rel="noopener nofollow">Gera Cejas</a> on <a href="https://www.pexels.com/photo/argentinian-bbq-chef-grilling-sausages-outdoors-37049972/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 제품별 상세
 
 ### 필립스 에센셜 (4.1L) — 1~2인 정석
@@ -89,6 +116,15 @@ AS 전국망. 서울·지방 관계없이 수리 쉬움.
 세라믹 코팅 품질이 최상급. 7년 쓸 각오면 가치 있음.
 - 단점: 초기 비용
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/airfryer-comparison-2026/04.jpg" alt="airfryer-comparison-2026-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@gera-cejas-3616330" target="_blank" rel="noopener nofollow">Gera Cejas</a> on <a href="https://www.pexels.com/photo/close-up-of-empanadas-frying-in-buenos-aires-pan-37049926/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 이런 제품은 피하세요
 
 - 3만원 이하 무명 브랜드 (코팅 1년 내 벗겨짐 사례 많음)

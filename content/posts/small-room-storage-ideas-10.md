@@ -42,6 +42,15 @@ cover:
 - 높이 170~180cm
 - 아래 단에 접이식 수납칸 추가
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/small-room-storage-ideas-10/01.jpg" alt="small-room-storage-ideas-10-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@artbovich" target="_blank" rel="noopener nofollow">Max Vakhtbovych</a> on <a href="https://www.pexels.com/photo/house-with-cupboards-in-kitchen-near-bookshelves-and-living-room-6487957/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 3. 침대 헤드보드 수납형
 
 일반 침대 대신 **헤드에 책장·컵받침 달린 침대**. 사이드 테이블 제거 효과.
@@ -63,6 +72,15 @@ cover:
 - 방문 뒤 — 넥타이·벨트·헤어용품
 - 욕실문 뒤 — 수건·목욕용품
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/small-room-storage-ideas-10/02.jpg" alt="small-room-storage-ideas-10-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@fotografiagmazg" target="_blank" rel="noopener nofollow">Gustavo Galeano Maz</a> on <a href="https://www.pexels.com/photo/a-furnished-studio-apartment-10471491/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 6. 침대 사이드 포켓
 
 침대 매트 사이에 끼우는 **사이드 포켓**:
@@ -83,6 +101,15 @@ cover:
 - 욕실: 샴푸·폼
 - 현관: 열쇠·마스크
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/small-room-storage-ideas-10/03.jpg" alt="small-room-storage-ideas-10-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@artbovich" target="_blank" rel="noopener nofollow">Max Vakhtbovych</a> on <a href="https://www.pexels.com/photo/light-living-room-with-small-kitchen-zone-in-contemporary-flat-6890400/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 9. 진공 압축팩 (부피 옷)
 
 **겨울 패딩·이불** 부피는 진공팩으로 1/4:
@@ -101,6 +128,15 @@ cover:
 2. **너무 많은 수납함** — 뭐가 어디 있는지 못 찾음
 3. **투명해서 다 보임** — 시각적 어수선함 ↑
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/small-room-storage-ideas-10/04.jpg" alt="small-room-storage-ideas-10-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@artbovich" target="_blank" rel="noopener nofollow">Max Vakhtbovych</a> on <a href="https://www.pexels.com/photo/wooden-furniture-in-room-with-mirror-6890392/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 원룸 수납 구매 순서 (예산별)
 
 ### 예산 5만원 — 필수만

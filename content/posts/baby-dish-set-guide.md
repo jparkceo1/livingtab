@@ -35,6 +35,15 @@ cover:
 - **1~2세**: 실리콘 + 스테인리스 (서서히 전환)
 - **3세+**: 도자기·스테인리스 (일반 식기 훈련)
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/baby-dish-set-guide/01.jpg" alt="baby-dish-set-guide-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@karola-g" target="_blank" rel="noopener nofollow">www.kaboompics.com</a> on <a href="https://www.pexels.com/photo/man-in-red-crew-neck-shirt-feeding-a-baby-7946709/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 2. 반드시 확인할 안전 인증
 
 - **KC 어린이제품안전특별법 인증** — 한국 필수 인증
@@ -53,6 +62,15 @@ cover:
 - **1~2세**: 지름 12~15cm, 깊이 3~4cm (초기 식사)
 - **3세+**: 일반 식기와 유사하되 가장자리 둥근 것
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/baby-dish-set-guide/02.jpg" alt="baby-dish-set-guide-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@karola-g" target="_blank" rel="noopener nofollow">www.kaboompics.com</a> on <a href="https://www.pexels.com/photo/a-boy-holding-a-spoon-7946745/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 4. 논슬립(미끄럼 방지) 기능
 
 - 바닥 **실리콘 패드**: 아이가 식기 밀어도 고정
@@ -69,6 +87,15 @@ cover:
 - ⚠️ PP — 제품별 다름. 80°C 이상 세척 시 변형 위험
 - ❌ 대나무 — 식세척·전자레인지 둘 다 안됨
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/baby-dish-set-guide/03.jpg" alt="baby-dish-set-guide-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@karola-g" target="_blank" rel="noopener nofollow">www.kaboompics.com</a> on <a href="https://www.pexels.com/photo/close-up-shot-of-a-toddler-eating-7946619/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 6. 분리 세척 가능한 구조
 
 아이 식기는 **홈이나 틈새에 음식물 끼기 쉬움**. 구매 전:
@@ -87,6 +114,15 @@ cover:
 
 **세트 10개 이하**로 시작해서 필요할 때 추가 구매가 경제적입니다.
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/baby-dish-set-guide/04.jpg" alt="baby-dish-set-guide-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@vanessa-loring" target="_blank" rel="noopener nofollow">Vanessa Loring</a> on <a href="https://www.pexels.com/photo/a-child-sitting-on-a-higher-chair-eating-fruits-5083240/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 이런 제품은 피하세요
 
 - **소재 불명** — 상세페이지에 "친환경 소재"만 적힌 것

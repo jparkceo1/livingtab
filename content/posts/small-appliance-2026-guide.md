@@ -42,6 +42,15 @@ cover:
 
 사용 빈도가 주 1회 미만이면 **공간 낭비**가 되기 쉽습니다.
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/small-appliance-2026-guide/01.jpg" alt="small-appliance-2026-guide-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@artbovich" target="_blank" rel="noopener nofollow">Max Vakhtbovych</a> on <a href="https://www.pexels.com/photo/mounted-appliances-in-the-kitchen-7534297/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 2. 공간부터 측정
 
 - 로봇청소기: **높이 9~10cm** 소파·가구 밑 통과 여부
@@ -58,6 +67,15 @@ cover:
 - 연간 사용시간 × W = 예상 전력량 계산
 - **절전 모드·대기 전력** 수치도 확인
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/small-appliance-2026-guide/02.jpg" alt="small-appliance-2026-guide-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@artbovich" target="_blank" rel="noopener nofollow">Max Vakhtbovych</a> on <a href="https://www.pexels.com/photo/furniture-in-kitchen-8082206/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 4. 소음 데시벨 (dB)
 
 | dB 수치 | 체감 |
@@ -77,6 +95,15 @@ cover:
 
 보증 기간도 꼭 확인 — **1년 미만이면 보류** 권장.
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/small-appliance-2026-guide/03.jpg" alt="small-appliance-2026-guide-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@jaycee300s-3059779" target="_blank" rel="noopener nofollow">Jaycee300s</a> on <a href="https://www.pexels.com/photo/tea-and-coffeemaker-18071814/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 6. 부속품·소모품 비용
 
 본체보다 소모품에서 돈이 나갑니다.
@@ -96,6 +123,15 @@ cover:
 - ⚠️ **별점 1점 리뷰부터** 읽으세요 — 고장·AS 이슈 빨리 파악
 - ⚠️ 협찬 리뷰 식별 ("유료 광고 포함" 표기 확인)
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/small-appliance-2026-guide/04.jpg" alt="small-appliance-2026-guide-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@dpsinghbhullar" target="_blank" rel="noopener nofollow">dp singh Bhullar</a> on <a href="https://www.pexels.com/photo/modern-stainless-steel-gas-stove-top-for-kitchens-33904619/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 카테고리별 추천 포스트 예고
 
 리빙탭에서는 앞으로 다음 포스트가 순차 발행됩니다:

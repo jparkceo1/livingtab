@@ -22,6 +22,15 @@ cover:
 
 이 글은 한국 1~2인 가구 실사용 데이터를 기준으로, **꼭 사야 할 주방 필수템 15가지 + 미뤄도 되는 것 5가지**를 정리했습니다.
 
+
+<!-- auto-image-01 -->
+<figure>
+  <img src="/images/kitchen-essentials-2026/01.jpg" alt="kitchen-essentials-2026-01" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@mohsen-naranjani-431200986" target="_blank" rel="noopener nofollow">Mohsen Naranjani</a> on <a href="https://www.pexels.com/photo/close-up-of-kitchenware-15245005/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 🟢 반드시 사야 할 주방 필수템 15
 
 ### 조리도구
@@ -51,6 +60,15 @@ cover:
 14. **수세미 + 행주 (면/극세사)**
 15. **음식물 쓰레기통 (1L급)**
 
+
+<!-- auto-image-02 -->
+<figure>
+  <img src="/images/kitchen-essentials-2026/02.jpg" alt="kitchen-essentials-2026-02" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@thgusstavo" target="_blank" rel="noopener nofollow">Thgusstavo Santana</a> on <a href="https://www.pexels.com/photo/traditional-jars-on-a-stove-24989144/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 🔴 처음부터 사지 마세요 (자주 하는 실수)
 
 1. **거창한 주방 가전 세트** — 토스터·와플메이커·아이스크림제조기 등 "언젠가 쓸 것 같은" 특수기계. 실제 사용률 월 1회 미만이 대부분
@@ -59,6 +77,15 @@ cover:
 4. **전용 조리도구** (파스타 삽·초밥 말이 등) — 필요해질 때 구매
 5. **주방 수납 랩·홀더 풀세트** — 공간 설계 끝난 뒤 천천히
 
+
+<!-- auto-image-03 -->
+<figure>
+  <img src="/images/kitchen-essentials-2026/03.jpg" alt="kitchen-essentials-2026-03" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@cflaten" target="_blank" rel="noopener nofollow">Chris Flaten</a> on <a href="https://www.pexels.com/photo/a-plastic-pasta-fork-server-on-white-surface-5514747/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 예산 구간별 전략
 
 ### 30만원 예산 — "최소 필수"
@@ -80,6 +107,15 @@ cover:
 - 에어프라이어 (10만)
 - 주방 수납 가구
 
+
+<!-- auto-image-04 -->
+<figure>
+  <img src="/images/kitchen-essentials-2026/04.jpg" alt="kitchen-essentials-2026-04" loading="lazy" style="width:100%;border-radius:8px;margin:1.5rem 0 0.5rem;">
+  <figcaption style="font-size:0.78rem;color:#8A867D;text-align:center;margin-bottom:1.5rem;">
+    Photo by <a href="https://www.pexels.com/@beth-fitzpatrick-742222899" target="_blank" rel="noopener nofollow">Beth Fitzpatrick</a> on <a href="https://www.pexels.com/photo/antique-copper-cookware-on-vintage-stove-35225640/" target="_blank" rel="noopener nofollow">Pexels</a>
+  </figcaption>
+</figure>
+<!-- /auto-image -->
 ## 실패 줄이는 3가지 팁
 
 1. **이사 전에 몰아서 사지 말 것** — 실제 살면서 쓰는 패턴 보고 단계별 구매
