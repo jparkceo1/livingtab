@@ -346,7 +346,7 @@ main.main > article.post-entry:not(:first-of-type) .entry-link {
 /* ============ 상세 페이지 ============ */
 /* 상세 페이지 — 중앙정렬 블록 + 내부는 좌측정렬 */
 .post-single {
-  padding: 2rem 0 !important;
+  padding: 3rem 2rem !important;   /* 데스크탑: 세로 3rem, 가로 2rem */
   max-width: 780px !important;
   margin-left: auto !important;
   margin-right: auto !important;
