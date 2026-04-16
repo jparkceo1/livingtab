@@ -36,6 +36,15 @@ html, body, html[data-theme=dark] body {
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif !important;
   letter-spacing: -0.02em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 한글 텍스트 — 단어 단위로 줄바꿈 (글자 중간에서 끊지 않기) */
+h1, h2, h3, h4, h5, h6, p, li, .post-title, .post-description,
+.entry-header h2, .entry-content p, .first-entry h1 {
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
 }
 
 /* ============ HEADER (Toss 스타일) ============ */
@@ -309,6 +318,15 @@ main.main > article.post-entry:not(:first-of-type) .entry-link {
   padding: 3rem 1.5rem !important;
   max-width: 780px;
   margin: 0 auto;
+}
+.post-single .post-title,
+.post-single .post-description,
+.post-single .post-content p,
+.post-single .post-content li,
+.post-single .post-content h2,
+.post-single .post-content h3 {
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
 }
 .post-header, .page-header {
   margin-bottom: 3rem;
