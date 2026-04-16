@@ -94,19 +94,23 @@ h1, h2, h3, h4, h5, h6, p, li, .post-title, .post-description,
 .menu a:hover::after { width: 100%; }
 #theme-toggle { display: none !important; }
 
-/* ============ MAIN — CSS Grid 자동 반응형 ============ */
+/* ============ MAIN — 기본 (모든 페이지) ============ */
 main.main {
   max-width: 1200px !important;
   padding: 3rem 2rem 4rem !important;
   background: #FFFFFF !important;
   margin: 0 auto !important;
+}
+main.main .first-entry { display: none !important; }
+
+/* 홈·리스트 페이지만 그리드 (상세 페이지 제외!) */
+body.list main.main {
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
   gap: 2.5rem 1.5rem !important;
   align-items: start;
 }
-main.main .first-entry { display: none !important; }
-main.main::after { display: none !important; }
+body.list main.main::after { display: none !important; }
 
 /* ============ FEATURED (첫 번째) — 전체 너비 차지 ============ */
 main.main article.post-entry:first-of-type {
