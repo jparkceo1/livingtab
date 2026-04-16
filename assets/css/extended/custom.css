@@ -146,30 +146,14 @@ main.main article.post-entry:first-of-type::before {
   min-height: 0 !important;
   position: relative;
 }
-main.main article.post-entry:first-of-type:has(a[href*="welcome"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="small-appliance"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="kitchen-essentials"])::before {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="robot-vacuum"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="airfryer"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="baby-dish"])::before {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="storage-ideas"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main article.post-entry:first-of-type:has(a[href*="cordless-vacuum"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
+main.main article.post-entry:first-of-type:has(a[href*="welcome"])::before { background-image: url('/covers/welcome.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="small-appliance-2026-guide"])::before { background-image: url('/covers/small-appliance-2026-guide.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="kitchen-essentials-2026"])::before { background-image: url('/covers/kitchen-essentials-2026.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="robot-vacuum-top5-2026"])::before { background-image: url('/covers/robot-vacuum-top5-2026.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="airfryer-comparison-2026"])::before { background-image: url('/covers/airfryer-comparison-2026.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="baby-dish-set-guide"])::before { background-image: url('/covers/baby-dish-set-guide.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="small-room-storage-ideas-10"])::before { background-image: url('/covers/small-room-storage-ideas-10.jpg'); }
+main.main article.post-entry:first-of-type:has(a[href*="cordless-vacuum-top5-2026"])::before { background-image: url('/covers/cordless-vacuum-top5-2026.jpg'); }
 
 /* Featured 오른쪽 텍스트 영역 */
 main.main article.post-entry:first-of-type .entry-header,
@@ -264,30 +248,14 @@ main.main > article.post-entry:not(:first-of-type)::before {
   flex: none !important;
   min-height: 0 !important;
 }
-main.main > article.post-entry:not(:first-of-type):has(a[href*="welcome"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="small-appliance"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="robot-vacuum"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="airfryer"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="baby-dish"])::before {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="storage-ideas"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="cordless-vacuum"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-main.main > article.post-entry:not(:first-of-type):has(a[href*="kitchen-essentials"])::before {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
+main.main > article.post-entry:not(:first-of-type):has(a[href*="welcome"])::before { background-image: url('/covers/welcome.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="small-appliance-2026-guide"])::before { background-image: url('/covers/small-appliance-2026-guide.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="kitchen-essentials-2026"])::before { background-image: url('/covers/kitchen-essentials-2026.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="robot-vacuum-top5-2026"])::before { background-image: url('/covers/robot-vacuum-top5-2026.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="airfryer-comparison-2026"])::before { background-image: url('/covers/airfryer-comparison-2026.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="baby-dish-set-guide"])::before { background-image: url('/covers/baby-dish-set-guide.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="small-room-storage-ideas-10"])::before { background-image: url('/covers/small-room-storage-ideas-10.jpg'); }
+main.main > article.post-entry:not(:first-of-type):has(a[href*="cordless-vacuum-top5-2026"])::before { background-image: url('/covers/cordless-vacuum-top5-2026.jpg'); }
 
 /* 카드 내용 */
 main.main > article.post-entry:not(:first-of-type) .entry-header {
