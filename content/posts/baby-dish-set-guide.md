@@ -1,6 +1,6 @@
 ---
 title: "유아식기 세트 고르는 법 — 부모가 꼭 알아야 할 7가지"
-date: 2026-04-17T12:00:00+09:00
+date: 2026-04-16T23:00:00+09:00
 draft: false
 slug: "baby-dish-set-guide"
 categories: ["육아"]

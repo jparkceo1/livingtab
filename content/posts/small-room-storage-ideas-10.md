@@ -1,6 +1,6 @@
 ---
 title: "원룸 수납 아이디어 10가지 — 공간 2배 만드는 실전 노하우"
-date: 2026-04-17T14:00:00+09:00
+date: 2026-04-16T23:15:00+09:00
 draft: false
 slug: "small-room-storage-ideas-10"
 categories: ["수납·인테리어"]

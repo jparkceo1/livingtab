@@ -1,6 +1,6 @@
 ---
 title: "에어프라이어 추천 — 용량별·기능별 5종 솔직 비교"
-date: 2026-04-17T10:30:00+09:00
+date: 2026-04-16T22:45:00+09:00
 draft: false
 slug: "airfryer-comparison-2026"
 categories: ["소형가전"]
