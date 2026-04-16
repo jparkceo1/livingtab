@@ -1,285 +1,269 @@
-/* LivingTab — longblack.co 스타일 에디토리얼 */
+/* LivingTab — Pretendard 단일 + 웨이트 계층 */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css');
 
 :root {
-  --lt-bg: #F5F1EB;         /* 크림 베이지 */
-  --lt-bg-dark: #1a1a1a;    /* 다크 */
-  --lt-ink: #1a1a1a;
-  --lt-text: #2D2A25;
-  --lt-muted: #6B655C;
-  --lt-accent: #8B6F47;     /* 따뜻한 브라운 */
-  --lt-gold: #C9A870;       /* 골드 액센트 */
-  --lt-divider: #D4CEC3;
+  --lt-bg: #FAFAF8;
+  --lt-ink: #111111;
+  --lt-text: #333333;
+  --lt-muted: #767270;
+  --lt-line: #E5E3DE;
+  --lt-gold: #B5935A;
+  --lt-dark: #1A1A1A;
 }
 
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&display=swap');
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-body {
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Noto Sans KR", sans-serif;
+body, html {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Noto Sans KR", sans-serif !important;
   background: var(--lt-bg);
   color: var(--lt-text);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+  font-feature-settings: "ss03", "ss04";
+  -webkit-text-size-adjust: 100%;
 }
 
-/* 기본 테마 변수 덮어쓰기 */
 :root {
   --theme: var(--lt-bg);
   --entry: #FFFFFF;
   --primary: var(--lt-ink);
   --secondary: var(--lt-muted);
-  --tertiary: var(--lt-divider);
+  --tertiary: var(--lt-line);
   --content: var(--lt-text);
-  --border: var(--lt-divider);
+  --border: var(--lt-line);
 }
 
-.main { max-width: 960px !important; padding: 2rem 1.5rem !important; }
+.main {
+  max-width: 880px !important;
+  padding: 2.5rem 1.5rem !important;
+}
 
-/* =========================
-   헤더
-   ========================= */
+/* ========== 헤더 ========== */
 .header {
   background: var(--lt-bg);
-  border-bottom: 1px solid var(--lt-divider);
-  padding: 1rem 0;
+  border-bottom: 1px solid var(--lt-line);
+  padding: 0.5rem 0;
 }
 .header-nav {
-  max-width: 960px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 .logo a {
-  font-family: "Noto Serif KR", serif !important;
   color: var(--lt-ink) !important;
-  font-weight: 900 !important;
-  font-size: 1.5rem !important;
-  letter-spacing: -0.03em;
+  font-weight: 800 !important;
+  font-size: 1.35rem !important;
+  letter-spacing: -0.035em !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
 }
-.menu { gap: 2rem !important; }
+.logo a img { display: none; }  /* 로고 이미지 숨김, 텍스트만 */
+.menu { gap: 1.5rem !important; }
 .menu a {
   color: var(--lt-muted) !important;
   font-weight: 500 !important;
-  font-size: 0.95rem !important;
-  letter-spacing: 0;
+  font-size: 0.92rem !important;
+  letter-spacing: -0.015em !important;
 }
 .menu a:hover { color: var(--lt-ink) !important; }
 
-/* =========================
-   홈 히어로
-   ========================= */
+/* ========== 홈 히어로 ========== */
 .first-entry {
-  background: var(--lt-bg-dark) !important;
-  background-image: url('/covers/home-hero.jpg') !important;
+  background: var(--lt-dark) !important;
+  background-image:
+    linear-gradient(135deg, rgba(26,26,26,0.88) 0%, rgba(26,26,26,0.55) 100%),
+    url('/covers/home-hero.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
-  min-height: 480px !important;
+  min-height: 440px !important;
   border-radius: 0 !important;
-  padding: 6rem 3rem !important;
-  margin: 0 0 4rem 0 !important;
+  padding: 5rem 2.5rem !important;
+  margin: 0 -1.5rem 3.5rem !important;
   color: #FFF !important;
   position: relative;
-  overflow: hidden;
-}
-.first-entry::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0.6) 100%);
-}
-.first-entry .entry-header, .first-entry .entry-content, .first-entry .entry-footer {
-  position: relative;
-  z-index: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 .first-entry .entry-header h1 {
-  font-family: "Noto Serif KR", serif !important;
-  font-size: 3.2rem !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  font-size: 2.8rem !important;
   color: #FFFFFF !important;
-  font-weight: 900 !important;
-  line-height: 1.25 !important;
-  margin-bottom: 1.5rem !important;
-  letter-spacing: -0.04em;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.04em !important;
+  margin: 0 0 1.25rem 0 !important;
 }
 .first-entry .entry-content {
-  font-size: 1.1rem !important;
-  color: #E8E2D5 !important;
-  line-height: 1.85 !important;
-  max-width: 560px;
+  font-size: 1.05rem !important;
+  color: rgba(255,255,255,0.88) !important;
+  line-height: 1.8 !important;
+  max-width: 520px !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 400 !important;
 }
+.first-entry .entry-content p { margin: 0 0 0.5rem !important; }
 .first-entry .entry-content strong {
   color: var(--lt-gold) !important;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .first-entry .social-icons a { color: var(--lt-gold) !important; }
 
-/* =========================
-   홈 — 매거진 카드 그리드
-   ========================= */
+/* ========== 홈 포스트 카드 ========== */
 .post-entry {
   background: #FFFFFF;
-  border: none;
-  border-radius: 2px;
+  border: 1px solid var(--lt-line);
+  border-radius: 4px;
   padding: 0 !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 1.25rem !important;
   overflow: hidden;
-  transition: transform 0.25s ease;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: none;
 }
 .post-entry:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+  border-color: var(--lt-ink);
+  transform: translateY(-1px);
 }
-
-/* 커버 이미지 — 포스트 slug 기반 */
-.post-entry::before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 55%;
-  background-size: cover;
-  background-position: center;
-  background-color: #1a1a1a;
-}
-/* slug별 커버 매핑 */
-.post-entry:has(a[href*="welcome"])::before {
-  background-image: url('/covers/welcome.jpg');
-}
-.post-entry:has(a[href*="small-appliance"])::before {
-  background-image: url('/covers/small-appliance-2026-guide.jpg');
-}
-.post-entry:has(a[href*="kitchen-essentials"])::before {
-  background-image: url('/covers/kitchen-essentials-2026.jpg');
-}
-
 .post-entry .entry-header {
-  padding: 2rem 2.5rem 0.75rem !important;
+  padding: 1.5rem 1.75rem 0.5rem !important;
 }
 .post-entry .entry-header h2 {
-  font-family: "Noto Serif KR", serif !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
   color: var(--lt-ink) !important;
-  font-size: 1.6rem !important;
+  font-size: 1.3rem !important;
   font-weight: 700 !important;
-  line-height: 1.35 !important;
+  line-height: 1.45 !important;
   margin: 0 !important;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em !important;
 }
 .post-entry .entry-content {
-  padding: 0 2.5rem 1rem !important;
+  padding: 0 1.75rem 0.75rem !important;
 }
 .post-entry .entry-content p {
   color: var(--lt-muted) !important;
-  font-size: 0.98rem !important;
-  line-height: 1.7 !important;
-  margin: 0.75rem 0 0 0 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.65 !important;
+  margin: 0.75rem 0 0 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .post-entry .entry-footer {
-  padding: 0.75rem 2.5rem 2rem !important;
-  color: var(--lt-accent) !important;
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-  font-weight: 500;
+  padding: 0.5rem 1.75rem 1.5rem !important;
+  color: var(--lt-muted) !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.01em !important;
+  font-weight: 500 !important;
+}
+.post-entry .entry-footer span {
+  color: var(--lt-muted) !important;
 }
 
-/* =========================
-   상세 페이지 — 매거진 톤
-   ========================= */
-.post-single { padding: 3rem 1rem !important; }
+/* ========== 상세 페이지 ========== */
+.post-single { padding: 2.5rem 1rem !important; }
 
-.page-header, .post-header {
-  text-align: left;
+.post-header {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 2px solid var(--lt-ink);
+  border-bottom: 1px solid var(--lt-line);
 }
 .post-title {
-  font-family: "Noto Serif KR", serif !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
   color: var(--lt-ink) !important;
-  font-size: 2.6rem !important;
-  font-weight: 900 !important;
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
   line-height: 1.3 !important;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.045em !important;
   margin: 0.5rem 0 1rem !important;
 }
 .post-description {
   color: var(--lt-muted) !important;
-  font-size: 1.15rem;
-  line-height: 1.65;
-  margin: 1rem 0 0;
-  font-style: normal;
+  font-size: 1.08rem !important;
+  line-height: 1.65 !important;
+  margin: 1rem 0 0 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
 }
-.post-meta, .breadcrumbs {
-  color: var(--lt-accent) !important;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  font-weight: 500;
-  text-transform: uppercase;
+.post-meta, .breadcrumbs, .breadcrumbs a {
+  color: var(--lt-muted) !important;
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
 }
 
 /* 본문 */
 .post-content {
   color: var(--lt-text) !important;
-  font-size: 1.08rem !important;
-  line-height: 1.95 !important;
-  font-family: "Pretendard", sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.9 !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 400 !important;
 }
-.post-content > * { max-width: 720px; margin-left: auto; margin-right: auto; }
-.post-content p { margin: 1.5rem auto !important; }
-.post-content strong { color: var(--lt-ink) !important; font-weight: 700 !important; }
-
-.post-content h2 {
-  font-family: "Noto Serif KR", serif !important;
+.post-content > * {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-content p { margin: 1.4rem auto !important; }
+.post-content strong {
   color: var(--lt-ink) !important;
-  font-size: 1.9rem !important;
-  font-weight: 900 !important;
-  margin: 4rem auto 1.25rem !important;
-  padding-top: 2rem;
-  letter-spacing: -0.025em;
-  line-height: 1.35;
-  border-top: none;
-  position: relative;
+  font-weight: 700 !important;
 }
-.post-content h2::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: var(--lt-ink);
-  margin-bottom: 1.25rem;
+
+.post-content h1 { display: none !important; }
+.post-content h2 {
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  color: var(--lt-ink) !important;
+  font-size: 1.75rem !important;
+  font-weight: 800 !important;
+  margin: 3.5rem auto 1.25rem !important;
+  padding-top: 1rem;
+  letter-spacing: -0.04em !important;
+  line-height: 1.4;
 }
 .post-content h3 {
-  font-family: "Noto Serif KR", serif !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
   color: var(--lt-ink) !important;
-  font-size: 1.35rem !important;
+  font-size: 1.25rem !important;
   font-weight: 700 !important;
-  margin: 2.5rem auto 1rem !important;
-  letter-spacing: -0.015em;
+  margin: 2.25rem auto 0.75rem !important;
+  letter-spacing: -0.03em !important;
 }
 .post-content h4 {
-  color: var(--lt-accent) !important;
-  font-size: 1.05rem !important;
+  font-family: "Pretendard Variable", Pretendard, sans-serif !important;
+  color: var(--lt-muted) !important;
+  font-size: 0.82rem !important;
   font-weight: 600 !important;
-  margin: 1.75rem auto 0.5rem !important;
+  margin: 1.75rem auto 0.25rem !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 /* 리스트 */
 .post-content ul, .post-content ol {
-  padding-left: 1.5rem !important;
-  margin: 1.5rem auto !important;
+  padding-left: 1.25rem !important;
+  margin: 1.25rem auto !important;
 }
 .post-content li {
-  margin: 0.75rem 0 !important;
+  margin: 0.5rem 0 !important;
   line-height: 1.85;
   color: var(--lt-text);
+  letter-spacing: -0.02em;
 }
-.post-content ul li::marker { color: var(--lt-accent); }
+.post-content ul li::marker { color: var(--lt-gold); }
 
 /* 테이블 */
 .post-content table {
   width: 100%;
   border-collapse: collapse;
   margin: 2rem auto !important;
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   background: transparent;
   border-radius: 0;
   box-shadow: none;
@@ -289,20 +273,22 @@ body {
 .post-content table th {
   background: transparent !important;
   color: var(--lt-ink) !important;
-  font-weight: 700;
+  font-weight: 700 !important;
   padding: 0.85rem 0.5rem !important;
   text-align: left;
-  border-bottom: 1px solid var(--lt-divider);
-  font-size: 0.88rem;
-  letter-spacing: 0.03em;
+  border: none;
+  border-bottom: 1px solid var(--lt-line);
+  font-size: 0.8rem !important;
+  letter-spacing: 0.06em !important;
   text-transform: uppercase;
 }
 .post-content table td {
   padding: 0.85rem 0.5rem !important;
   border: none !important;
-  border-bottom: 1px solid var(--lt-divider) !important;
+  border-bottom: 1px solid var(--lt-line) !important;
   color: var(--lt-text);
   background: transparent !important;
+  letter-spacing: -0.02em;
 }
 .post-content table tr:last-child td { border-bottom: none !important; }
 
@@ -311,137 +297,121 @@ body {
   border: none !important;
   border-left: 3px solid var(--lt-ink) !important;
   background: transparent !important;
-  padding: 0.5rem 0 0.5rem 1.5rem !important;
+  padding: 0.25rem 0 0.25rem 1.5rem !important;
   margin: 2rem auto !important;
-  font-family: "Noto Serif KR", serif;
-  font-style: italic;
-  font-size: 1.15rem;
+  font-style: normal !important;
+  font-size: 1.1rem !important;
   color: var(--lt-ink);
-  line-height: 1.7;
+  line-height: 1.75;
+  font-weight: 500 !important;
 }
-.post-content blockquote p { margin: 0.5rem 0 !important; }
 
 /* 코드 */
 .post-content code {
-  background: #EBE4D8;
+  background: #F3F1EC;
   color: var(--lt-ink);
-  padding: 0.15rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 2px;
-  font-size: 0.9em;
+  font-size: 0.88em;
   font-weight: 500;
 }
 
 /* 링크 */
 .post-content a, .entry-content a, .first-entry a {
-  color: var(--lt-ink);
-  text-decoration: underline;
-  text-decoration-color: var(--lt-gold);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+  color: var(--lt-ink) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--lt-gold) !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
   font-weight: 500;
-  transition: color 0.2s;
 }
-.post-content a:hover { color: var(--lt-accent); }
+.post-content a:hover { color: var(--lt-gold) !important; }
 
 /* HR */
 .post-content hr {
   border: none;
-  width: 80px;
+  width: 60px;
   margin: 4rem auto;
-  border-top: 2px solid var(--lt-ink);
+  border-top: 1px solid var(--lt-ink);
 }
 
 /* 태그 */
 .post-tags {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--lt-divider);
+  border-top: 1px solid var(--lt-line);
 }
 .post-tags a {
-  background: transparent;
-  color: var(--lt-accent) !important;
-  padding: 0.4rem 0 !important;
-  font-weight: 500;
+  background: transparent !important;
+  color: var(--lt-muted) !important;
+  padding: 0.3rem 0 !important;
+  font-weight: 500 !important;
   margin-right: 1rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.02em !important;
   text-decoration: none !important;
-  text-transform: uppercase;
+  border: none !important;
 }
-.post-tags a::before { content: "# "; color: var(--lt-divider); }
-.post-tags a:hover {
-  color: var(--lt-ink) !important;
-  background: transparent;
-}
-
-/* 관련 / 네비 */
-.post-nav {
-  border-top: 1px solid var(--lt-divider);
-  margin-top: 4rem;
-  padding-top: 2rem;
-}
+.post-tags a::before { content: "#"; color: var(--lt-line); }
+.post-tags a:hover { color: var(--lt-ink) !important; }
 
 /* Footer */
 .footer {
   background: var(--lt-bg);
   color: var(--lt-muted);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   text-align: center;
   padding: 3rem 1rem 2rem;
-  letter-spacing: 0.03em;
-  border-top: 1px solid var(--lt-divider);
+  letter-spacing: -0.01em;
+  border-top: 1px solid var(--lt-line);
   margin-top: 4rem;
 }
-.footer a { color: var(--lt-accent); }
+.footer a { color: var(--lt-muted); }
 
-/* 쿠팡 공시 */
-footer.entry-footer + div,
-article + div[style*="margin-top:3rem"] {
-  background: var(--lt-bg);
-  color: var(--lt-muted);
-  font-size: 0.82rem;
-  padding: 1.5rem;
-  border: 1px dashed var(--lt-divider);
-  margin: 3rem auto;
-  text-align: center;
-  letter-spacing: 0.02em;
+/* 쿠팡 공시 박스 */
+article + div[style*="margin-top:3rem"],
+footer.entry-footer + div {
+  background: transparent !important;
+  color: var(--lt-muted) !important;
+  font-size: 0.78rem !important;
+  padding: 1.5rem 0 !important;
+  border: none !important;
+  border-top: 1px solid var(--lt-line) !important;
+  margin: 3rem auto 0 !important;
+  text-align: center !important;
+  letter-spacing: -0.01em !important;
 }
 
-/* =========================
-   모바일
-   ========================= */
+/* 모바일 */
 @media (max-width: 640px) {
   .first-entry {
-    padding: 4rem 1.5rem !important;
+    padding: 3.5rem 1.5rem !important;
     min-height: 340px !important;
+    margin: 0 -1.5rem 2.5rem !important;
   }
-  .first-entry .entry-header h1 { font-size: 2.2rem !important; }
-  .first-entry .entry-content { font-size: 1rem !important; }
-  .post-entry .entry-header { padding: 1.5rem 1.5rem 0.5rem !important; }
-  .post-entry .entry-content { padding: 0 1.5rem 0.5rem !important; }
-  .post-entry .entry-footer { padding: 0.5rem 1.5rem 1.5rem !important; }
-  .post-entry .entry-header h2 { font-size: 1.3rem !important; }
-  .post-title { font-size: 1.85rem !important; }
+  .first-entry .entry-header h1 { font-size: 2rem !important; }
+  .first-entry .entry-content { font-size: 0.98rem !important; }
+  .post-entry .entry-header { padding: 1.25rem 1.25rem 0.25rem !important; }
+  .post-entry .entry-content { padding: 0 1.25rem 0.5rem !important; }
+  .post-entry .entry-footer { padding: 0.25rem 1.25rem 1.25rem !important; }
+  .post-entry .entry-header h2 { font-size: 1.15rem !important; }
+  .post-title { font-size: 1.75rem !important; }
   .post-content { font-size: 1rem !important; line-height: 1.85 !important; }
-  .post-content h2 { font-size: 1.55rem !important; margin: 3rem auto 1rem !important; }
-  .post-content h3 { font-size: 1.2rem !important; }
+  .post-content h2 { font-size: 1.45rem !important; margin: 2.5rem auto 1rem !important; }
+  .post-content h3 { font-size: 1.15rem !important; }
   .post-content table { font-size: 0.88rem; }
 }
 
-/* 다크 모드 (옵션) */
+/* 다크 */
 @media (prefers-color-scheme: dark) {
   :root {
     --lt-bg: #121212;
-    --lt-ink: #F5F1EB;
-    --lt-text: #D4CFC4;
-    --lt-muted: #8C8478;
-    --lt-divider: #2A2623;
+    --lt-ink: #FAFAF8;
+    --lt-text: #D4D2CD;
+    --lt-muted: #8A8682;
+    --lt-line: #2A2724;
   }
   body { background: var(--lt-bg); }
   .post-entry { background: #1A1815; }
-  .footer { background: var(--lt-bg); }
-  .first-entry { background: var(--lt-bg-dark) !important; }
-  .post-content code { background: #2A2623; color: var(--lt-gold); }
-  .post-content table { border-color: var(--lt-gold); }
-  .post-content blockquote { border-left-color: var(--lt-gold) !important; }
+  .post-content code { background: #2A2724; color: var(--lt-gold); }
 }
