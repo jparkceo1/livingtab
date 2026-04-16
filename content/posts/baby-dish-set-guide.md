@@ -12,6 +12,7 @@ cover:
   alt: "baby-dish-set-guide 대표 이미지"
   caption: "Photo by [www.kaboompics.com](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---

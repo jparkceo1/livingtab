@@ -12,6 +12,7 @@ cover:
   alt: "small-room-storage-ideas-10 대표 이미지"
   caption: "Photo by [Max Vakhtbovych](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---

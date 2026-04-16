@@ -12,6 +12,7 @@ cover:
   alt: "cordless-vacuum-top5-2026 대표 이미지"
   caption: "Photo by [Liliana Drew](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---

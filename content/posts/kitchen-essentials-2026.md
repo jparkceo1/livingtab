@@ -12,6 +12,7 @@ cover:
   alt: "kitchen-essentials-2026 대표 이미지"
   caption: "Photo by [Owen.outdoors](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---

@@ -19,6 +19,7 @@ cover:
   alt: "small-appliance-2026-guide 대표 이미지"
   caption: "Photo by [Curtis Adams](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---

@@ -12,6 +12,7 @@ cover:
   alt: "airfryer-comparison-2026 대표 이미지"
   caption: "Photo by [Wijs (Wise)](https://www.pexels.com) via Pexels"
   relative: false
+  hiddenInList: true
   hidden: false
 
 ---
