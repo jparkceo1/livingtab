@@ -46,10 +46,11 @@
     </div>
 
     <div class="flex md:grid md:grid-cols-3 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
+      {{/* 쿠팡 실제 상품 (승인 후 API로 최저가·이미지 자동 갱신 예정) */}}
       {{- $bestProducts := slice
-        (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+" "price" "398,000" "before" "599,000" "rating" "4.8" "reviews" "12,847" "img" "/covers/robot-vacuum-top5-2026.jpg?v=4" "url" "#")
-        (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000" "before" "179,000" "rating" "4.7" "reviews" "5,234" "img" "/covers/airfryer-comparison-2026.jpg?v=4" "url" "#")
-        (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 9종 세트" "price" "38,900" "before" "59,000" "rating" "4.9" "reviews" "3,892" "img" "/covers/baby-dish-set-guide.jpg?v=4" "url" "#")
+        (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+ 로봇청소기" "price" "398,000부터" "rating" "4.7" "reviews" "쿠팡에서 확인" "img" "/covers/robot-vacuum-top5-2026.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EB%A1%9C%EB%B3%B4%EB%9D%BD+Q7+Max&channel=user")
+        (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000부터" "rating" "4.6" "reviews" "쿠팡에서 확인" "img" "/covers/airfryer-comparison-2026.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EC%BF%A0%EC%BF%A0+%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4+8L&channel=user")
+        (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 세트" "price" "38,900부터" "rating" "4.8" "reviews" "쿠팡에서 확인" "img" "/covers/baby-dish-set-guide.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EC%8B%A4%EB%A6%AC%EC%BD%98+%EC%9C%A0%EC%95%84%EC%8B%9D%EA%B8%B0+%EC%84%B8%ED%8A%B8&channel=user")
       -}}
       {{- range $bestProducts -}}
       <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[70vw] md:w-auto bg-white text-gray-900 flex md:flex-col gap-3 md:gap-0 p-3 hover:shadow-lg transition-shadow no-underline">
@@ -65,9 +66,8 @@
           <div>
             <div class="flex items-baseline gap-1.5">
               <span class="text-[15px] md:text-[16px] font-bold text-[#FF6B2C]">₩{{ .price }}</span>
-              <span class="text-[10px] md:text-[11px] text-gray-400 line-through">₩{{ .before }}</span>
             </div>
-            <div class="text-[10px] md:text-[11px] text-gray-500 mt-0.5">★ {{ .rating }} ({{ .reviews }})</div>
+            <div class="text-[10px] md:text-[11px] text-gray-500 mt-0.5">★ {{ .rating }} · {{ .reviews }}</div>
           </div>
         </div>
       </a>
