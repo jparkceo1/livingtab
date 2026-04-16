@@ -85,28 +85,38 @@ body {
 .menu a:hover::after { width: 100%; }
 #theme-toggle { display: none !important; }
 
-/* ============ MAIN ============ */
+/* ============ MAIN — CSS Grid 자동 반응형 ============ */
 main.main {
   max-width: 1200px !important;
   padding: 3rem 2rem 4rem !important;
   background: #FFFFFF !important;
   margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 2.5rem 1.5rem !important;
+  align-items: start;
 }
 main.main .first-entry { display: none !important; }
+main.main::after { display: none !important; }
 
-/* ============ FEATURED (첫 번째 포스트) ============ */
+/* ============ FEATURED (첫 번째) — 전체 너비 차지 ============ */
 main.main article.post-entry:first-of-type {
+  grid-column: 1 / -1 !important;  /* 모든 열 차지 */
   display: grid !important;
   grid-template-columns: 1.15fr 1fr;
   gap: 3rem;
   align-items: center;
   max-width: 100%;
-  margin: 0 0 5rem !important;
+  margin: 0 0 2rem !important;
   padding: 0 !important;
   background: transparent !important;
   border: none !important;
   position: relative;
   min-height: 0;
+}
+/* Featured 내부 — 좁아지면 1컬럼 */
+@container (max-width: 720px) {
+  main.main article.post-entry:first-of-type { grid-template-columns: 1fr; }
 }
 /* 이미지 박스 */
 main.main article.post-entry:first-of-type::before {
@@ -189,37 +199,21 @@ main.main article.post-entry:first-of-type a.entry-link {
   z-index: 2;
 }
 
-/* ============ 섹션 타이틀 ============ */
-main.main article.post-entry:nth-of-type(2)::before {
-  content: "모든 가이드";
-  grid-column: 1 / -1;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--gray-900);
-  letter-spacing: -0.03em;
-  margin: 0 0 2rem;
-  padding-bottom: 1rem;
-  border-bottom: none;
-}
+/* 섹션 타이틀 제거 — Grid 자동 배치로 대체 */
 
-/* ============ ARTICLE GRID (Toss 스타일 3컬럼) ============ */
+/* ============ ARTICLE GRID 카드 ============ */
 main.main > article.post-entry:not(:first-of-type) {
   background: #FFFFFF !important;
   border: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  margin: 0 0 2.5rem 0 !important;
+  margin: 0 !important;
+  width: 100%;
   box-shadow: none !important;
   display: block !important;
   position: relative;
-  width: calc(33.333% - 1rem);
-  float: left;
-  margin-right: 1.5rem !important;
   transition: transform 0.15s;
-}
-main.main > article.post-entry:not(:first-of-type):nth-of-type(3n+1) {
-  margin-right: 0 !important;
+  float: none !important;
 }
 main.main > article.post-entry:not(:first-of-type):hover {
   transform: translateY(-2px);
@@ -308,12 +302,7 @@ main.main > article.post-entry:not(:first-of-type) .entry-link {
   inset: 0;
 }
 
-/* Clearfix */
-main.main::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+/* Clearfix 불필요 (grid 사용) */
 
 /* ============ 상세 페이지 ============ */
 .post-single {
@@ -520,63 +509,45 @@ footer.entry-footer + div {
   max-width: 720px;
 }
 
-/* ============ 모바일 ============ */
+/* ============ 반응형 (Grid auto-fill이 대부분 처리, 나머지만 조정) ============ */
+
+/* Featured 900px 이하 — 1컬럼 */
 @media (max-width: 900px) {
   main.main { padding: 2rem 1.25rem 3rem !important; }
   main.main article.post-entry:first-of-type {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 3.5rem !important;
-  }
-  main.main article.post-entry:first-of-type::before {
-    aspect-ratio: 16/10;
-    order: 0;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
   main.main article.post-entry:first-of-type .entry-header,
   main.main article.post-entry:first-of-type .entry-content,
   main.main article.post-entry:first-of-type .entry-footer {
-    grid-column: 1;
+    grid-column: 1 !important;
+    grid-row: auto !important;
   }
   main.main article.post-entry:first-of-type .entry-header h2 {
-    font-size: 1.7rem !important;
+    font-size: 1.75rem !important;
   }
-
-  main.main article.post-entry:nth-of-type(2)::before {
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  main.main > article.post-entry:not(:first-of-type) {
-    width: calc(50% - 0.5rem) !important;
-    margin-right: 1rem !important;
-    margin-bottom: 2rem !important;
-    float: left;
-  }
-  main.main > article.post-entry:not(:first-of-type):nth-of-type(3n+1) {
-    margin-right: 1rem !important;
-  }
-  main.main > article.post-entry:not(:first-of-type):nth-of-type(2n+2) {
-    margin-right: 0 !important;
-  }
-
-  .post-single { padding: 2rem 1.25rem !important; }
-  .post-title { font-size: 1.8rem !important; }
-  .post-content { font-size: 1rem !important; line-height: 1.8 !important; }
-  .post-content h2 { font-size: 1.45rem !important; }
-  .post-content h3 { font-size: 1.15rem !important; }
 }
 
-@media (max-width: 560px) {
-  main.main > article.post-entry:not(:first-of-type) {
-    width: 100% !important;
-    margin-right: 0 !important;
-    float: none;
-    margin-bottom: 2rem !important;
+/* 모바일 640px 이하 — 간격 축소 */
+@media (max-width: 640px) {
+  main.main {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 1.5rem 1rem 2.5rem !important;
   }
-  main.main > article.post-entry:not(:first-of-type):nth-of-type(n) {
-    margin-right: 0 !important;
+  main.main article.post-entry:first-of-type .entry-header h2 {
+    font-size: 1.5rem !important;
   }
   main.main > article.post-entry:not(:first-of-type)::before {
     aspect-ratio: 16/9;
   }
+
+  .post-single { padding: 2rem 1.25rem !important; }
+  .post-title { font-size: 1.7rem !important; }
+  .post-content { font-size: 1rem !important; line-height: 1.8 !important; }
+  .post-content h2 { font-size: 1.4rem !important; }
+  .post-content h3 { font-size: 1.15rem !important; }
+  .post-content table { font-size: 0.88rem; }
 }
