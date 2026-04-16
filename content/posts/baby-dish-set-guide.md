@@ -7,6 +7,13 @@ categories: ["육아"]
 tags: ["유아식기", "이유식기", "식기세트", "안전인증", "육아용품"]
 description: "자녀를 위한 유아식기 고를 때 부모가 놓치기 쉬운 소재·안전인증·실용성 체크포인트 정리."
 showToc: true
+cover:
+  image: "/covers/baby-dish-set-guide-hero.jpg"
+  alt: "baby-dish-set-guide 대표 이미지"
+  caption: "Photo by [www.kaboompics.com](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

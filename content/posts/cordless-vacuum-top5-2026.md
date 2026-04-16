@@ -7,6 +7,13 @@ categories: ["소형가전"]
 tags: ["무선청소기", "다이슨", "LG", "삼성", "흡입력", "2026"]
 description: "다이슨·LG·삼성 무선청소기 5종을 흡입력·배터리·무게·가격 기준으로 실사용 비교."
 showToc: true
+cover:
+  image: "/covers/cordless-vacuum-top5-2026-hero.jpg"
+  alt: "cordless-vacuum-top5-2026 대표 이미지"
+  caption: "Photo by [Liliana Drew](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

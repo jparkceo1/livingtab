@@ -7,6 +7,13 @@ categories: ["수납·인테리어"]
 tags: ["원룸수납", "공간활용", "수납아이디어", "인테리어", "소형평수"]
 description: "6~10평 원룸에서 공간을 2배 넓게 쓰는 10가지 수납 아이디어. 직접 사용 가능한 아이템 포함."
 showToc: true
+cover:
+  image: "/covers/small-room-storage-ideas-10-hero.jpg"
+  alt: "small-room-storage-ideas-10 대표 이미지"
+  caption: "Photo by [Max Vakhtbovych](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

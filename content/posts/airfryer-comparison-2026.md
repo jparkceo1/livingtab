@@ -7,6 +7,13 @@ categories: ["소형가전"]
 tags: ["에어프라이어", "비교", "추천", "주방가전", "2026"]
 description: "1~2인용부터 4인 가족까지. 용량·기능·브랜드별 에어프라이어 5종을 실사용 관점에서 비교."
 showToc: true
+cover:
+  image: "/covers/airfryer-comparison-2026-hero.jpg"
+  alt: "airfryer-comparison-2026 대표 이미지"
+  caption: "Photo by [Wijs (Wise)](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

@@ -14,6 +14,13 @@ faq:
     a: "아닙니다. 최근엔 중소·전문 브랜드 중 품질 좋은 제품이 많습니다. 다만 AS·부품 수급을 확인하세요."
   - q: "보증 기간은 평균 얼마인가요?"
     a: "대기업은 1~2년, 중소 브랜드는 6개월~1년이 일반적입니다. 구매 전 반드시 확인하세요."
+cover:
+  image: "/covers/small-appliance-2026-guide-hero.jpg"
+  alt: "small-appliance-2026-guide 대표 이미지"
+  caption: "Photo by [Curtis Adams](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

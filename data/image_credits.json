@@ -1,57 +1,69 @@
 {
   "welcome": {
-    "cover": {
+    "card": {
       "file": "/covers/welcome.jpg",
       "photographer": "Max Vakhtbovych",
       "photographer_url": "https://www.pexels.com/@artbovich",
       "source_url": "https://www.pexels.com/photo/modern-design-living-room-with-tall-windows-7546767/"
     },
+    "hero": {
+      "file": "/covers/welcome-hero.jpg",
+      "photographer": "HONG SON",
+      "photographer_url": "https://www.pexels.com/@hson",
+      "source_url": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-34538288/"
+    },
     "inline": [
       {
         "file": "/images/welcome/01.jpg",
-        "photographer": "HONG SON",
-        "photographer_url": "https://www.pexels.com/@hson",
-        "source_url": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-34538288/"
-      },
-      {
-        "file": "/images/welcome/02.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
         "source_url": "https://www.pexels.com/photo/gray-couch-beside-white-wall-7195873/"
       },
       {
-        "file": "/images/welcome/03.jpg",
+        "file": "/images/welcome/02.jpg",
         "photographer": "Liuuu _61",
         "photographer_url": "https://www.pexels.com/@liuuu-_61-2383408",
         "source_url": "https://www.pexels.com/photo/modern-minimalist-living-room-with-sleek-design-34549302/"
       },
       {
-        "file": "/images/welcome/04.jpg",
+        "file": "/images/welcome/03.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
         "source_url": "https://www.pexels.com/photo/comfortable-sofa-in-living-room-7587778/"
+      },
+      {
+        "file": "/images/welcome/04.jpg",
+        "photographer": "Peter  Vang",
+        "photographer_url": "https://www.pexels.com/@peter-vang-2157328093",
+        "source_url": "https://www.pexels.com/photo/modern-living-room-with-large-window-view-35430096/"
       }
     ]
   },
   "small-appliance-2026-guide": {
-    "cover": {
+    "card": {
       "file": "/covers/small-appliance-2026-guide.jpg",
       "photographer": "Gustavo Galeano Maz",
       "photographer_url": "https://www.pexels.com/@fotografiagmazg",
       "source_url": "https://www.pexels.com/photo/a-modern-kitchen-17134085/"
     },
+    "hero": {
+      "file": "/covers/small-appliance-2026-guide-hero.jpg",
+      "photographer": "Curtis Adams",
+      "photographer_url": "https://www.pexels.com/@curtis-adams-1694007",
+      "source_url": "https://www.pexels.com/photo/modern-kitchen-with-stainless-steel-appliances-36777526/"
+    },
     "inline": [
       {
         "file": "/images/small-appliance-2026-guide/01.jpg",
-        "photographer": "Curtis Adams",
-        "photographer_url": "https://www.pexels.com/@curtis-adams-1694007",
-        "source_url": "https://www.pexels.com/photo/modern-kitchen-with-stainless-steel-appliances-36777526/"
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/mounted-appliances-in-the-kitchen-7534297/"
       },
       {
         "file": "/images/small-appliance-2026-guide/02.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/mounted-appliances-in-the-kitchen-7534297/"
+        "source_url": "https://www.pexels.com/photo/furniture-in-kitchen-8082206/"
       },
       {
         "file": "/images/small-appliance-2026-guide/03.jpg",
@@ -61,213 +73,249 @@
       },
       {
         "file": "/images/small-appliance-2026-guide/04.jpg",
-        "photographer": "Max Vakhtbovych",
-        "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/furniture-in-kitchen-8082206/"
+        "photographer": "dp singh Bhullar",
+        "photographer_url": "https://www.pexels.com/@dpsinghbhullar",
+        "source_url": "https://www.pexels.com/photo/modern-stainless-steel-gas-stove-top-for-kitchens-33904619/"
       }
     ]
   },
   "kitchen-essentials-2026": {
-    "cover": {
+    "card": {
       "file": "/covers/kitchen-essentials-2026.jpg",
       "photographer": "Anna Romanova",
       "photographer_url": "https://www.pexels.com/@anna-romanova-1406375",
       "source_url": "https://www.pexels.com/photo/a-large-collection-of-copper-pots-and-pans-16770951/"
     },
+    "hero": {
+      "file": "/covers/kitchen-essentials-2026-hero.jpg",
+      "photographer": "Owen.outdoors",
+      "photographer_url": "https://www.pexels.com/@owen-outdoors-409204690",
+      "source_url": "https://www.pexels.com/photo/hanging-frying-pans-in-kitchen-store-display-29462835/"
+    },
     "inline": [
       {
         "file": "/images/kitchen-essentials-2026/01.jpg",
-        "photographer": "Owen.outdoors",
-        "photographer_url": "https://www.pexels.com/@owen-outdoors-409204690",
-        "source_url": "https://www.pexels.com/photo/hanging-frying-pans-in-kitchen-store-display-29462835/"
-      },
-      {
-        "file": "/images/kitchen-essentials-2026/02.jpg",
         "photographer": "Mohsen Naranjani",
         "photographer_url": "https://www.pexels.com/@mohsen-naranjani-431200986",
         "source_url": "https://www.pexels.com/photo/close-up-of-kitchenware-15245005/"
       },
       {
-        "file": "/images/kitchen-essentials-2026/03.jpg",
+        "file": "/images/kitchen-essentials-2026/02.jpg",
         "photographer": "Thgusstavo Santana",
         "photographer_url": "https://www.pexels.com/@thgusstavo",
         "source_url": "https://www.pexels.com/photo/traditional-jars-on-a-stove-24989144/"
       },
       {
-        "file": "/images/kitchen-essentials-2026/04.jpg",
+        "file": "/images/kitchen-essentials-2026/03.jpg",
         "photographer": "Chris Flaten",
         "photographer_url": "https://www.pexels.com/@cflaten",
         "source_url": "https://www.pexels.com/photo/a-plastic-pasta-fork-server-on-white-surface-5514747/"
+      },
+      {
+        "file": "/images/kitchen-essentials-2026/04.jpg",
+        "photographer": "Beth Fitzpatrick",
+        "photographer_url": "https://www.pexels.com/@beth-fitzpatrick-742222899",
+        "source_url": "https://www.pexels.com/photo/antique-copper-cookware-on-vintage-stove-35225640/"
       }
     ]
   },
   "robot-vacuum-top5-2026": {
-    "cover": {
+    "card": {
       "file": "/covers/robot-vacuum-top5-2026.jpg",
       "photographer": "Andrey Matveev",
       "photographer_url": "https://www.pexels.com/@zeleboba",
       "source_url": "https://www.pexels.com/photo/modern-white-robot-vacuum-cleaner-on-wood-floor-35147280/"
     },
+    "hero": {
+      "file": "/covers/robot-vacuum-top5-2026-hero.jpg",
+      "photographer": "MART  PRODUCTION",
+      "photographer_url": "https://www.pexels.com/@mart-production",
+      "source_url": "https://www.pexels.com/photo/overhead-of-white-robot-vacuum-7641526/"
+    },
     "inline": [
       {
         "file": "/images/robot-vacuum-top5-2026/01.jpg",
-        "photographer": "MART  PRODUCTION",
-        "photographer_url": "https://www.pexels.com/@mart-production",
-        "source_url": "https://www.pexels.com/photo/overhead-of-white-robot-vacuum-7641526/"
-      },
-      {
-        "file": "/images/robot-vacuum-top5-2026/02.jpg",
         "photographer": "cottonbro studio",
         "photographer_url": "https://www.pexels.com/@cottonbro",
         "source_url": "https://www.pexels.com/photo/woman-in-blue-denim-jeans-and-brown-jacket-standing-beside-brown-wooden-table-4107249/"
       },
       {
-        "file": "/images/robot-vacuum-top5-2026/03.jpg",
+        "file": "/images/robot-vacuum-top5-2026/02.jpg",
         "photographer": "cottonbro studio",
         "photographer_url": "https://www.pexels.com/@cottonbro",
         "source_url": "https://www.pexels.com/photo/person-holding-white-round-device-4107248/"
       },
       {
-        "file": "/images/robot-vacuum-top5-2026/04.jpg",
+        "file": "/images/robot-vacuum-top5-2026/03.jpg",
         "photographer": "cottonbro studio",
         "photographer_url": "https://www.pexels.com/@cottonbro",
         "source_url": "https://www.pexels.com/photo/person-walking-near-a-robotic-vacuum-cleaner-on-marble-floor-6856823/"
+      },
+      {
+        "file": "/images/robot-vacuum-top5-2026/04.jpg",
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "source_url": "https://www.pexels.com/photo/person-walking-past-roomba-vacuum-cleaner-6856821/"
       }
     ]
   },
   "airfryer-comparison-2026": {
-    "cover": {
+    "card": {
       "file": "/covers/airfryer-comparison-2026.jpg",
-      "photographer": "FOX ^.ᆽ.^= ∫",
-      "photographer_url": "https://www.pexels.com/@fox-58267",
-      "source_url": "https://www.pexels.com/photo/crispy-chicken-pieces-in-modern-air-fryer-35285814/"
+      "photographer": "Angelo Greñas",
+      "photographer_url": "https://www.pexels.com/@angelo-grenas-154789430",
+      "source_url": "https://www.pexels.com/photo/fried-chicken-on-stainless-strainer-10648379/"
+    },
+    "hero": {
+      "file": "/covers/airfryer-comparison-2026-hero.jpg",
+      "photographer": "Wijs (Wise)",
+      "photographer_url": "https://www.pexels.com/@wijs-wise-136435282",
+      "source_url": "https://www.pexels.com/photo/freshly-fried-french-fries-15234683/"
     },
     "inline": [
       {
         "file": "/images/airfryer-comparison-2026/01.jpg",
-        "photographer": "Angelo Greñas",
-        "photographer_url": "https://www.pexels.com/@angelo-grenas-154789430",
-        "source_url": "https://www.pexels.com/photo/fried-chicken-on-stainless-strainer-10648379/"
-      },
-      {
-        "file": "/images/airfryer-comparison-2026/02.jpg",
-        "photographer": "Wijs (Wise)",
-        "photographer_url": "https://www.pexels.com/@wijs-wise-136435282",
-        "source_url": "https://www.pexels.com/photo/freshly-fried-french-fries-15234683/"
-      },
-      {
-        "file": "/images/airfryer-comparison-2026/03.jpg",
         "photographer": "Matheus Bertelli",
         "photographer_url": "https://www.pexels.com/@bertellifotografia",
         "source_url": "https://www.pexels.com/photo/crispy-street-food-pastries-frying-in-oil-30893317/"
       },
       {
-        "file": "/images/airfryer-comparison-2026/04.jpg",
+        "file": "/images/airfryer-comparison-2026/02.jpg",
         "photographer": "Gera Cejas",
         "photographer_url": "https://www.pexels.com/@gera-cejas-3616330",
         "source_url": "https://www.pexels.com/photo/argentinian-empanadas-frying-outdoors-37049963/"
+      },
+      {
+        "file": "/images/airfryer-comparison-2026/03.jpg",
+        "photographer": "Gera Cejas",
+        "photographer_url": "https://www.pexels.com/@gera-cejas-3616330",
+        "source_url": "https://www.pexels.com/photo/argentinian-bbq-chef-grilling-sausages-outdoors-37049972/"
+      },
+      {
+        "file": "/images/airfryer-comparison-2026/04.jpg",
+        "photographer": "Gera Cejas",
+        "photographer_url": "https://www.pexels.com/@gera-cejas-3616330",
+        "source_url": "https://www.pexels.com/photo/close-up-of-empanadas-frying-in-buenos-aires-pan-37049926/"
       }
     ]
   },
   "baby-dish-set-guide": {
-    "cover": {
+    "card": {
       "file": "/covers/baby-dish-set-guide.jpg",
       "photographer": "www.kaboompics.com",
       "photographer_url": "https://www.pexels.com/@karola-g",
       "source_url": "https://www.pexels.com/photo/parents-feeding-their-son-7946792/"
+    },
+    "hero": {
+      "file": "/covers/baby-dish-set-guide-hero.jpg",
+      "photographer": "www.kaboompics.com",
+      "photographer_url": "https://www.pexels.com/@karola-g",
+      "source_url": "https://www.pexels.com/photo/man-in-maroon-crew-neck-shirt-watching-a-baby-eat-7946612/"
     },
     "inline": [
       {
         "file": "/images/baby-dish-set-guide/01.jpg",
         "photographer": "www.kaboompics.com",
         "photographer_url": "https://www.pexels.com/@karola-g",
-        "source_url": "https://www.pexels.com/photo/man-in-maroon-crew-neck-shirt-watching-a-baby-eat-7946612/"
+        "source_url": "https://www.pexels.com/photo/man-in-red-crew-neck-shirt-feeding-a-baby-7946709/"
       },
       {
         "file": "/images/baby-dish-set-guide/02.jpg",
         "photographer": "www.kaboompics.com",
         "photographer_url": "https://www.pexels.com/@karola-g",
-        "source_url": "https://www.pexels.com/photo/man-in-red-crew-neck-shirt-feeding-a-baby-7946709/"
+        "source_url": "https://www.pexels.com/photo/a-boy-holding-a-spoon-7946745/"
       },
       {
         "file": "/images/baby-dish-set-guide/03.jpg",
         "photographer": "www.kaboompics.com",
         "photographer_url": "https://www.pexels.com/@karola-g",
-        "source_url": "https://www.pexels.com/photo/a-boy-holding-a-spoon-7946745/"
+        "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-toddler-eating-7946619/"
       },
       {
         "file": "/images/baby-dish-set-guide/04.jpg",
-        "photographer": "www.kaboompics.com",
-        "photographer_url": "https://www.pexels.com/@karola-g",
-        "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-toddler-eating-7946619/"
+        "photographer": "Vanessa Loring",
+        "photographer_url": "https://www.pexels.com/@vanessa-loring",
+        "source_url": "https://www.pexels.com/photo/a-child-sitting-on-a-higher-chair-eating-fruits-5083240/"
       }
     ]
   },
   "small-room-storage-ideas-10": {
-    "cover": {
+    "card": {
       "file": "/covers/small-room-storage-ideas-10.jpg",
       "photographer": "Max Vakhtbovych",
       "photographer_url": "https://www.pexels.com/@artbovich",
       "source_url": "https://www.pexels.com/photo/photo-of-a-room-with-chairs-and-a-sofa-6969990/"
+    },
+    "hero": {
+      "file": "/covers/small-room-storage-ideas-10-hero.jpg",
+      "photographer": "Max Vakhtbovych",
+      "photographer_url": "https://www.pexels.com/@artbovich",
+      "source_url": "https://www.pexels.com/photo/apartment-studio-interior-8142976/"
     },
     "inline": [
       {
         "file": "/images/small-room-storage-ideas-10/01.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/apartment-studio-interior-8142976/"
-      },
-      {
-        "file": "/images/small-room-storage-ideas-10/02.jpg",
-        "photographer": "Max Vakhtbovych",
-        "photographer_url": "https://www.pexels.com/@artbovich",
         "source_url": "https://www.pexels.com/photo/house-with-cupboards-in-kitchen-near-bookshelves-and-living-room-6487957/"
       },
       {
-        "file": "/images/small-room-storage-ideas-10/03.jpg",
+        "file": "/images/small-room-storage-ideas-10/02.jpg",
         "photographer": "Gustavo Galeano Maz",
         "photographer_url": "https://www.pexels.com/@fotografiagmazg",
         "source_url": "https://www.pexels.com/photo/a-furnished-studio-apartment-10471491/"
       },
       {
-        "file": "/images/small-room-storage-ideas-10/04.jpg",
+        "file": "/images/small-room-storage-ideas-10/03.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
         "source_url": "https://www.pexels.com/photo/light-living-room-with-small-kitchen-zone-in-contemporary-flat-6890400/"
+      },
+      {
+        "file": "/images/small-room-storage-ideas-10/04.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/wooden-furniture-in-room-with-mirror-6890392/"
       }
     ]
   },
   "cordless-vacuum-top5-2026": {
-    "cover": {
+    "card": {
       "file": "/covers/cordless-vacuum-top5-2026.jpg",
       "photographer": "Liliana Drew",
       "photographer_url": "https://www.pexels.com/@liliana-drew",
       "source_url": "https://www.pexels.com/photo/a-person-vacuuming-under-a-side-cabinet-9462147/"
+    },
+    "hero": {
+      "file": "/covers/cordless-vacuum-top5-2026-hero.jpg",
+      "photographer": "Liliana Drew",
+      "photographer_url": "https://www.pexels.com/@liliana-drew",
+      "source_url": "https://www.pexels.com/photo/a-person-vacuuming-a-carpet-9462139/"
     },
     "inline": [
       {
         "file": "/images/cordless-vacuum-top5-2026/01.jpg",
         "photographer": "Liliana Drew",
         "photographer_url": "https://www.pexels.com/@liliana-drew",
-        "source_url": "https://www.pexels.com/photo/a-person-vacuuming-a-carpet-9462139/"
-      },
-      {
-        "file": "/images/cordless-vacuum-top5-2026/02.jpg",
-        "photographer": "Liliana Drew",
-        "photographer_url": "https://www.pexels.com/@liliana-drew",
         "source_url": "https://www.pexels.com/photo/red-and-black-vacuum-in-close-up-shot-9462141/"
       },
       {
-        "file": "/images/cordless-vacuum-top5-2026/03.jpg",
+        "file": "/images/cordless-vacuum-top5-2026/02.jpg",
         "photographer": "cottonbro studio",
         "photographer_url": "https://www.pexels.com/@cottonbro",
         "source_url": "https://www.pexels.com/photo/black-vacuum-cleaner-on-area-rug-4107284/"
       },
       {
-        "file": "/images/cordless-vacuum-top5-2026/04.jpg",
+        "file": "/images/cordless-vacuum-top5-2026/03.jpg",
         "photographer": "Tima Miroshnichenko",
         "photographer_url": "https://www.pexels.com/@tima-miroshnichenko",
         "source_url": "https://www.pexels.com/photo/person-vacuuming-the-floor-6195275/"
+      },
+      {
+        "file": "/images/cordless-vacuum-top5-2026/04.jpg",
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "source_url": "https://www.pexels.com/photo/photograph-of-a-woman-in-a-white-shirt-vacuuming-7703296/"
       }
     ]
   }

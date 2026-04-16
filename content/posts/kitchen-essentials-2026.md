@@ -7,6 +7,13 @@ categories: ["주방"]
 tags: ["주방용품", "신혼살림", "자취템", "체크리스트"]
 description: "주방 첫 살림에서 꼭 필요한 것과 굳이 안 사도 되는 것을 구분한 실전 체크리스트."
 showToc: true
+cover:
+  image: "/covers/kitchen-essentials-2026-hero.jpg"
+  alt: "kitchen-essentials-2026 대표 이미지"
+  caption: "Photo by [Owen.outdoors](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

@@ -7,6 +7,13 @@ categories: ["소형가전"]
 tags: ["로봇청소기", "가성비", "물걸레", "추천", "2026"]
 description: "2026년 로봇청소기 5종을 가격·흡입력·물걸레·배터리 기준으로 직접 비교한 솔직 리뷰."
 showToc: true
+cover:
+  image: "/covers/robot-vacuum-top5-2026-hero.jpg"
+  alt: "robot-vacuum-top5-2026 대표 이미지"
+  caption: "Photo by [MART  PRODUCTION](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 결론부터

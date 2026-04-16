@@ -7,6 +7,13 @@ categories: ["공지"]
 tags: ["소개", "블로그", "가이드"]
 description: "리빙탭에 오신 것을 환영합니다. 소형가전·주방·육아·수납 카테고리의 실사용 비교 구매 가이드를 올립니다."
 showToc: true
+cover:
+  image: "/covers/welcome-hero.jpg"
+  alt: "welcome 대표 이미지"
+  caption: "Photo by [HONG SON](https://www.pexels.com) via Pexels"
+  relative: false
+  hidden: false
+
 ---
 
 ## 반갑습니다
