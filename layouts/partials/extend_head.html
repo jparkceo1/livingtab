@@ -1,0 +1,93 @@
+{{/* 애드센스 (심사 통과 후 주석 해제) */}}
+{{/*
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+*/}}
+
+{{/* 구글 Analytics 4 (Search Console 연결용, 심사 통과 후) */}}
+{{/*
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+*/}}
+
+{{/* Product / Review / FAQ JSON-LD */}}
+{{ if .Params.product }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ .Params.product.name }}",
+  "description": "{{ .Params.description }}",
+  {{ with .Params.product.url }}"url": "{{ . }}",{{ end }}
+  {{ with .Params.product.rating }}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ . }}",
+    "reviewCount": "{{ default 0 $.Params.product.review_count }}"
+  },{{ end }}
+  {{ with .Params.product.price }}
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ . }}",
+    "priceCurrency": "{{ default "KRW" $.Params.product.currency }}",
+    "availability": "https://schema.org/InStock"
+  }{{ end }}
+}
+</script>
+{{ end }}
+
+{{/* FAQ Schema */}}
+{{ if .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $item := .Params.faq }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ .q }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ .a }}"
+      }
+    }{{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{/* BreadcrumbList */}}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "홈",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{ with (index .Params.categories 0) }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ . }}",
+      "item": "{{ $.Site.BaseURL }}categories/{{ . | urlize }}/"
+    }
+    {{ end }},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}"
+    }
+  ]
+}
+</script>
+{{ end }}

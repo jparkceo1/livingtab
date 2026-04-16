@@ -1,0 +1,6 @@
+{{/* 사용법: {{< coupang url="https://..." name="상품명" >}} */}}
+<div style="margin:1.5rem 0;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;">
+  <a href="{{ .Get "url" }}" target="_blank" rel="nofollow sponsored noopener" style="text-decoration:none;color:#333;font-weight:600;">
+    🛒 {{ .Get "name" }} <span style="color:#0F766E;">쿠팡에서 보기 →</span>
+  </a>
+</div>

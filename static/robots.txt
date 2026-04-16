@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# 검색 엔진 봇 허용, AI 훈련 크롤러만 선택적 차단은 Cloudflare 엣지에서 처리
+
+Sitemap: https://livingtab.co.kr/sitemap.xml

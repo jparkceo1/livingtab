@@ -1,0 +1,94 @@
+baseURL: "https://livingtab.co.kr/"
+title: "리빙탭 | 소형가전·주방·육아·수납 구매 가이드"
+theme: "PaperMod"
+languageCode: "ko-kr"
+defaultContentLanguage: "ko"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+pagination:
+  pagerSize: 12
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  ko:
+    languageName: "한국어"
+    weight: 1
+    title: "리빙탭 | 소형가전·주방·육아·수납 구매 가이드"
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: posts
+          name: "전체 글"
+          url: "/posts/"
+          weight: 10
+        - identifier: categories
+          name: "카테고리"
+          url: "/categories/"
+          weight: 20
+        - identifier: tags
+          name: "태그"
+          url: "/tags/"
+          weight: 30
+        - identifier: about
+          name: "소개"
+          url: "/about/"
+          weight: 40
+
+params:
+  env: production
+  description: "실사용 비교·체크리스트 기반 구매 가이드. 리빙탭에서 한 번에 비교하고 고르세요."
+  author: "리빙탭"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  comments: false
+
+  homeInfoParams:
+    Title: "리빙탭에 오신 걸 환영합니다 👋"
+    Content: |
+      소형가전·주방·육아·수납까지, 꼭 필요한 정보만 모아드립니다.
+
+      실사용 비교·가격·리뷰수·체크리스트를 한 페이지에서 확인하고 현명하게 고르세요.
+
+  socialIcons:
+    - name: instagram
+      url: "https://www.instagram.com/livingtab_official/"
+    - name: rss
+      url: "/index.xml"
+
+  assets:
+    disableHLJS: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+permalinks:
+  posts: "/:slug/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
