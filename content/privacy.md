@@ -101,7 +101,7 @@ layout: "single"
 - 삭제 요구
 - 처리 정지 요구
 
-위 권리 행사는 **jparkceo1@gmail.com** 으로 요청하시면 지체 없이 조치합니다.
+위 권리 행사는 **contact@livingtab.co.kr** 으로 요청하시면 지체 없이 조치합니다.
 
 ## 10. 개인정보의 파기
 
@@ -113,7 +113,7 @@ layout: "single"
 ## 11. 개인정보 보호책임자
 
 - 성명: 박윤승
-- 이메일: jparkceo1@gmail.com
+- 이메일: contact@livingtab.co.kr
 - 운영 사이트: https://livingtab.co.kr
 
 ## 12. 개인정보처리방침 변경

@@ -72,7 +72,7 @@ layout: "single"
 ## 제11조 (문의처)
 
 - 운영자: 박윤승
-- 이메일: jparkceo1@gmail.com
+- 이메일: contact@livingtab.co.kr
 - 웹사이트: https://livingtab.co.kr
 
 **부칙**
