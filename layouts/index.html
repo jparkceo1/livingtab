@@ -8,13 +8,13 @@
 {{/* TODAY 섹션 */}}
 {{- with $featured -}}
 <div class="max-w-[1240px] mx-auto md:px-6 my-8">
-  <a href="{{ .Permalink }}" class="flex flex-col md:flex-row bg-[#4A4A4A] overflow-hidden md:h-[480px] no-underline">
-    <div class="w-full md:w-1/2 relative min-h-[340px] md:min-h-[480px] bg-[#4A4A4A]">
+  <a href="{{ .Permalink }}" class="flex flex-col md:flex-row bg-black overflow-hidden md:h-[480px] no-underline">
+    <div class="w-full md:w-1/2 relative min-h-[340px] md:min-h-[480px] bg-black">
       <div class="absolute top-0 left-0 bg-[#FF6B2C] text-white px-5 py-[10px] font-bold text-[14px] tracking-widest leading-none z-10 shadow-md">TODAY</div>
       <img src="/covers/{{ .File.BaseFileName }}-hero.jpg?v=4" alt="{{ .Title }}" class="absolute inset-0 w-full h-full object-cover">
     </div>
 
-    <div class="w-full md:w-1/2 bg-[#4A4A4A] text-white p-8 md:p-14 flex flex-col justify-center">
+    <div class="w-full md:w-1/2 bg-black text-white p-8 md:p-14 flex flex-col justify-center">
       <div class="flex justify-between items-start mb-10 border-b border-[white/20] pb-6">
         <div class="flex flex-col text-[13px] font-medium text-[#F5B7A8] gap-[2px]">
           <i data-lucide="clock" class="w-[18px] h-[18px] mb-2"></i>
@@ -34,26 +34,25 @@
 </div>
 {{- end -}}
 
-{{/* 오늘의 쿠팡 베스트 3 — 컴팩트 버전 */}}
+{{/* 오늘의 쿠팡 베스트 3 — 밝은 배경 (TODAY 다크와 차별화) */}}
 <div class="max-w-[1240px] mx-auto px-4 md:px-6 my-8">
-  <div class="bg-[#4A4A4A] text-white p-4 md:p-6">
-    <div class="flex justify-between items-center mb-3 md:mb-4 border-b border-white/20 pb-2 md:pb-3">
+  <div class="bg-[#FAF7F2] border border-[#E8E4DC] p-4 md:p-6">
+    <div class="flex justify-between items-center mb-3 md:mb-4 pb-2 md:pb-3">
       <div class="flex items-baseline gap-3">
         <div class="text-[#FF6B2C] text-[11px] md:text-[12px] font-bold tracking-widest uppercase">BEST DEAL</div>
-        <h3 class="text-[17px] md:text-[20px] font-bold tracking-tight font-serif-kr">오늘의 쿠팡 베스트</h3>
+        <h3 class="text-[17px] md:text-[20px] font-bold tracking-tight font-serif-kr text-gray-900">오늘의 쿠팡 베스트</h3>
       </div>
       <span class="text-[10px] md:text-[11px] text-gray-400">쿠팡 파트너스 제휴</span>
     </div>
 
     <div class="flex md:grid md:grid-cols-3 gap-3 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
-      {{/* 쿠팡 실제 상품 (승인 후 API로 최저가·이미지 자동 갱신 예정) */}}
       {{- $bestProducts := slice
         (dict "rank" 1 "cat" "소형가전" "name" "로보락 Q7 Max+ 로봇청소기" "price" "398,000부터" "rating" "4.7" "reviews" "쿠팡에서 확인" "img" "/covers/robot-vacuum-top5-2026.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EB%A1%9C%EB%B3%B4%EB%9D%BD+Q7+Max&channel=user")
         (dict "rank" 2 "cat" "주방" "name" "쿠쿠 8L 에어프라이어" "price" "129,000부터" "rating" "4.6" "reviews" "쿠팡에서 확인" "img" "/covers/airfryer-comparison-2026.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EC%BF%A0%EC%BF%A0+%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4+8L&channel=user")
         (dict "rank" 3 "cat" "육아" "name" "실리콘 유아식기 세트" "price" "38,900부터" "rating" "4.8" "reviews" "쿠팡에서 확인" "img" "/covers/baby-dish-set-guide.jpg?v=4" "url" "https://www.coupang.com/np/search?q=%EC%8B%A4%EB%A6%AC%EC%BD%98+%EC%9C%A0%EC%95%84%EC%8B%9D%EA%B8%B0+%EC%84%B8%ED%8A%B8&channel=user")
       -}}
       {{- range $bestProducts -}}
-      <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[70vw] md:w-auto bg-white text-gray-900 flex md:flex-col gap-3 md:gap-0 p-3 hover:shadow-lg transition-shadow no-underline">
+      <a href="{{ .url }}" target="_blank" rel="nofollow sponsored noopener" class="snap-start shrink-0 w-[70vw] md:w-auto bg-white text-gray-900 flex md:flex-col gap-3 md:gap-0 p-3 border border-gray-100 hover:border-[#FF6B2C]/30 hover:shadow-md transition-all no-underline">
         <div class="w-[90px] md:w-full shrink-0 aspect-square md:aspect-[16/10] bg-gray-100 overflow-hidden md:mb-2.5 relative">
           <img src="{{ .img }}" alt="{{ .name }}" class="w-full h-full object-cover">
           <div class="absolute top-1 left-1 bg-[#FF6B2C] text-white w-5 h-5 md:w-6 md:h-6 flex items-center justify-center font-bold text-[11px] md:text-[12px] shadow-md">{{ .rank }}</div>
@@ -95,7 +94,7 @@
 
 {{/* 이메일 구독 CTA — 최하단 */}}
 <div class="max-w-[1240px] mx-auto px-4 md:px-6 my-16">
-  <div class="bg-[#4A4A4A] text-white p-8 md:p-16 flex flex-col md:flex-row items-center gap-8 md:gap-10">
+  <div class="bg-black text-white p-8 md:p-16 flex flex-col md:flex-row items-center gap-8 md:gap-10">
     <div class="flex-1">
       <div class="text-[#F5B7A8] text-[12px] md:text-[13px] font-bold tracking-widest uppercase mb-2">NEWSLETTER</div>
       <h3 class="text-[24px] md:text-[36px] font-bold leading-tight mb-3 font-serif-kr">

@@ -558,5 +558,245 @@
         "source_url": "https://www.pexels.com/photo/bedroom-in-light-colors-with-soft-bed-6782338/"
       }
     ]
+  },
+  "coffee-machine-beginner-2026": {
+    "card": {
+      "file": "/covers/coffee-machine-beginner-2026.jpg",
+      "photographer": "Chevanon Photography",
+      "photographer_url": "https://www.pexels.com/@chevanon",
+      "source_url": "https://www.pexels.com/photo/selective-focus-photography-of-espresso-machine-302893/"
+    },
+    "hero": {
+      "file": "/covers/coffee-machine-beginner-2026-hero.jpg",
+      "photographer": "Lisa from Pexels",
+      "photographer_url": "https://www.pexels.com/@fotios-photos",
+      "source_url": "https://www.pexels.com/photo/espresso-machine-with-white-mugs-1524336/"
+    },
+    "inline": [
+      {
+        "file": "/images/coffee-machine-beginner-2026/01.jpg",
+        "photographer": "Claro Cafe",
+        "photographer_url": "https://www.pexels.com/@clarocafe",
+        "source_url": "https://www.pexels.com/photo/blue-ceramic-cup-on-silver-espresso-machine-8873868/"
+      },
+      {
+        "file": "/images/coffee-machine-beginner-2026/02.jpg",
+        "photographer": "Wijs (Wise)",
+        "photographer_url": "https://www.pexels.com/@wijs-wise-136435282",
+        "source_url": "https://www.pexels.com/photo/coffee-machine-pouring-coffee-16673167/"
+      },
+      {
+        "file": "/images/coffee-machine-beginner-2026/03.jpg",
+        "photographer": "Pavel Sharko",
+        "photographer_url": "https://www.pexels.com/@pavelsharko",
+        "source_url": "https://www.pexels.com/photo/coffee-machine-with-silver-cups-16788578/"
+      },
+      {
+        "file": "/images/coffee-machine-beginner-2026/04.jpg",
+        "photographer": "🇻🇳🇻🇳 Việt Anh Nguyễn 🇻🇳🇻🇳",
+        "photographer_url": "https://www.pexels.com/@vi-t-anh-nguy-n-2150409023",
+        "source_url": "https://www.pexels.com/photo/professional-espresso-machine-at-cozy-cafe-32265890/"
+      }
+    ]
+  },
+  "fan-vs-circulator-2026": {
+    "card": {
+      "file": "/covers/fan-vs-circulator-2026.jpg",
+      "photographer": "Wolrider YURTSEVEN",
+      "photographer_url": "https://www.pexels.com/@wolrider",
+      "source_url": "https://www.pexels.com/photo/relaxing-indoor-scene-with-multiple-fans-33075262/"
+    },
+    "hero": {
+      "file": "/covers/fan-vs-circulator-2026-hero.jpg",
+      "photographer": "cottonbro studio",
+      "photographer_url": "https://www.pexels.com/@cottonbro",
+      "source_url": "https://www.pexels.com/photo/woman-staring-at-the-electric-fan-8102626/"
+    },
+    "inline": [
+      {
+        "file": "/images/fan-vs-circulator-2026/01.jpg",
+        "photographer": "Wolrider YURTSEVEN",
+        "photographer_url": "https://www.pexels.com/@wolrider",
+        "source_url": "https://www.pexels.com/photo/relaxed-man-in-white-suit-surrounded-by-fans-33075272/"
+      },
+      {
+        "file": "/images/fan-vs-circulator-2026/02.jpg",
+        "photographer": "Wolrider YURTSEVEN",
+        "photographer_url": "https://www.pexels.com/@wolrider",
+        "source_url": "https://www.pexels.com/photo/relaxed-man-in-office-attire-by-a-fan-33075257/"
+      },
+      {
+        "file": "/images/fan-vs-circulator-2026/03.jpg",
+        "photographer": "FOX ^.ᆽ.^= ∫",
+        "photographer_url": "https://www.pexels.com/@fox-58267",
+        "source_url": "https://www.pexels.com/photo/antique-fan-and-a-radio-on-a-desk-5850340/"
+      },
+      {
+        "file": "/images/fan-vs-circulator-2026/04.jpg",
+        "photographer": "Wolrider YURTSEVEN",
+        "photographer_url": "https://www.pexels.com/@wolrider",
+        "source_url": "https://www.pexels.com/photo/man-relaxing-amidst-multiple-fans-in-vintage-room-33075266/"
+      }
+    ]
+  },
+  "wedding-appliance-checklist": {
+    "card": {
+      "file": "/covers/wedding-appliance-checklist.jpg",
+      "photographer": "AJ  Ahamad",
+      "photographer_url": "https://www.pexels.com/@aj-ahamad-767001191",
+      "source_url": "https://www.pexels.com/photo/modern-kitchen-appliances-with-retro-design-30707661/"
+    },
+    "hero": {
+      "file": "/covers/wedding-appliance-checklist-hero.jpg",
+      "photographer": "Jaycee300s",
+      "photographer_url": "https://www.pexels.com/@jaycee300s-3059779",
+      "source_url": "https://www.pexels.com/photo/tea-and-coffeemaker-18071814/"
+    },
+    "inline": [
+      {
+        "file": "/images/wedding-appliance-checklist/01.jpg",
+        "photographer": "dp singh Bhullar",
+        "photographer_url": "https://www.pexels.com/@dpsinghbhullar",
+        "source_url": "https://www.pexels.com/photo/modern-stainless-steel-gas-stove-top-for-kitchens-33904619/"
+      },
+      {
+        "file": "/images/wedding-appliance-checklist/02.jpg",
+        "photographer": "AS Photography",
+        "photographer_url": "https://www.pexels.com/@asphotography",
+        "source_url": "https://www.pexels.com/photo/close-up-photo-of-dishwasher-213162/"
+      },
+      {
+        "file": "/images/wedding-appliance-checklist/03.jpg",
+        "photographer": "Gustavo Galeano Maz",
+        "photographer_url": "https://www.pexels.com/@fotografiagmazg",
+        "source_url": "https://www.pexels.com/photo/a-modern-kitchen-17134085/"
+      },
+      {
+        "file": "/images/wedding-appliance-checklist/04.jpg",
+        "photographer": "Curtis Adams",
+        "photographer_url": "https://www.pexels.com/@curtis-adams-1694007",
+        "source_url": "https://www.pexels.com/photo/modern-kitchen-with-stainless-steel-appliances-36777526/"
+      }
+    ]
+  },
+  "baby-mattress-guide-2026": {
+    "card": {
+      "file": "/covers/baby-mattress-guide-2026.jpg",
+      "photographer": "Leah Newhouse",
+      "photographer_url": "https://www.pexels.com/@leah-newhouse-50725",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-baby-wearing-gray-pants-2790347/"
+    },
+    "hero": {
+      "file": "/covers/baby-mattress-guide-2026-hero.jpg",
+      "photographer": "www.kaboompics.com",
+      "photographer_url": "https://www.pexels.com/@karola-g",
+      "source_url": "https://www.pexels.com/photo/baby-lying-on-white-crib-4964215/"
+    },
+    "inline": [
+      {
+        "file": "/images/baby-mattress-guide-2026/01.jpg",
+        "photographer": "Alicia",
+        "photographer_url": "https://www.pexels.com/@alicia-358015",
+        "source_url": "https://www.pexels.com/photo/baby-in-blue-blanket-971435/"
+      },
+      {
+        "file": "/images/baby-mattress-guide-2026/02.jpg",
+        "photographer": "Anna Shvets",
+        "photographer_url": "https://www.pexels.com/@shvetsa",
+        "source_url": "https://www.pexels.com/photo/overhead-shot-of-a-baby-in-a-crib-11369156/"
+      },
+      {
+        "file": "/images/baby-mattress-guide-2026/03.jpg",
+        "photographer": "www.kaboompics.com",
+        "photographer_url": "https://www.pexels.com/@karola-g",
+        "source_url": "https://www.pexels.com/photo/baby-blanket-hanging-on-a-white-wooden-crib-4964488/"
+      },
+      {
+        "file": "/images/baby-mattress-guide-2026/04.jpg",
+        "photographer": "Anna Shvets",
+        "photographer_url": "https://www.pexels.com/@shvetsa",
+        "source_url": "https://www.pexels.com/photo/father-putting-son-on-a-crib-11369162/"
+      }
+    ]
+  },
+  "small-kitchen-storage-ideas": {
+    "card": {
+      "file": "/covers/small-kitchen-storage-ideas.jpg",
+      "photographer": "Jonathan Borba",
+      "photographer_url": "https://www.pexels.com/@jonathanborba",
+      "source_url": "https://www.pexels.com/photo/cozy-modern-kitchen-in-espirito-santo-brazil-30628753/"
+    },
+    "hero": {
+      "file": "/covers/small-kitchen-storage-ideas-hero.jpg",
+      "photographer": "Matheus Bertelli",
+      "photographer_url": "https://www.pexels.com/@bertellifotografia",
+      "source_url": "https://www.pexels.com/photo/a-kitchen-in-an-apartment-12513477/"
+    },
+    "inline": [
+      {
+        "file": "/images/small-kitchen-storage-ideas/01.jpg",
+        "photographer": "Anna McDonald",
+        "photographer_url": "https://www.pexels.com/@anna-mcdonald-583613655",
+        "source_url": "https://www.pexels.com/photo/kitchen-in-house-21287221/"
+      },
+      {
+        "file": "/images/small-kitchen-storage-ideas/02.jpg",
+        "photographer": "Yunus Tuğ",
+        "photographer_url": "https://www.pexels.com/@yunustug",
+        "source_url": "https://www.pexels.com/photo/cozy-modern-kitchen-with-coffee-bar-and-elegant-lighting-29435290/"
+      },
+      {
+        "file": "/images/small-kitchen-storage-ideas/03.jpg",
+        "photographer": "Mitchell Henderson",
+        "photographer_url": "https://www.pexels.com/@mtk402",
+        "source_url": "https://www.pexels.com/photo/two-plants-2098912/"
+      },
+      {
+        "file": "/images/small-kitchen-storage-ideas/04.jpg",
+        "photographer": "ready made",
+        "photographer_url": "https://www.pexels.com/@readymade",
+        "source_url": "https://www.pexels.com/photo/clear-glass-jars-on-table-3847411/"
+      }
+    ]
+  },
+  "summer-electricity-saving-tips": {
+    "card": {
+      "file": "/covers/summer-electricity-saving-tips.jpg",
+      "photographer": "Alex Bian",
+      "photographer_url": "https://www.pexels.com/@zfxmql",
+      "source_url": "https://www.pexels.com/photo/air-conditioner-on-green-leaf-covered-wall-34725849/"
+    },
+    "hero": {
+      "file": "/covers/summer-electricity-saving-tips-hero.jpg",
+      "photographer": "Tomás Asurmendi",
+      "photographer_url": "https://www.pexels.com/@tomas-asurmendi-774865545",
+      "source_url": "https://www.pexels.com/photo/wall-mounted-air-conditioners-on-building-facade-33094409/"
+    },
+    "inline": [
+      {
+        "file": "/images/summer-electricity-saving-tips/01.jpg",
+        "photographer": "FOX ^.ᆽ.^= ∫",
+        "photographer_url": "https://www.pexels.com/@fox-58267",
+        "source_url": "https://www.pexels.com/photo/view-of-the-air-conditioning-unit-outside-the-building-27134985/"
+      },
+      {
+        "file": "/images/summer-electricity-saving-tips/02.jpg",
+        "photographer": "Geri Tech",
+        "photographer_url": "https://www.pexels.com/@geri-tech-3769679",
+        "source_url": "https://www.pexels.com/photo/modern-air-conditioner-control-panel-close-up-32737485/"
+      },
+      {
+        "file": "/images/summer-electricity-saving-tips/03.jpg",
+        "photographer": "Nothing Ahead",
+        "photographer_url": "https://www.pexels.com/@ian-panelo",
+        "source_url": "https://www.pexels.com/photo/yellow-building-with-green-roof-20059227/"
+      },
+      {
+        "file": "/images/summer-electricity-saving-tips/04.jpg",
+        "photographer": "Jay Brand",
+        "photographer_url": "https://www.pexels.com/@jay-brand-1763356224",
+        "source_url": "https://www.pexels.com/photo/industrial-hvac-unit-in-black-and-white-29452977/"
+      }
+    ]
   }
 }
