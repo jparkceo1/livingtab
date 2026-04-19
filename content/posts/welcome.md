@@ -1,6 +1,6 @@
 ---
 title: "리빙탭 블로그 오픈 — 이런 글이 올라옵니다"
-date: 2026-04-16T21:00:00+09:00
+date: 2026-04-04T09:00:00+09:00
 draft: false
 slug: "welcome"
 categories: ["공지"]

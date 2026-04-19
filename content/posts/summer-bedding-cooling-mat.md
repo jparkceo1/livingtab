@@ -1,6 +1,6 @@
 ---
 title: "여름 침구 추천 — 냉감 매트·쿨시트 실사용 비교"
-date: 2026-04-17T00:10:00+09:00
+date: 2026-04-14T10:00:00+09:00
 draft: false
 slug: "summer-bedding-cooling-mat"
 categories: ["수납·인테리어"]

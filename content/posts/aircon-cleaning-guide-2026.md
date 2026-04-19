@@ -1,6 +1,6 @@
 ---
 title: "에어컨 청소 셀프 vs 업체 — 2026 기준 비용·방법 완전 정리"
-date: 2026-04-16T23:50:00+09:00
+date: 2026-04-12T10:00:00+09:00
 draft: false
 slug: "aircon-cleaning-guide-2026"
 categories: ["소형가전"]

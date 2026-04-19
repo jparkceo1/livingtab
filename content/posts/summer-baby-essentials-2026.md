@@ -1,6 +1,6 @@
 ---
 title: "여름철 유아용품 체크리스트 — 더위·장마 대비 부모 필수 준비"
-date: 2026-04-17T00:05:00+09:00
+date: 2026-04-14T15:00:00+09:00
 draft: false
 slug: "summer-baby-essentials-2026"
 categories: ["육아"]

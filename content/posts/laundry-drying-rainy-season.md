@@ -1,6 +1,6 @@
 ---
 title: "장마철 빨래 건조 꿀팁 10가지 — 쿰쿰한 냄새 없이 말리는 법"
-date: 2026-04-17T00:00:00+09:00
+date: 2026-04-13T10:00:00+09:00
 draft: false
 slug: "laundry-drying-rainy-season"
 categories: ["수납·인테리어"]

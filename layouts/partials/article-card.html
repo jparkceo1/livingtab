@@ -19,9 +19,8 @@
   <p class="text-[15px] text-gray-600 line-clamp-2 leading-[1.6] mb-3 tracking-tight font-medium">
     {{ $p.Params.description }}
   </p>
-  <div class="flex items-center gap-[4px] mt-auto">
-    <i data-lucide="pencil" class="w-[15px] h-[15px] text-[#D4A574]" fill="currentColor" stroke-width="0"></i>
-    <span class="text-[14px] font-bold text-gray-900">{{ $p.ReadingTime }}분</span>
-    <span class="text-[14px] text-gray-400 font-medium">· {{ $p.WordCount }}자</span>
+  <div class="flex items-center gap-[4px] mt-auto text-[13px] text-gray-400">
+    <span>{{ $p.Date.Format "2006.01.02" }}</span>
+    {{ with (index $p.Params.categories 0) }}<span>· {{ . }}</span>{{ end }}
   </div>
 </a>

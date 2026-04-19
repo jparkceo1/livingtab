@@ -1,6 +1,6 @@
 ---
 title: "신혼 혼수 가전 체크리스트 — 예산별 완벽 가이드"
-date: 2026-04-16T20:20:00+09:00
+date: 2026-04-06T15:00:00+09:00
 draft: false
 slug: "wedding-appliance-checklist"
 categories: ["주방"]

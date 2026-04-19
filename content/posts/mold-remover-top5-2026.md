@@ -1,6 +1,6 @@
 ---
 title: "곰팡이 제거제 TOP 5 — 욕실·창틀·실리콘 안전하게 지우는 법"
-date: 2026-04-16T23:55:00+09:00
+date: 2026-04-13T15:00:00+09:00
 draft: false
 slug: "mold-remover-top5-2026"
 categories: ["수납·인테리어"]

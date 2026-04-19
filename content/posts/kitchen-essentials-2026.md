@@ -1,6 +1,6 @@
 ---
 title: "주방 필수템 체크리스트 — 신혼·이사·자취 첫 살림 장만할 때"
-date: 2026-04-16T21:30:00+09:00
+date: 2026-04-09T15:00:00+09:00
 draft: false
 slug: "kitchen-essentials-2026"
 categories: ["주방"]

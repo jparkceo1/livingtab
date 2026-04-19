@@ -1,6 +1,6 @@
 ---
 title: "로봇청소기 추천 TOP 5 — 2026 가성비·흡입력·물걸레 기준"
-date: 2026-04-16T22:30:00+09:00
+date: 2026-04-09T10:00:00+09:00
 draft: false
 slug: "robot-vacuum-top5-2026"
 categories: ["소형가전"]

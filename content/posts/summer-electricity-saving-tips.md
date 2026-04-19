@@ -1,6 +1,6 @@
 ---
 title: "여름 전기요금 절약 꿀팁 10가지 — 누진제 폭탄 피하는 법"
-date: 2026-04-16T20:50:00+09:00
+date: 2026-04-07T10:00:00+09:00
 draft: false
 slug: "summer-electricity-saving-tips"
 categories: ["소형가전"]

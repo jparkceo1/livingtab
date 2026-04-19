@@ -1,6 +1,6 @@
 ---
 title: "2026년 소형가전 구매 가이드 — 처음 장만할 때 꼭 확인할 것"
-date: 2026-04-16T21:15:00+09:00
+date: 2026-04-08T10:00:00+09:00
 draft: false
 slug: "small-appliance-2026-guide"
 categories: ["소형가전"]

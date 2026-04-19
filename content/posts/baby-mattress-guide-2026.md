@@ -1,6 +1,6 @@
 ---
 title: "아기 침대 매트리스 고르는 법 — 부모가 꼭 알아야 할 5가지"
-date: 2026-04-16T20:30:00+09:00
+date: 2026-04-06T10:00:00+09:00
 draft: false
 slug: "baby-mattress-guide-2026"
 categories: ["육아"]

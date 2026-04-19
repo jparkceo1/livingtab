@@ -1,6 +1,6 @@
 ---
 title: "커피머신 입문 비교 — 캡슐 vs 에스프레소 vs 드립 어떤 게 맞을까"
-date: 2026-04-16T20:00:00+09:00
+date: 2026-04-05T15:00:00+09:00
 draft: false
 slug: "coffee-machine-beginner-2026"
 categories: ["소형가전"]

@@ -1,6 +1,6 @@
 ---
 title: "선풍기 vs 서큘레이터 차이 완전 정리 — 뭘 사야 할까"
-date: 2026-04-16T20:10:00+09:00
+date: 2026-04-05T10:00:00+09:00
 draft: false
 slug: "fan-vs-circulator-2026"
 categories: ["소형가전"]

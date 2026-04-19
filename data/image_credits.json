@@ -55,21 +55,21 @@
     "inline": [
       {
         "file": "/images/small-appliance-2026-guide/01.jpg",
-        "photographer": "Max Vakhtbovych",
-        "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/mounted-appliances-in-the-kitchen-7534297/"
+        "photographer": "Jaycee300s",
+        "photographer_url": "https://www.pexels.com/@jaycee300s-3059779",
+        "source_url": "https://www.pexels.com/photo/tea-and-coffeemaker-18071814/"
       },
       {
         "file": "/images/small-appliance-2026-guide/02.jpg",
         "photographer": "Max Vakhtbovych",
         "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/furniture-in-kitchen-8082206/"
+        "source_url": "https://www.pexels.com/photo/mounted-appliances-in-the-kitchen-7534297/"
       },
       {
         "file": "/images/small-appliance-2026-guide/03.jpg",
-        "photographer": "Jaycee300s",
-        "photographer_url": "https://www.pexels.com/@jaycee300s-3059779",
-        "source_url": "https://www.pexels.com/photo/tea-and-coffeemaker-18071814/"
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/furniture-in-kitchen-8082206/"
       },
       {
         "file": "/images/small-appliance-2026-guide/04.jpg",
@@ -495,21 +495,21 @@
     "inline": [
       {
         "file": "/images/summer-baby-essentials-2026/01.jpg",
-        "photographer": "Sasha  Kim",
-        "photographer_url": "https://www.pexels.com/@sasha-kim",
-        "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-baby-sitting-on-bed-8432220/"
-      },
-      {
-        "file": "/images/summer-baby-essentials-2026/02.jpg",
         "photographer": "William  Fortunato",
         "photographer_url": "https://www.pexels.com/@william-fortunato",
         "source_url": "https://www.pexels.com/photo/black-mother-comforting-crying-baby-on-hands-of-father-6392872/"
       },
       {
+        "file": "/images/summer-baby-essentials-2026/02.jpg",
+        "photographer": "www.kaboompics.com",
+        "photographer_url": "https://www.pexels.com/@karola-g",
+        "source_url": "https://www.pexels.com/photo/interior-of-baby-room-4964372/"
+      },
+      {
         "file": "/images/summer-baby-essentials-2026/03.jpg",
-        "photographer": "Max Vakhtbovych",
-        "photographer_url": "https://www.pexels.com/@artbovich",
-        "source_url": "https://www.pexels.com/photo/domestic-room-with-a-toddler-bed-7167058/"
+        "photographer": "Sarah  Chai",
+        "photographer_url": "https://www.pexels.com/@sarah-chai",
+        "source_url": "https://www.pexels.com/photo/a-mother-taking-care-of-her-baby-7282766/"
       },
       {
         "file": "/images/summer-baby-essentials-2026/04.jpg",
@@ -796,6 +796,406 @@
         "photographer": "Jay Brand",
         "photographer_url": "https://www.pexels.com/@jay-brand-1763356224",
         "source_url": "https://www.pexels.com/photo/industrial-hvac-unit-in-black-and-white-29452977/"
+      }
+    ]
+  },
+  "children-day-gift-guide-2026": {
+    "card": {
+      "file": "/covers/children-day-gift-guide-2026.jpg",
+      "photographer": "Joshua Ruanes",
+      "photographer_url": "https://www.pexels.com/@joswaphotography",
+      "source_url": "https://www.pexels.com/photo/birthday-hat-near-toy-car-and-boy-16958799/"
+    },
+    "hero": {
+      "file": "/covers/children-day-gift-guide-2026-hero.jpg",
+      "photographer": "Thirdman",
+      "photographer_url": "https://www.pexels.com/@thirdman",
+      "source_url": "https://www.pexels.com/photo/a-boy-in-long-sleeves-shirt-holding-a-gift-7599682/"
+    },
+    "inline": [
+      {
+        "file": "/images/children-day-gift-guide-2026/01.jpg",
+        "photographer": "Thirdman",
+        "photographer_url": "https://www.pexels.com/@thirdman",
+        "source_url": "https://www.pexels.com/photo/a-boy-putting-a-party-hat-on-a-stuffed-animal-7599680/"
+      },
+      {
+        "file": "/images/children-day-gift-guide-2026/02.jpg",
+        "photographer": "Thirdman",
+        "photographer_url": "https://www.pexels.com/@thirdman",
+        "source_url": "https://www.pexels.com/photo/girls-with-party-hats-dancing-near-boys-sitting-on-the-floor-7599524/"
+      },
+      {
+        "file": "/images/children-day-gift-guide-2026/03.jpg",
+        "photographer": "Liliana Drew",
+        "photographer_url": "https://www.pexels.com/@liliana-drew",
+        "source_url": "https://www.pexels.com/photo/kids-in-animal-costumes-playing-8501705/"
+      },
+      {
+        "file": "/images/children-day-gift-guide-2026/04.jpg",
+        "photographer": "Foden Nguyen",
+        "photographer_url": "https://www.pexels.com/@foden-nguyen-81016607",
+        "source_url": "https://www.pexels.com/photo/adorable-baby-celebrating-first-birthday-in-studio-34657111/"
+      }
+    ]
+  },
+  "parents-day-gift-2026": {
+    "card": {
+      "file": "/covers/parents-day-gift-2026.jpg",
+      "photographer": "SHVETS production",
+      "photographer_url": "https://www.pexels.com/@shvets-production",
+      "source_url": "https://www.pexels.com/photo/man-in-pink-dress-shirt-holding-red-and-white-polka-dot-container-8972256/"
+    },
+    "hero": {
+      "file": "/covers/parents-day-gift-2026-hero.jpg",
+      "photographer": "SHVETS production",
+      "photographer_url": "https://www.pexels.com/@shvets-production",
+      "source_url": "https://www.pexels.com/photo/elderly-people-holding-a-gift-8972307/"
+    },
+    "inline": [
+      {
+        "file": "/images/parents-day-gift-2026/01.jpg",
+        "photographer": "olia danilevich",
+        "photographer_url": "https://www.pexels.com/@olia-danilevich",
+        "source_url": "https://www.pexels.com/photo/three-women-celebrating-birthday-5729105/"
+      },
+      {
+        "file": "/images/parents-day-gift-2026/02.jpg",
+        "photographer": "SHVETS production",
+        "photographer_url": "https://www.pexels.com/@shvets-production",
+        "source_url": "https://www.pexels.com/photo/a-person-holding-a-present-8972262/"
+      },
+      {
+        "file": "/images/parents-day-gift-2026/03.jpg",
+        "photographer": "Ivan S",
+        "photographer_url": "https://www.pexels.com/@ivan-s",
+        "source_url": "https://www.pexels.com/photo/a-couple-celebrating-an-anniversary-7911316/"
+      },
+      {
+        "file": "/images/parents-day-gift-2026/04.jpg",
+        "photographer": "SHVETS production",
+        "photographer_url": "https://www.pexels.com/@shvets-production",
+        "source_url": "https://www.pexels.com/photo/an-elderly-couple-looking-at-a-box-together-7545257/"
+      }
+    ]
+  },
+  "spring-moving-checklist-2026": {
+    "card": {
+      "file": "/covers/spring-moving-checklist-2026.jpg",
+      "photographer": "RDNE Stock project",
+      "photographer_url": "https://www.pexels.com/@rdne",
+      "source_url": "https://www.pexels.com/photo/couple-friends-glass-kitchen-7464492/"
+    },
+    "hero": {
+      "file": "/covers/spring-moving-checklist-2026-hero.jpg",
+      "photographer": "SHVETS production",
+      "photographer_url": "https://www.pexels.com/@shvets-production",
+      "source_url": "https://www.pexels.com/photo/relocating-man-standing-in-white-room-amidst-cardboard-boxes-7203784/"
+    },
+    "inline": [
+      {
+        "file": "/images/spring-moving-checklist-2026/01.jpg",
+        "photographer": "RDNE Stock project",
+        "photographer_url": "https://www.pexels.com/@rdne",
+        "source_url": "https://www.pexels.com/photo/man-person-couple-hands-7464708/"
+      },
+      {
+        "file": "/images/spring-moving-checklist-2026/02.jpg",
+        "photographer": "www.kaboompics.com",
+        "photographer_url": "https://www.pexels.com/@karola-g",
+        "source_url": "https://www.pexels.com/photo/crop-man-signing-carton-moving-boxes-4506272/"
+      },
+      {
+        "file": "/images/spring-moving-checklist-2026/03.jpg",
+        "photographer": "RDNE Stock project",
+        "photographer_url": "https://www.pexels.com/@rdne",
+        "source_url": "https://www.pexels.com/photo/couple-friends-glass-apartment-7464724/"
+      },
+      {
+        "file": "/images/spring-moving-checklist-2026/04.jpg",
+        "photographer": "SHVETS production",
+        "photographer_url": "https://www.pexels.com/@shvets-production",
+        "source_url": "https://www.pexels.com/photo/man-writing-label-on-box-7203964/"
+      }
+    ]
+  },
+  "air-purifier-fine-dust-2026": {
+    "card": {
+      "file": "/covers/air-purifier-fine-dust-2026.jpg",
+      "photographer": "Max Vakhtbovych",
+      "photographer_url": "https://www.pexels.com/@artbovich",
+      "source_url": "https://www.pexels.com/photo/spacious-living-room-with-sofa-and-tv-6934272/"
+    },
+    "hero": {
+      "file": "/covers/air-purifier-fine-dust-2026-hero.jpg",
+      "photographer": "Max Vakhtbovych",
+      "photographer_url": "https://www.pexels.com/@artbovich",
+      "source_url": "https://www.pexels.com/photo/living-room-interior-design-with-beige-sectional-couch-beside-brown-and-white-window-curtain-8082565/"
+    },
+    "inline": [
+      {
+        "file": "/images/air-purifier-fine-dust-2026/01.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/living-room-with-natural-light-through-the-full-wall-glass-panels-7195864/"
+      },
+      {
+        "file": "/images/air-purifier-fine-dust-2026/02.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/modern-living-room-with-tv-6903218/"
+      },
+      {
+        "file": "/images/air-purifier-fine-dust-2026/03.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/modern-interior-of-lounge-with-tv-and-picture-in-daytime-6782360/"
+      },
+      {
+        "file": "/images/air-purifier-fine-dust-2026/04.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/cozy-living-room-with-sofas-and-television-set-6316067/"
+      }
+    ]
+  },
+  "sunscreen-face-comparison-2026": {
+    "card": {
+      "file": "/covers/sunscreen-face-comparison-2026.jpg",
+      "photographer": "Betül  Üstün",
+      "photographer_url": "https://www.pexels.com/@betul-ustun-236006735",
+      "source_url": "https://www.pexels.com/photo/spf-50-sun-cream-in-pink-bottle-on-rocks-20896018/"
+    },
+    "hero": {
+      "file": "/covers/sunscreen-face-comparison-2026-hero.jpg",
+      "photographer": "Vilvah Store",
+      "photographer_url": "https://www.pexels.com/@yaazhini",
+      "source_url": "https://www.pexels.com/photo/tubes-of-sunscreen-lying-on-sand-between-seashells-16443631/"
+    },
+    "inline": [
+      {
+        "file": "/images/sunscreen-face-comparison-2026/01.jpg",
+        "photographer": "Betül  Üstün",
+        "photographer_url": "https://www.pexels.com/@betul-ustun-236006735",
+        "source_url": "https://www.pexels.com/photo/a-bottle-with-sunscreen-16615433/"
+      },
+      {
+        "file": "/images/sunscreen-face-comparison-2026/02.jpg",
+        "photographer": "Moose Photos",
+        "photographer_url": "https://www.pexels.com/@moose-photos-170195",
+        "source_url": "https://www.pexels.com/photo/person-pouring-plastic-tube-bottle-1029896/"
+      },
+      {
+        "file": "/images/sunscreen-face-comparison-2026/03.jpg",
+        "photographer": "Kampus Production",
+        "photographer_url": "https://www.pexels.com/@kampus",
+        "source_url": "https://www.pexels.com/photo/young-girl-wearing-pink-tank-top-smiling-8926001/"
+      },
+      {
+        "file": "/images/sunscreen-face-comparison-2026/04.jpg",
+        "photographer": "www.kaboompics.com",
+        "photographer_url": "https://www.pexels.com/@karola-g",
+        "source_url": "https://www.pexels.com/photo/woman-putting-sunblock-on-her-hand-5202453/"
+      }
+    ]
+  },
+  "camping-beginner-checklist-2026": {
+    "card": {
+      "file": "/covers/camping-beginner-checklist-2026.jpg",
+      "photographer": "cottonbro studio",
+      "photographer_url": "https://www.pexels.com/@cottonbro",
+      "source_url": "https://www.pexels.com/photo/person-put-tent-peg-in-ground-5993968/"
+    },
+    "hero": {
+      "file": "/covers/camping-beginner-checklist-2026-hero.jpg",
+      "photographer": "Diana Reyes",
+      "photographer_url": "https://www.pexels.com/@diana-reyes-227887231",
+      "source_url": "https://www.pexels.com/photo/blue-tent-in-serene-woodland-campsite-35925101/"
+    },
+    "inline": [
+      {
+        "file": "/images/camping-beginner-checklist-2026/01.jpg",
+        "photographer": "Mac DeStroir",
+        "photographer_url": "https://www.pexels.com/@destroir",
+        "source_url": "https://www.pexels.com/photo/pile-of-firewood-2662831/"
+      },
+      {
+        "file": "/images/camping-beginner-checklist-2026/02.jpg",
+        "photographer": "Emre Ayata",
+        "photographer_url": "https://www.pexels.com/@emreayata",
+        "source_url": "https://www.pexels.com/photo/winter-camping-in-the-snowy-forest-at-twilight-30210071/"
+      },
+      {
+        "file": "/images/camping-beginner-checklist-2026/03.jpg",
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "source_url": "https://www.pexels.com/photo/silhouette-photo-of-a-person-inside-the-tent-5994749/"
+      },
+      {
+        "file": "/images/camping-beginner-checklist-2026/04.jpg",
+        "photographer": "Chermiti Mohamed",
+        "photographer_url": "https://www.pexels.com/@chermitove",
+        "source_url": "https://www.pexels.com/photo/lake-view-from-tent-5046996/"
+      }
+    ]
+  },
+  "fridge-organization-tips": {
+    "card": {
+      "file": "/covers/fridge-organization-tips.jpg",
+      "photographer": "Sydney Sang",
+      "photographer_url": "https://www.pexels.com/@urfriendlyphotog",
+      "source_url": "https://www.pexels.com/photo/a-man-with-blue-face-paint-in-the-refrigerator-28226731/"
+    },
+    "hero": {
+      "file": "/covers/fridge-organization-tips-hero.jpg",
+      "photographer": "RDNE Stock project",
+      "photographer_url": "https://www.pexels.com/@rdne",
+      "source_url": "https://www.pexels.com/photo/dry-goods-in-glass-containers-on-a-shelf-8580727/"
+    },
+    "inline": [
+      {
+        "file": "/images/fridge-organization-tips/01.jpg",
+        "photographer": "Anna Shvets",
+        "photographer_url": "https://www.pexels.com/@shvetsa",
+        "source_url": "https://www.pexels.com/photo/young-woman-standing-next-to-an-open-refrigerator-6593607/"
+      },
+      {
+        "file": "/images/fridge-organization-tips/02.jpg",
+        "photographer": "RDNE Stock project",
+        "photographer_url": "https://www.pexels.com/@rdne",
+        "source_url": "https://www.pexels.com/photo/clear-glass-jars-on-white-wooden-shelf-8580793/"
+      },
+      {
+        "file": "/images/fridge-organization-tips/03.jpg",
+        "photographer": "SHVETS production",
+        "photographer_url": "https://www.pexels.com/@shvets-production",
+        "source_url": "https://www.pexels.com/photo/young-woman-sorting-waste-in-kitchen-7512851/"
+      },
+      {
+        "file": "/images/fridge-organization-tips/04.jpg",
+        "photographer": "Max Vakhtbovych",
+        "photographer_url": "https://www.pexels.com/@artbovich",
+        "source_url": "https://www.pexels.com/photo/fridge-with-different-vegetable-in-modern-kitchen-6508357/"
+      }
+    ]
+  },
+  "kids-water-play-safety-2026": {
+    "card": {
+      "file": "/covers/kids-water-play-safety-2026.jpg",
+      "photographer": "Atlantic Ambience",
+      "photographer_url": "https://www.pexels.com/@freestockpro",
+      "source_url": "https://www.pexels.com/photo/pink-flamingo-floater-2705879/"
+    },
+    "hero": {
+      "file": "/covers/kids-water-play-safety-2026-hero.jpg",
+      "photographer": "Jacob  Yavin",
+      "photographer_url": "https://www.pexels.com/@jacobyavin",
+      "source_url": "https://www.pexels.com/photo/swimming-school-12918939/"
+    },
+    "inline": [
+      {
+        "file": "/images/kids-water-play-safety-2026/01.jpg",
+        "photographer": "Helena Jankovičová Kováčová",
+        "photographer_url": "https://www.pexels.com/@helen1",
+        "source_url": "https://www.pexels.com/photo/three-boys-playing-in-a-pool-with-an-inflatable-raft-27594322/"
+      },
+      {
+        "file": "/images/kids-water-play-safety-2026/02.jpg",
+        "photographer": "Helena Jankovičová Kováčová",
+        "photographer_url": "https://www.pexels.com/@helen1",
+        "source_url": "https://www.pexels.com/photo/a-group-of-people-playing-in-a-pool-with-a-ball-27594326/"
+      },
+      {
+        "file": "/images/kids-water-play-safety-2026/03.jpg",
+        "photographer": "Franco Monsalvo",
+        "photographer_url": "https://www.pexels.com/@franco-monsalvo-252430633",
+        "source_url": "https://www.pexels.com/photo/toddler-enjoys-pool-fun-in-green-swim-ring-30111567/"
+      },
+      {
+        "file": "/images/kids-water-play-safety-2026/04.jpg",
+        "photographer": "Helena Jankovičová Kováčová",
+        "photographer_url": "https://www.pexels.com/@helen1",
+        "source_url": "https://www.pexels.com/photo/kids-playing-in-a-pool-with-inflatable-rafts-27594325/"
+      }
+    ]
+  },
+  "umbrella-rainboots-comparison-2026": {
+    "card": {
+      "file": "/covers/umbrella-rainboots-comparison-2026.jpg",
+      "photographer": "Vika Glitter",
+      "photographer_url": "https://www.pexels.com/@vika-glitter-392079",
+      "source_url": "https://www.pexels.com/photo/joyful-woman-in-rainy-park-with-umbrella-30598065/"
+    },
+    "hero": {
+      "file": "/covers/umbrella-rainboots-comparison-2026-hero.jpg",
+      "photographer": "Atlantic Ambience",
+      "photographer_url": "https://www.pexels.com/@freestockpro",
+      "source_url": "https://www.pexels.com/photo/legs-wearing-gumboots-in-autumn-park-12932482/"
+    },
+    "inline": [
+      {
+        "file": "/images/umbrella-rainboots-comparison-2026/01.jpg",
+        "photographer": "Beyzaa Yurtkuran",
+        "photographer_url": "https://www.pexels.com/@beyzaa-yurtkuran-279977530",
+        "source_url": "https://www.pexels.com/photo/reflection-of-umbrella-in-water-on-a-rainy-day-30828875/"
+      },
+      {
+        "file": "/images/umbrella-rainboots-comparison-2026/02.jpg",
+        "photographer": "Abhishek sanga",
+        "photographer_url": "https://www.pexels.com/@itsmethomas",
+        "source_url": "https://www.pexels.com/photo/person-in-black-raincoat-holding-an-umbrella-10963723/"
+      },
+      {
+        "file": "/images/umbrella-rainboots-comparison-2026/03.jpg",
+        "photographer": "atelierbyvineeth . . .",
+        "photographer_url": "https://www.pexels.com/@atelierbyvineeth",
+        "source_url": "https://www.pexels.com/photo/rainy-day-walk-in-dublin-with-colorful-umbrellas-36129246/"
+      },
+      {
+        "file": "/images/umbrella-rainboots-comparison-2026/04.jpg",
+        "photographer": "Nothing Ahead",
+        "photographer_url": "https://www.pexels.com/@ian-panelo",
+        "source_url": "https://www.pexels.com/photo/a-water-droplet-hanging-on-a-blue-umbrella-8876714/"
+      }
+    ]
+  },
+  "pet-summer-essentials-2026": {
+    "card": {
+      "file": "/covers/pet-summer-essentials-2026.jpg",
+      "photographer": "Mithul Varshan",
+      "photographer_url": "https://www.pexels.com/@mithulvarshan",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-dachshund-4853499/"
+    },
+    "hero": {
+      "file": "/covers/pet-summer-essentials-2026-hero.jpg",
+      "photographer": "Zay Small",
+      "photographer_url": "https://www.pexels.com/@zay-small-2151143883",
+      "source_url": "https://www.pexels.com/photo/white-dog-playing-with-ball-in-park-setting-32889073/"
+    },
+    "inline": [
+      {
+        "file": "/images/pet-summer-essentials-2026/01.jpg",
+        "photographer": "gabesdotphotos photographer",
+        "photographer_url": "https://www.pexels.com/@gabesphotos",
+        "source_url": "https://www.pexels.com/photo/dog-on-green-grass-field-11444586/"
+      },
+      {
+        "file": "/images/pet-summer-essentials-2026/02.jpg",
+        "photographer": "Dmitry Egorov",
+        "photographer_url": "https://www.pexels.com/@egorov",
+        "source_url": "https://www.pexels.com/photo/low-angle-shot-of-a-black-german-shepherd-at-the-playground-10264065/"
+      },
+      {
+        "file": "/images/pet-summer-essentials-2026/03.jpg",
+        "photographer": "Jordan Bergendahl",
+        "photographer_url": "https://www.pexels.com/@jordan-bergendahl-2628960",
+        "source_url": "https://www.pexels.com/photo/happy-husky-with-tongue-out-lying-on-green-valley-4607862/"
+      },
+      {
+        "file": "/images/pet-summer-essentials-2026/04.jpg",
+        "photographer": "Alexander Nadrilyanski",
+        "photographer_url": "https://www.pexels.com/@aleksandar069",
+        "source_url": "https://www.pexels.com/photo/selective-focus-photo-of-a-white-and-brown-corgi-on-green-grass-7296956/"
       }
     ]
   }

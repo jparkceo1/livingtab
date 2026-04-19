@@ -1,6 +1,6 @@
 ---
 title: "좁은 주방 수납 아이디어 7가지 — 공간 2배로 쓰는 법"
-date: 2026-04-16T20:40:00+09:00
+date: 2026-04-07T15:00:00+09:00
 draft: false
 slug: "small-kitchen-storage-ideas"
 categories: ["수납·인테리어"]

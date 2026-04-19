@@ -1,6 +1,6 @@
 ---
 title: "제습기 추천 TOP 5 — 장마 오기 전에 사야 할 용량별 비교"
-date: 2026-04-16T23:45:00+09:00
+date: 2026-04-12T15:00:00+09:00
 draft: false
 slug: "dehumidifier-recommend-2026"
 categories: ["소형가전"]
